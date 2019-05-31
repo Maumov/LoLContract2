@@ -1,0 +1,255 @@
+﻿{
+  "_meta": {
+    "maxChars": {
+      "welcome": 20,
+      "readyToPlay": 20,
+      "pressContinue": 50,
+      "greatJob": 20,
+      "onePlusOne": 30,
+      "0": 30,
+
+	  "enterTheCode": 20,
+	  "of": 10,
+	  "next": 20,
+	  "ok": 20,
+	  "loading": 50,
+	  "play": 10,
+	  "end": 30,
+	  "door": 30,
+
+	  "intro_1": 30,
+	  "intro_2": 30,
+	  "intro_3": 30,
+	  "intro_4": 30,
+
+	  "mapaTutorial_1": 50,
+	  "mapaTutorial_2": 50,
+	  "mapaTutorial_3": 50,
+	  "mapaTutorial_4": 50,
+	  "mapaTutorial_5": 50,
+	  "mapaTutorial_6": 50,
+
+	  "mapaTutorial_7": 50,
+
+	  "mapaTutorial_8": 50,
+
+	  "mapaTutorial_9": 50,
+	  "mapaTutorial_10": 50,
+
+	  "puertaTutorial_1": 50,
+	  "puertaTutorial_2": 50,
+	  "puertaTutorial_3": 50,
+
+	  "puertaTutorialGood": 50,
+	  "puertaTutorialBad": 50,
+
+	  "puertaTutorial_Final": 50,
+	  
+	  "cofre_1": 50,
+	  "modulo1Tutorial_1": 50,
+	  "modulo1Tutorial_2": 50,
+	  "modulo1Tutorial_3": 50,
+	  "modulo1Tutorial_4": 50,
+	  "modulo1Tutorial_5": 50,
+	  "modulo1Tutorial_6": 50,
+
+	  "modulo2Tutorial_1": 50,
+
+	  "modulo12Tutorial_Bad": 50,
+	  "modulo12Tutorial_Good": 50,
+
+	  "modulo3Tutorial_1": 50,
+	  "modulo3Tutorial_2": 50,
+	  "modulo3Tutorial_3": 50,
+	  "modulo3Tutorial_4": 50,
+	  "modulo3Tutorial_5": 50,
+
+	  "modulo3Tutorial_Bad": 50,
+	  "modulo3Tutorial_Good": 50,
+
+	  "cofreFinished": 50,
+
+	  "lastChestOpen": 50,
+
+	  "treasureFinded": 50
+    }
+  },
+  "en": {
+    "welcome": "Welcome!",
+    "readyToPlay": "Are you ready to play?",
+    "greatJob": "Great job!",
+    "pressContinue": "Press the next button to continue.",
+    "onePlusOne": "One + One = Two",
+	"0": "One + One = Two",
+
+	"enterTheCode": "Value",
+	"of": "of",
+	"next": "Next",
+	"ok": "Ok",
+	"loading": "Loading...",
+	"play": "Play",
+	"end": "Thank you for playing!",
+	"door": "Door Opened",
+
+	"intro_1": "I am finally on the fraction island, here I will find the fraction treasure.",
+	"intro_2": "The legend says that I have to find 4 gems to open the treasure door.",
+	"intro_3": "I can go through the island destroying bushes pressing 'Space' key.",
+	"intro_4": "To find the gems location I will open the map clicking on the 'M' or with the 'M' key.",
+
+	"mapaTutorial_1": "Ok! The gems coordinates are on the left side of the screen, I will try the yellow one.",
+	"mapaTutorial_2": "It shows me a red and a blue location, let's try with the red one.",
+	"mapaTutorial_3": "In this one I have to multiply 1/2 x 1/4, the answer is 1/8.",
+	"mapaTutorial_4": "The blue multiplication is 3/5 x 1/2, the answer is 3/10.",
+	"mapaTutorial_5": "The legend say that the amount of red and blue lines showed on the map is the same as the denominator obtained from the multiplication.",
+	"mapaTutorial_6": "In this case the red locations is 1/8. That means I have to put 8 red lines with the buttons at the bottom of the screen.",
+
+	"mapaTutorial_7": "Ok, now the 10 blue lines with the other buttons.",
+
+	"mapaTutorial_8": "Great! I have the right amount of lineas, now I just have to click in the intersection between the 1st red line and the 3rd blue line.",
+
+	"mapaTutorial_9": "The yellow gem location it is revealed, I will go check it.",
+	"mapaTutorial_10": "To close the map I can press the 'M' key again or click on the X on the top right corner.",
+
+	"puertaTutorial_1": "This door is getting me away from the gem. I have to open it.",
+	"puertaTutorial_2": "The mecaninsm will open when I put the right answer and click the 3 buttons.",
+	"puertaTutorial_3": "Let's try with the answer of any operation and click on button with the red circle to check.",
+
+	"puertaTutorialGood": "That was the right answer! The answers seems to be related, let's try the same one with the other buttons.",
+
+	"puertaTutorialBad": "That's not quite the answer, let's try again.",
+
+	"puertaTutorial_Final": "I knew it, the answers were related, I can see a division as a multiplication and as a fraction.",
+
+	"cofre_1": "Finally the first gem. But it is inside the chest, let's open it.",
+
+	"modulo1Tutorial_1": "I can solve this writting a value on the purple fraction's numerator.",
+	"modulo1Tutorial_2": "This vault have the same amount of stamps as the red fraction's denominator.",
+	"modulo1Tutorial_3": "Insisde of every red piece there are blue stamps and it is the same amount as the blue fraction's denominator.",
+	"modulo1Tutorial_4": "This means that if I cut a piece of the lock according to the red fraction and then stamp it according to the blue fraction.",
+	"modulo1Tutorial_5": "I will find how to express the fraction of a fraction as a fraction times a fraction. With a look on the purple fraction's denominator I can see is the result of multiply the red and blue fraction's denominator.",
+	"modulo1Tutorial_6": "I will find the answer multiplying the red and blue fraction's numerators. Let's check the answer clicking the button with the red circle.",
+
+	"modulo2Tutorial_1": "This part is very similar to the earlier one, I will use the same idea to answer it, let's put a value clicking the button with the red circle in it.",
+
+	"modulo12Tutorial_Good": "That was the right answer. Great!",
+	"modulo12Tutorial_Bad": "It looks like it is not the answer of multiplying numerators, let's try again.",
+
+	"modulo3Tutorial_1": "This puzzle looks easy, blue squares on top, and red squares on left, with purple squares on the middle.",
+	"modulo3Tutorial_2": " I have to put the same amount of squares as the red squares multiplying by the blue squares. Let's do it clicking on the buttons at the bottom of the screen.",
+
+	"modulo3Tutorial_3": "Ok, looks like I have the same amount as one side, let's get the right amount of squares on the other side.",
+
+	"modulo3Tutorial_4": "With the perfect amount of squares, Let's lit some squares clicking on then.",
+	"modulo3Tutorial_5": "Let's lit on the purple square that are under the lit blue squares and the side of the lit red squares",
+
+	"modulo3Tutorial_Good": "The amount of squares that I should lit on is the same as the multiplication of the blue and red lit on squares.",
+	"modulo3Tutorial_Bad": "It does not seem like the amount of right lit squares, maybe it is the multiplication of the red and blue lit squares.",
+
+	"cofreFinished": "I have opened the chest! The gem is free, I am missing just 3 more and the treasure door will open.",
+	
+	"lastChestOpen": "I have found the last gem and a sudden earthquake happned. I will go check the treasure door.",
+
+	"treasureFinded": "Finally found the fraction treasure!"
+
+	
+  },
+  "es": {
+    "welcome": "¡Bienvenido!",
+    "readyToPlay": "¿Estás listo para jugar?",
+    "greatJob": "¡Gran trabajo!",
+    "pressContinue": "Presione el botón 'siguiente' para continuar.",
+    "onePlusOne": "Uno + Uno = Dos",
+
+	"enterTheCode": "Valor",
+	"of": "de",
+	"next": "Siguiente",
+	"ok": "Ok",
+	"loading": "Cargando...",
+	"play": "Jugar",
+	"end": "¡Gracias por jugar!",
+	"door": "Puerta Abierta",
+
+	"intro_1": "He llegado al fin a la isla adecuada. Aqui encontrare el gran tesoro de la fraccion",
+	"intro_2": "La leyenda decia que debia encontrar 4 gemas para abrir la puerta del tesoro",
+	"intro_3": "Me puedo abrir paso a traves de los arbustos de la isla destruyendolos con 'Espacio'",
+	"intro_4": "Abrire el mapa para encontrar la ubicacion de las gemas presionando la letra 'M' o dando click en la letra 'M' del minimapa",
+
+	"mapaTutorial_1": "¡Ok! Tengo la ubicacion de las gemas a la izquierda, probare con la gema amarilla",
+	"mapaTutorial_2": "Tengo una ubicacion roja y una azul, probare con la ubicacion roja",
+	"mapaTutorial_3": "En esta debo multiplicar 1/2 por 1/4, la respuesta es 1/8.",
+	"mapaTutorial_4": "En la azul la multiplicacion es 3/5 por 1/2, eso da 3/10.",
+	"mapaTutorial_5": "Segun la leyenda debo colocar la cantidad de lineas rojas y azules segun el denominador resultado de la multiplicación de cada color",
+	"mapaTutorial_6": "En este caso la ubicacion roja es 1/8, osea que deberia colocar 8 lineas de color rojo, lo hare con botones de abajo.",
+
+	"mapaTutorial_7": "Ok, ahora colocare 10 lineas azules con los botones de abajo",
+
+	"mapaTutorial_8": "¡Genial! ya tengo las lineas adecuadas ahora debo dar click donde se cruzan la primera linea roja y la tercera linea azul",
+
+	"mapaTutorial_9": "He encontrado la localizacion de la gema amarilla, ire a revisarla.",
+	"mapaTutorial_10": "Para cerrar el mapa presiona 'M' de nuevo o presiona X de la esquina superior derecha",
+
+	"puertaTutorial_1": "Esta puerta esta bloqueando mi acceso hacia la gema, intentare abrirla.",
+	"puertaTutorial_2": "El mecanismo se abre al colocar el valor adecuado en el centro de la puerta",
+	"puertaTutorial_3": "Colocare la respuesta de cualquier operación y presionare el boton con el circulo rojo de la zona",
+
+	"puertaTutorialGood": "Esa era la respuesta correcta... Parece que las respuestas estan relacionadas, probare la misma respuesta con los demas botones rojos.",
+
+	"puertaTutorialBad": "Mmmm... Parece que esta no es la respuesta correcta de la operacion, lo intentare de nuevo",
+
+	"puertaTutorial_Final": "Las respuestas si estaban relacionadas, la division tambien la puedo ver como una multiplicacion y como una fraccion",
+
+	"cofre_1": "He encontrado la primera gema, pero parece estar dentro del cofre, tendre que abrirlo",
+
+	"modulo1Tutorial_1": "Esta parte del cofre debo resolverla colocando un valor en el numerador de la fraccion morada.",
+	"modulo1Tutorial_2": "Tiene la misma cantidad de marcas que el denominador de la fraccion roja.",
+	"modulo1Tutorial_3": "Dentro de cada pedazo rojo hay la misma cantidad de marcas azules que el denominador de la fraccion azul",
+	"modulo1Tutorial_4": "Esto quiere decir que si cortamos un pedazo de cerradura segun la fraccion roja, y luego esta la marcamos la misma cantidad de veces que dice la fraccion azul.",
+	"modulo1Tutorial_5": "Encontraremos cuanto es tomar una fraccion de otra fraccion. Si observo la la fraccion morada el denominador es el resultado de multiplicar los denominadores de la fraccion roja y azul",
+	"modulo1Tutorial_6": "Hallare la respuesta multiplicando los numeradores de la fraccion roja y azul. Cuando coloque el numero probare presionando el boton con el circulo rojo",
+
+	"modulo2Tutorial_1": "Vaya este modulo es bastante similar al anterior, tratare de usar la misma logica, colocare un valor y presionare el boton con el circulo rojo",
+
+	"modulo12Tutorial_Good": "Esta era la respuesta correcta, ¡Genial!",
+	"modulo12Tutorial_Bad": "Parece que esta no es la respuesta de multiplicar los numeradores, lo intentare de nuevo",
+
+	"modulo3Tutorial_1": "Este acertijo se ve sencillo, cuadros azules arriba en columnas, rojos a la izquierda como filas y en el centro cuadros morados.",
+	"modulo3Tutorial_2": "Debo colocar la misma cantidad de filas y columnas en los cubos morados, probare con los botones rojos para colocar la cantidad de filas adecuadas.",
+
+	"modulo3Tutorial_3": "Ok, ahora probare con los botones azules para colocar la cantidad de columnas azules.",
+
+	"modulo3Tutorial_4": "Ahora que tengo la cantidad de cuadros morados necesarios, intentare encender algunos cuadros dando click sobre ellos",
+	"modulo3Tutorial_5": "Encendere los cuadros morados que estan debajo de las columnas azules encendidos y que estan al lado de las filas rojas encendidas",
+
+	"modulo3Tutorial_Good": "La cantidad de cuadros que debia encender es la misma que si multiplicara la cantidad de cuadros rojos y azules encendidos",
+	"modulo3Tutorial_Bad": "Parece que no era la cantidad correcta, quizas la respuesta es la multiplicacion de la cantidad de cuadros rojos y azules encendidos",
+
+	"cofreFinished": "¡He abierto el cofre!, La gema esta liberada, tengo 1 me faltan 3 mas y se abrira la gran puerta del tesoro",
+	
+	"lastChestOpen": "He encontrado la ultima gema y sucedio un terremoto, ire a revisar la gran puerta",
+
+	"treasureFinded": "¡Al fin encontre el tesoro!"
+
+
+  },
+  "zh": {
+    "welcome": "欢迎！",
+    "readyToPlay": "你准备好玩吗",
+    "greatJob": "做得好！",
+    "pressContinue": "按“下一步”按钮继续。",
+    "onePlusOne": "一+一=二"
+  },
+  "jp": {
+    "welcome": "ようこそ!",
+    "readyToPlay": "あなたは遊ぶ準備ができていますか？",
+    "greatJob": "よくやった！",
+    "pressContinue": "続行するには '次へ'ボタンを押してください。",
+    "onePlusOne": "1 + 1 = 2"
+  },
+  "ru": {
+    "welcome": "Добро пожаловать!",
+    "readyToPlay": "Вы готовы играть?",
+    "greatJob": "Отличная работа!",
+    "pressContinue": "Нажмите следующую кнопку, чтобы продолжить.",
+    "onePlusOne": "один + один"
+  }
+}
