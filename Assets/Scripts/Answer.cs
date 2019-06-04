@@ -78,3 +78,9 @@ public class Answer : MonoBehaviour
 }
 
 public enum AnswerType { Denominator, Fraction, Number }
+
+public class Respuesta {
+    float denominador;
+    float numerador;
+    float numero;
+}

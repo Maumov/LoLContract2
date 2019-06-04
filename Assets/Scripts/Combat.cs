@@ -50,4 +50,8 @@ public class Combat : MonoBehaviour
         // Waiting for script
         Debug.Log("Applied");
     }
+
+    void Attack() {
+
+    }
 }
