@@ -20,6 +20,16 @@ public class Question : MonoBehaviour
 
     public void CheckAnswer(Respuesta respuesta) {
 
+        bool sw = false;
+
+        //---- Check answer
+
+        //-----------------
+
+
+        if(OnRespuesta != null) {
+            OnRespuesta(sw);
+        }
     }
 }
 [System.Serializable]

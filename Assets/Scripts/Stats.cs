@@ -19,6 +19,10 @@ public class Stats : MonoBehaviour
 
     public void Dead() {
 
+
+        if(OnDead != null) {
+            OnDead();
+        }
     }
 
 }

@@ -46,7 +46,7 @@ public class Answer : MonoBehaviour
     // Llamada por el boton
     public void CheckAnswer()
     {
-        question.CheckAnswer(AnswerValue);
+        question.CheckAnswer(AnswerValue());
     }
 
     public void ResetValues()
