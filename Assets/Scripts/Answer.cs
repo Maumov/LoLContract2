@@ -10,10 +10,8 @@ public class Answer : MonoBehaviour
     public InputField incognita2;
     public GameObject line;
     public Question question;
-    string defaultValue;
+    string defaultValue = "?";
     public AnswerType type;
-    float numerator;
-    float denominator;
 
     public void SetAnswerType(AnswerType answerType)
     {
@@ -36,24 +34,13 @@ public class Answer : MonoBehaviour
         }
     }
 
-    float AnswerValue()
+    Respuesta AnswerValue()
     {
-        numerator = float.Parse(incognita1.text);
-        denominator = float.Parse(incognita2.text);
+        Respuesta respuesta = new Respuesta();
+        float.TryParse(incognita1.text, out respuesta.numerator);
+        float.TryParse(incognita2.text, out respuesta.denominator);
 
-        switch (type)
-        {
-            case AnswerType.Denominator:
-                return (1 / denominator);
-
-            case AnswerType.Fraction:
-                return (numerator / denominator);
-
-            case AnswerType.Number:
-                return numerator;
-            default:
-                return -1;
-        }
+        return respuesta;
     }
 
     // Llamada por el boton
@@ -64,9 +51,6 @@ public class Answer : MonoBehaviour
 
     public void ResetValues()
     {
-        numerator = 1;
-        denominator = 1;
-
         incognita1.gameObject.SetActive(true);
         incognita1.enabled = true;
         incognita1.text = defaultValue;
@@ -78,3 +62,9 @@ public class Answer : MonoBehaviour
 }
 
 public enum AnswerType { Denominator, Fraction, Number }
+
+public class Respuesta
+{
+    public float numerator;
+    public float denominator;
+}
