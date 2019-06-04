@@ -8,6 +8,14 @@ public class Combat : MonoBehaviour
     public bool isPlayer;
     public AnimatorController animator;
 
+    public delegate void AttackEvent();
+    public event AttackEvent OnAttack;
+
+    private void Start()
+    {
+        OnAttack += ApplyDamage;
+    }
+
     /*
     public void InitiateAttack()
     {
