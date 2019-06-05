@@ -11,7 +11,7 @@ public class AnswerViewer : MonoBehaviour
 
     public List<Text> incognita1, incognita2;
 
-    public void Show() {
-
+    public void Show(Answer ans) {
+        answer = ans;
     }
 }

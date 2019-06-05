@@ -11,45 +11,21 @@ public class Combat : MonoBehaviour
     public delegate void AttackEvent();
     public event AttackEvent OnAttack;
 
+
+
     private void Start()
     {
         OnAttack += ApplyDamage;
     }
-
-    /*
-    public void InitiateAttack()
-    {
-        if (isPlayer)
-        {
-            animator.PlayIdle();
-        }
-        else
-        {
-            animator.PlayStartAttack();
-        }
-    }
-    */
+    
 
     public virtual void CorrectAnswer()
     {
-        /*
-        if (isPlayer)
-        {
-            animator.PlayStartAttack();
-        }
-        animator.PlayEndAttack();
-        */
     }
 
 
     public virtual void WrongAnswer()
     {
-        /*
-        if(isPlayer == false)
-        {
-            animator.PlayEndAttack();
-        }
-        */
     }
 
     // Se llama cuando la animacion muestra el impacto.

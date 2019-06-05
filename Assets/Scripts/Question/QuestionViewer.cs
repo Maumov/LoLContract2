@@ -11,8 +11,9 @@ public class QuestionViewer : MonoBehaviour
 
     public List<Text> a, b, c, d, e;
 
-
-    public void Show() {
+    
+    public void Show(Question quest) {
+        question = quest;
 
         switch(question.exerciseNumber) {
             case 0:
@@ -32,9 +33,5 @@ public class QuestionViewer : MonoBehaviour
                 e[question.exerciseNumber].text = question.e.ToString();
             break;
         }
-
-        
-
     }
-
 }
