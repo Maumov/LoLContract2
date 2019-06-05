@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Question : MonoBehaviour
+public class QuestionHandler : MonoBehaviour
 {
 
     public delegate void delegadoRespuesta(bool sw);
@@ -18,7 +18,7 @@ public class Question : MonoBehaviour
 
     }
 
-    public void CheckAnswer(Respuesta respuesta) {
+    public void CheckAnswer(Answer respuesta) {
 
         bool sw = false;
 
@@ -36,3 +36,15 @@ public class Question : MonoBehaviour
 public class InfoTutorial {
     public string texto;
 }
+
+[System.Serializable]
+public class Question {
+    public int exerciseNumber;
+    public int a;
+    public int b;
+    public int c;
+    public int d;
+    public int e;
+    public Answer respuesta;
+}
+
