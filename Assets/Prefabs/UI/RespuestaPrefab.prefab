@@ -34,7 +34,7 @@ RectTransform:
   - {fileID: 6213178882260656715}
   - {fileID: 5113110816377748696}
   m_Father: {fileID: 4847836117720007395}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2126,6 +2126,7 @@ GameObject:
   - component: {fileID: 6953608740067151220}
   - component: {fileID: 6825615966561825056}
   - component: {fileID: 3834049498732906187}
+  - component: {fileID: 1623939791285693673}
   m_Layer: 5
   m_Name: RespuestaPrefab
   m_TagString: Untagged
@@ -2144,9 +2145,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 3078716496574737386}
   - {fileID: 9108223809081635669}
   - {fileID: 929890746791232192}
-  - {fileID: 3078716496574737386}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2215,6 +2216,29 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1623939791285693673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297495926947431454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd1c422fc8be645bf2231aad0b7985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer:
+    answerType: 0
+    numerator: 0
+    denominator: 0
+  tipoRespuesta:
+  - {fileID: 6745632759634242788}
+  - {fileID: 197389446515071521}
+  - {fileID: 7731213490114238914}
+  incognita1: []
+  incognita2: []
+  answerHandler: {fileID: 0}
 --- !u!1 &6745632759634242788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +2273,7 @@ RectTransform:
   - {fileID: 7664249303911273519}
   - {fileID: 6676484393925834179}
   m_Father: {fileID: 4847836117720007395}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2763,7 +2787,7 @@ RectTransform:
   - {fileID: 1828279106925508871}
   - {fileID: 5754136949996093438}
   m_Father: {fileID: 4847836117720007395}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
