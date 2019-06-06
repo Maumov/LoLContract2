@@ -171,7 +171,7 @@ public class Question {
             break;
 
             case 7:
-            answer.numerator = Random.Range(1,10);
+            answer.numerator = Random.Range(2,10);
             c = (int)(a * answer.numerator);
             d = (int)(b * answer.numerator);
             answer.answerType = AnswerType.Fraction;
