@@ -13,6 +13,9 @@ public class QuestionViewer : MonoBehaviour
     public List<TextMeshProUGUI> a, b, c, d, e, f, g;
     
     public void Show(Question quest) {
+        foreach(GameObject g in tipoPregunta) {
+            g.SetActive(false);
+        }
         question = quest;
         SetTexts(a, question.a.ToString());
         SetTexts(b, question.b.ToString());
