@@ -2236,8 +2236,14 @@ MonoBehaviour:
   - {fileID: 6745632759634242788}
   - {fileID: 197389446515071521}
   - {fileID: 7731213490114238914}
-  incognita1: []
-  incognita2: []
+  incognita1:
+  - {fileID: 5630515706049723210}
+  - {fileID: 5432287976151798290}
+  - {fileID: 4291046895449607745}
+  incognita2:
+  - {fileID: 3929297338938027244}
+  - {fileID: 8407875750417079460}
+  - {fileID: 8819607487053886465}
   answerHandler: {fileID: 0}
 --- !u!1 &6745632759634242788
 GameObject:
