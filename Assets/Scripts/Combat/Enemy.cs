@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public delegate void enemyDelegate();
-    public event enemyDelegate OnSpawn, OnAttack;
+    public event enemyDelegate OnSpawn;
 
 
 
