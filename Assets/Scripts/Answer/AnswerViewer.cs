@@ -26,8 +26,12 @@ public class AnswerViewer : MonoBehaviour
 
     public void ButtonPressed() {
         Answer a = new Answer();
-        a.numerator = int.Parse(incognita1[(int)answer.answerType].text);
-        a.denominator = int.Parse(incognita2[(int)answer.answerType].text);
+        if(incognita1[(int)answer.answerType].text != "") {
+            a.numerator = int.Parse(incognita1[(int)answer.answerType].text);
+        }
+        if(incognita2[(int)answer.answerType].text != "") {
+            a.denominator = int.Parse(incognita2[(int)answer.answerType].text);
+        }
         answerHandler.CheckAnswer(a);
     }
 }

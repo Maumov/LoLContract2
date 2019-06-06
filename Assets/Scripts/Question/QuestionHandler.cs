@@ -10,14 +10,21 @@ public class QuestionHandler : MonoBehaviour
 
     public InfoTutorial infoTutorial;
 
-    Question question;
+    public Question question;
 
     AnswerHandler answerHandler;
     QuestionViewer questionViewer;
 
+    [Header("Test")]
+    public int testExerciseNumber;
+
     private void Start() {
         answerHandler = FindObjectOfType<AnswerHandler>();
         questionViewer = FindObjectOfType<QuestionViewer>();
+    }
+    [ContextMenu("Test")]
+    public void QuestionTest() {
+        SetQuestion(testExerciseNumber);
     }
 
     public void SetQuestion(int exerciseNumber) {
@@ -62,7 +69,7 @@ public class QuestionHandler : MonoBehaviour
             }
             break;
             case AnswerType.Denominator:
-            if(question.answer.denominator == respuesta.denominator) {
+            if(question.answer.numerator == respuesta.numerator) {
                 sw = true;
             }
             break;
@@ -86,6 +93,7 @@ public class QuestionHandler : MonoBehaviour
                 OnWrong();
             }
         }
+        Debug.Log("Resultado: " + sw);
     }
 }
 
@@ -108,10 +116,10 @@ public class Question {
     public Answer answer;
 
     public void SetRandomValues() {
-        a = Random.Range(1, 10);
-        b = Random.Range(1, 10);
-        c = Random.Range(1, 10);
-        d = Random.Range(1, 10);
+        a = Random.Range(2, 10);
+        b = Random.Range(2, 10);
+        c = Random.Range(2, 10);
+        d = Random.Range(2, 10);
         SetValues();
     }
 
@@ -147,8 +155,9 @@ public class Question {
             break;
             //---------------
             case 4:
-            answer.numerator = (int)((a * c)/b);
-            answer.answerType = AnswerType.Number;
+            answer.numerator = (int)((a * c));
+            answer.denominator = (int)(b);
+            answer.answerType = AnswerType.Fraction;
             break;
 
             case 5:
@@ -162,7 +171,7 @@ public class Question {
             break;
 
             case 7:
-            answer.numerator = Random.Range(1,10);
+            answer.numerator = Random.Range(2,10);
             c = (int)(a * answer.numerator);
             d = (int)(b * answer.numerator);
             answer.answerType = AnswerType.Fraction;
