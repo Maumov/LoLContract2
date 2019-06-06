@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class QuestionViewer : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class QuestionViewer : MonoBehaviour
 
     public List<GameObject> tipoPregunta;
 
-    public List<Text> a, b, c, d, e, f, g;
+    public List<TextMeshProUGUI> a, b, c, d, e, f, g;
     
     public void Show(Question quest) {
         question = quest;
@@ -23,8 +24,8 @@ public class QuestionViewer : MonoBehaviour
         tipoPregunta[question.exerciseNumber].SetActive(true);
     }
 
-    void SetTexts(List<Text> list, string value) {
-        foreach(Text t in list) {
+    void SetTexts(List<TextMeshProUGUI> list, string value) {
+        foreach(TextMeshProUGUI t in list) {
             t.text = value;
         }
     }
