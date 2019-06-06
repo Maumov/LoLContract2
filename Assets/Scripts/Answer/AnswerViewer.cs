@@ -8,7 +8,7 @@ public class AnswerViewer : MonoBehaviour
     public Answer answer;
     public List<GameObject> tipoRespuesta;
     public List<InputField> incognita1, incognita2;
-    public AnswerHandler answerHandler;
+    AnswerHandler answerHandler;
 
     void Start() {
         answerHandler = FindObjectOfType<AnswerHandler>();        

@@ -7,8 +7,8 @@ public class AnswerHandler : MonoBehaviour
 {  
     
     public Answer answer;
-    public AnswerViewer answerViewer;
-    public QuestionHandler questionHandler;
+    AnswerViewer answerViewer;
+    QuestionHandler questionHandler;
 
     private void Start() {
         answerViewer = FindObjectOfType<AnswerViewer>();
