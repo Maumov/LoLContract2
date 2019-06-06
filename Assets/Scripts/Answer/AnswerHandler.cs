@@ -28,7 +28,7 @@ public class AnswerHandler : MonoBehaviour
     
 }
 
-public enum AnswerType { Denominator, Fraction, Number }
+public enum AnswerType {    Number, Denominator, Fraction  }
 
 [System.Serializable]
 public class Answer{

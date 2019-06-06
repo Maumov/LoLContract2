@@ -5,8 +5,8 @@ using UnityEngine;
 public class QuestionHandler : MonoBehaviour
 {
 
-    public delegate void delegadoRespuesta(bool sw);
-    public event delegadoRespuesta OnRespuesta;
+    public delegate void delegateQuestion();
+    public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
 
     public InfoTutorial infoTutorial;
 
@@ -38,6 +38,9 @@ public class QuestionHandler : MonoBehaviour
 
     public void ShowQuestion() {
         questionViewer.Show(question);
+        if(OnQuestionSet != null) {
+            OnQuestionSet();
+        }
     }
 
     public void SetAnswerType() {
@@ -70,8 +73,18 @@ public class QuestionHandler : MonoBehaviour
             break;
         }
 
-        if(OnRespuesta != null) {
-            OnRespuesta(sw);
+        if(OnAnswerReceived != null) {
+            OnAnswerReceived();
+        }
+
+        if(sw) {
+            if(OnCorrect != null) {
+                OnCorrect();
+            }
+        } else {
+            if(OnWrong != null) {
+                OnWrong();
+            }
         }
     }
 }
