@@ -12,8 +12,8 @@ public class QuestionHandler : MonoBehaviour
 
     Question question;
 
-    public AnswerHandler answerHandler;
-    public QuestionViewer questionViewer;
+    AnswerHandler answerHandler;
+    QuestionViewer questionViewer;
 
     private void Start() {
         answerHandler = FindObjectOfType<AnswerHandler>();
