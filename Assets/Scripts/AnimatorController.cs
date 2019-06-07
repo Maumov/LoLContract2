@@ -12,20 +12,23 @@ public class AnimatorController : MonoBehaviour
         stats = GetComponent<Stats>();
         stats.OnDamageReceived += PlayDamaged;
         stats.OnDead += Dead;
-
-
     }
 
     public void Attack(){
-        
+        animator.SetTrigger("Attack");
+    }
+
+    public void PlayRandomAnimation(){
+        //animator.SetInteger("DodgeRandom", Random.Range(0, 4));
+        animator.SetInteger("AttackRandom", Random.Range(0, 2));
+        animator.SetInteger("ReturnRandom", Random.Range(0, 2));
     }
     
-
     public void PlayDamaged(){
-        animator.SetTrigger("Damaged");
+        animator.SetTrigger("GetHit");
     }
 
     public void Dead() {
-        animator.SetTrigger("Dead");
+        animator.SetTrigger("Death");
     }
 }
