@@ -31,4 +31,5 @@ public class AnimatorController : MonoBehaviour
     public void Dead() {
         animator.SetTrigger("Death");
     }
+    
 }
