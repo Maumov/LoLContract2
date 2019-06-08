@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5054442041916983440}
   - component: {fileID: 5054442041920387226}
   - component: {fileID: 5054442041919397206}
+  - component: {fileID: 2945797781234694659}
   m_Layer: 0
-  m_Name: SM_Env_Tiles_Ornate_02
+  m_Name: ElegantTiles2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2945797781234694659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054442041917167368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.999996, y: 0.070534326, z: 4.9999924}
+  m_Center: {x: -2.499998, y: 0.035267163, z: -2.4999962}

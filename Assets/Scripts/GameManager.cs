@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LoLSDK;
+
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int progress;
+    public static int maxProgress;
+    public static int score;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static List<int> casosAPreguntar;
+    public static GameObject boss;
+
+    public static void UpdateProgress() {
+        LOLSDK.Instance.SubmitProgress(score, progress, maxProgress);
     }
 }

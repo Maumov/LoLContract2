@@ -105,4 +105,5 @@ public class AnimatorController : MonoBehaviour
     {
         combat.FinishSlash();
     }
+    
 }
