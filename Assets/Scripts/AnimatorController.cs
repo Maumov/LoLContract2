@@ -86,8 +86,6 @@ public class AnimatorController : MonoBehaviour
         while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1){
             yield return new WaitForEndOfFrame();
         }
-
-        combat.FinishSlash();
         animator.SetTrigger("ReturnPosition");
 
         while (animator.GetCurrentAnimatorStateInfo(0).IsName("ReturnPosition"))
@@ -105,6 +103,6 @@ public class AnimatorController : MonoBehaviour
 
     void Hit()
     {
-
+        combat.FinishSlash();
     }
 }
