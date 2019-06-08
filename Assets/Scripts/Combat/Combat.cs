@@ -15,53 +15,59 @@ public class Combat : MonoBehaviour
     private void Start(){
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
-            questionHandler.OnCorrect += InitAttack;
+            //questionHandler.OnCorrect += InitAttack;
         }
         else{
-            questionHandler.OnWrong += InitAttack;
+            //questionHandler.OnWrong += InitAttack;
         }
     }
 
     public void InitAttack(){
-        if (isPlayer)
-        {
-            animator.PlayRandomAnimation();
-            animator.Attack();
-        }
+        StartCoroutine(animator.Attack());
     }
 
-    public void StartAttack(){
-        if(OnStartAttack != null)
+    // Delegates
+    #region 
+
+    public void StartAttack()
+    {
+        if (OnStartAttack != null)
         {
             OnStartAttack.Invoke();
         }
     }
 
-    public void ArriveOnTarget(){
+    public void ArriveOnTarget()
+    {
         if (OnArriveOnTarget != null)
         {
             OnArriveOnTarget.Invoke();
         }
     }
 
-    public void StartSlash(){
+    public void StartSlash()
+    {
         if (OnStartSlash != null)
         {
             OnStartSlash.Invoke();
         }
     }
 
-    public void FinishSlash(){
+    public void FinishSlash()
+    {
         if (OnFinishSlash != null)
         {
             OnFinishSlash.Invoke();
         }
     }
 
-    public void ReturnToPosition(){
+    public void ReturnToPosition()
+    {
         if (OnReturnToPosition != null)
         {
             OnReturnToPosition.Invoke();
         }
     }
+
+    #endregion
 }
