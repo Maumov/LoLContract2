@@ -6,7 +6,6 @@ public class Door : MonoBehaviour
 {
     public GameObject boss;
     public List<int> casosAPreguntar;
-    public bool isCombo;
     LoadingScreen loadingScreen;
     Animator anim;
 
