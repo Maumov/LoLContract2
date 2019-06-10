@@ -30,4 +30,8 @@ public class Stats : MonoBehaviour
 
     }
 
+    public bool isDead() {
+        return currentHitPoints <= 0;
+    }
+
 }

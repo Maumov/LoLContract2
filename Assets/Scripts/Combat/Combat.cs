@@ -5,22 +5,40 @@ using UnityEngine;
 [RequireComponent(typeof(AnimatorController))]
 public class Combat : MonoBehaviour
 {
+    public static bool canAttack;
+
     public bool isPlayer;
-    public AnimatorController animator;
-    public QuestionHandler questionHandler;
+    AnimatorController animator;
+    QuestionHandler questionHandler;
     bool isAttacking;
 
     public delegate void combatDelegate();
     public event combatDelegate OnStartAttack, OnArriveOnTarget, OnStartSlash, OnFinishSlash, OnReturnToPosition;
 
+    Combat target;
+    Stats stats;
+
+    public int damage;
+    [Header("Boss Combat Values")]
+    public float timeBetweenAttacks;
+    float nextAttack = Time.time;
+
     private void Start(){
-        OnStartAttack += AttackWasTrigger;
-        OnReturnToPosition += AttackCompleted;
+        stats = GetComponent<Stats>();
+        questionHandler = GetComponent<QuestionHandler>();
+        nextAttack = Time.time;
+        Combat[] combats = FindObjectsOfType<Combat>();
+        foreach(Combat c in combats) {
+            if(c.isPlayer != isPlayer) {
+                target = c;
+            }
+        }
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
-            //questionHandler.OnCorrect += InitAttack;
+            questionHandler.OnCorrect += Attack;
         }
         else{
+            StartCoroutine(BossCombat());
             //questionHandler.OnWrong += InitAttack;
         }
     }
@@ -29,18 +47,12 @@ public class Combat : MonoBehaviour
     {
         return isPlayer;
     }
-
-    public bool IsAttacking(){
-        return isAttacking;
-    }
-
-    public bool InitAttack(){
-        if (!isAttacking){
+    
+    public void InitAttack(){
+        if(!isAttacking) {
+            isAttacking = true;
+            canAttack = false;
             StartCoroutine(animator.Attack());
-            return true;
-        }
-        else {
-            return false;
         }
     }
 
@@ -49,6 +61,7 @@ public class Combat : MonoBehaviour
 
     public void StartAttack()
     {
+       
         if (OnStartAttack != null)
         {
             OnStartAttack.Invoke();
@@ -85,15 +98,33 @@ public class Combat : MonoBehaviour
         {
             OnReturnToPosition.Invoke();
         }
+        isAttacking = false;
+        canAttack = true;
     }
 
     #endregion
 
-    void AttackWasTrigger(){
-        isAttacking = true;
+    IEnumerator BossCombat() {
+        
+        while(!stats.isDead()) {
+
+            if(nextAttack < Time.time) {
+                yield return StartCoroutine(WaitAttackTurn());
+            }
+        }
+        yield return null;
     }
 
-    void AttackCompleted(){
-        isAttacking = false;
+    public void Attack() {
+        StartCoroutine(WaitAttackTurn());
+    }
+
+    IEnumerator WaitAttackTurn() {
+        while(!canAttack) {
+            yield return null;
+        }
+        InitAttack();
+        nextAttack = Time.time + timeBetweenAttacks;
+
     }
 }
