@@ -225,6 +225,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8217337570590332661}
   - component: {fileID: 8310001344964285255}
+  - component: {fileID: 8784570494908233121}
+  - component: {fileID: 4328034372709113545}
+  - component: {fileID: 8096114488468898412}
   m_Layer: 0
   m_Name: Character_Medusa_01
   m_TagString: Untagged
@@ -267,6 +270,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8784570494908233121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214888312034482531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fb5e581a12143468c990327d47dba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  target: {fileID: 0}
+  radiusStopMoving: 0
+  movementSpeed: 0
+  returnSpeed: 0
+--- !u!114 &4328034372709113545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214888312034482531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5756cd98a05224f4788f596032d6ac44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  animator: {fileID: 0}
+  questionHandler: {fileID: 0}
+--- !u!114 &8096114488468898412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214888312034482531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750bf79b64d3eb742b1dd3d918f1bbb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 0
+  currentHitPoints: 0
 --- !u!1 &8214889647629271355
 GameObject:
   m_ObjectHideFlags: 0

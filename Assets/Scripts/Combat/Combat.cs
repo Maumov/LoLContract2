@@ -8,11 +8,14 @@ public class Combat : MonoBehaviour
     public bool isPlayer;
     public AnimatorController animator;
     public QuestionHandler questionHandler;
+    bool isAttacking;
 
-    delegate void combatDelegate();
-    event combatDelegate OnStartAttack, OnArriveOnTarget, OnStartSlash, OnFinishSlash, OnReturnToPosition;
+    public delegate void combatDelegate();
+    public event combatDelegate OnStartAttack, OnArriveOnTarget, OnStartSlash, OnFinishSlash, OnReturnToPosition;
 
     private void Start(){
+        OnStartAttack += AttackWasTrigger;
+        OnReturnToPosition += AttackCompleted;
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
             //questionHandler.OnCorrect += InitAttack;
@@ -22,11 +25,26 @@ public class Combat : MonoBehaviour
         }
     }
 
-    public void InitAttack(){
-        StartCoroutine(animator.Attack());
+    public bool IsPlayer()
+    {
+        return isPlayer;
     }
 
-    // Delegates
+    public bool IsAttacking(){
+        return isAttacking;
+    }
+
+    public bool InitAttack(){
+        if (!isAttacking){
+            StartCoroutine(animator.Attack());
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    // Delegates triggers
     #region 
 
     public void StartAttack()
@@ -70,4 +88,12 @@ public class Combat : MonoBehaviour
     }
 
     #endregion
+
+    void AttackWasTrigger(){
+        isAttacking = true;
+    }
+
+    void AttackCompleted(){
+        isAttacking = false;
+    }
 }

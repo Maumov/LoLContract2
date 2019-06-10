@@ -55,8 +55,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7925553936423737935}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 3.3200002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6469701130651261380}
@@ -143,6 +143,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 814425322051127500, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: afa7c5a9251ba064e8ea3fedcb6e170c, type: 2}
+    - target: {fileID: 5122689274243907985, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 5340602789583087118}
+    - target: {fileID: 5122689274243907985, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: radiusStopMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122689274243907985, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122689274243907985, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: returnSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0522995e0f5684089fca018e1a887c, type: 3}
