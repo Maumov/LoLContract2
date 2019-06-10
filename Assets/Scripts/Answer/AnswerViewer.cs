@@ -11,7 +11,7 @@ public class AnswerViewer : MonoBehaviour
     AnswerHandler answerHandler;
 
     void Start() {
-        answerHandler = FindObjectOfType<AnswerHandler>();        
+        answerHandler = FindObjectOfType<AnswerHandler>();
     }
 
     public void Show(Answer ans) {

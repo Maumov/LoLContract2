@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AnimatorController))]
 public class Combat : MonoBehaviour
 {
-    public static bool canAttack;
+    public static bool canAttack = true;
 
     public bool isPlayer;
     AnimatorController animator;
@@ -21,11 +21,11 @@ public class Combat : MonoBehaviour
     public int damage;
     [Header("Boss Combat Values")]
     public float timeBetweenAttacks;
-    float nextAttack = Time.time;
+    float nextAttack;
 
     private void Start(){
         stats = GetComponent<Stats>();
-        questionHandler = GetComponent<QuestionHandler>();
+        questionHandler = FindObjectOfType<QuestionHandler>();
         nextAttack = Time.time;
         Combat[] combats = FindObjectsOfType<Combat>();
         foreach(Combat c in combats) {
@@ -53,6 +53,7 @@ public class Combat : MonoBehaviour
             isAttacking = true;
             canAttack = false;
             StartCoroutine(animator.Attack());
+
         }
     }
 
@@ -90,6 +91,7 @@ public class Combat : MonoBehaviour
         {
             OnFinishSlash.Invoke();
         }
+        target.GetDamage(damage);
     }
 
     public void ReturnToPosition()
@@ -126,5 +128,9 @@ public class Combat : MonoBehaviour
         InitAttack();
         nextAttack = Time.time + timeBetweenAttacks;
 
+    }
+
+    public void GetDamage(float value) {
+        stats.GetDamage(value);
     }
 }

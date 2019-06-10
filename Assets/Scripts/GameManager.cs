@@ -16,4 +16,9 @@ public class GameManager : MonoBehaviour
     public static void UpdateProgress() {
         LOLSDK.Instance.SubmitProgress(score, progress, maxProgress);
     }
+
+    public static int GetNewQuestion() {
+        return Random.Range(0, casosAPreguntar.Count);
+
+    }
 }
