@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7481618859720269904}
   - component: {fileID: 7481618859716801994}
   - component: {fileID: 7481618859717899242}
+  - component: {fileID: 4759140446734863839}
   m_Layer: 0
-  m_Name: SM_Env_Tiles_04
+  m_Name: FloorTiles4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4759140446734863839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481618859719929874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.000639, y: 0.101415, z: 4.999998}
+  m_Center: {x: -2.4996805, y: 0.0499075, z: 2.499999}
