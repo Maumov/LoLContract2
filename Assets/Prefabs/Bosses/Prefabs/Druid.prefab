@@ -69,6 +69,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370356604235697384}
     m_Modifications:
+    - target: {fileID: 2445870047510651273, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: m_Name
+      value: Character_ForestGuardian_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2442543188924493907, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -138,11 +143,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2445870047510651273, guid: 9b02a6da345b91b4c86becede13a66fa,
-        type: 3}
-      propertyPath: m_Name
-      value: Character_ForestGuardian_01
       objectReference: {fileID: 0}
     - target: {fileID: 2442381072811738043, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
