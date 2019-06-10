@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     public GameObject boss;
     public List<int> casosAPreguntar;
+    public bool isCombo;
     LoadingScreen loadingScreen;
     Animator anim;
 
@@ -34,8 +35,7 @@ public class Door : MonoBehaviour
     }
 
     void EnterDoor() {
-        GameManager.casosAPreguntar = casosAPreguntar;
-        GameManager.boss = boss;
+        GameManager.SetQuestions(casosAPreguntar, boss);
         loadingScreen.ChangeLevel();
     }
 
