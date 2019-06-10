@@ -21,6 +21,7 @@ public class QuestionHandler : MonoBehaviour
     private void Start() {
         answerHandler = FindObjectOfType<AnswerHandler>();
         questionViewer = FindObjectOfType<QuestionViewer>();
+        SetQuestion(GameManager.GetNewQuestion());
     }
     [ContextMenu("Test")]
     public void QuestionTest() {
@@ -82,14 +83,19 @@ public class QuestionHandler : MonoBehaviour
 
         if(OnAnswerReceived != null) {
             OnAnswerReceived();
+            SetQuestion(GameManager.GetNewQuestion());
         }
 
         if(sw) {
+            Debug.Log("entro");
             if(OnCorrect != null) {
+                Debug.Log("entro2");
                 OnCorrect();
             }
         } else {
+            Debug.Log("entro3");
             if(OnWrong != null) {
+                Debug.Log("entro4");
                 OnWrong();
             }
         }

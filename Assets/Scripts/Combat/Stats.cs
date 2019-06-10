@@ -8,7 +8,18 @@ public class Stats : MonoBehaviour
     public float currentHitPoints;
 
     public delegate void statsDelegate();
-    public event statsDelegate OnDead, OnDamageReceived;
+    public event statsDelegate OnDead, OnDamageReceived, OnRevive;
+
+    private void Start() {
+        currentHitPoints = maxHitPoints;
+    }
+
+    public void Revive() {
+        currentHitPoints = maxHitPoints;
+        if(OnRevive != null) {
+            OnRevive();
+        }
+    }
 
     public void GetDamage(float damage) {
         currentHitPoints -= damage;
@@ -28,6 +39,10 @@ public class Stats : MonoBehaviour
             OnDead();
         }
 
+    }
+
+    public bool isDead() {
+        return currentHitPoints <= 0;
     }
 
 }
