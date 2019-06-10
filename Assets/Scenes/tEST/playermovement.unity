@@ -119,16 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6924908858171194236, guid: fa014206ec7be924ebe5d2bc504ebd70,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6924908858171194236, guid: fa014206ec7be924ebe5d2bc504ebd70,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 162860, guid: fa014206ec7be924ebe5d2bc504ebd70, type: 3}
       propertyPath: m_Name
       value: PlayerMove
@@ -343,3 +333,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c25f6ad3a98a24a9f1f7b735f3240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  Offset: {x: 0, y: 5, z: -5}

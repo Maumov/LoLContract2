@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     public float movementSpeed;
     public float rotationSpeed;
-
-
-
+    
     float vertical;
     float horizontal;
 
@@ -34,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
     void Move() {
         Vector3 dir = new Vector3(horizontal,0f, vertical);
         dir.Normalize();
-        characterController.Move(dir * movementSpeed * Time.deltaTime);
-        transform.LookAt(transform.position + characterController.velocity);
+        dir *= movementSpeed;
+        dir += Physics.gravity;
+        characterController.Move(dir * Time.deltaTime);
+        transform.LookAt(transform.position + new Vector3(horizontal, 0f, vertical));
     }
 }
