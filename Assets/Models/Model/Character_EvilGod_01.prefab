@@ -1563,9 +1563,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
   target: {fileID: 0}
-  radiusStopMoving: 0
-  movementSpeed: 0
-  returnSpeed: 0
+  delayAnimation: 0.2
+  movementDuration: 1
+  returnDuration: 1
 --- !u!114 &2099843536513683199
 MonoBehaviour:
   m_ObjectHideFlags: 0
