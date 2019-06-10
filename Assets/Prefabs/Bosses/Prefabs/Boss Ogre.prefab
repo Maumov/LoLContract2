@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: radiusStopMoving
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1408128151367181573, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: returnSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
 --- !u!4 &188385350927664681 stripped
