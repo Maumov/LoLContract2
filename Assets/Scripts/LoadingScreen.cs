@@ -10,7 +10,6 @@ public class LoadingScreen : MonoBehaviour
 
     private void Start()
     {
-        ChangeLevel();
     }
 
     public void ChangeLevel()
