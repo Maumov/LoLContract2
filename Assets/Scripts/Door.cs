@@ -34,8 +34,7 @@ public class Door : MonoBehaviour
     }
 
     void EnterDoor() {
-        GameManager.casosAPreguntar = casosAPreguntar;
-        GameManager.boss = boss;
+        GameManager.SetQuestions(casosAPreguntar, boss);
         loadingScreen.ChangeLevel();
     }
 
