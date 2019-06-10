@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8310001344964285255, guid: 37df75166be935043a6803560e713c0e,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8784570494908233121, guid: 37df75166be935043a6803560e713c0e,
         type: 3}
       propertyPath: target
