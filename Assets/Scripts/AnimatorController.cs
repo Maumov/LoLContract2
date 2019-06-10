@@ -14,7 +14,8 @@ public class AnimatorController : MonoBehaviour
     public float returnSpeed;
     Vector3 defaultLocation;
 
-
+    public delegate void movementAnimations();
+    public event movementAnimations OnStep, OnLand;
 
     private void Start(){
         defaultLocation = transform.position;
@@ -26,17 +27,14 @@ public class AnimatorController : MonoBehaviour
     }
     
     // No deja realizarlo en la misma animacion.
-    public void ActivateWeapon()
-    {
-        if(weapon != null)
-        {
+    public void ActivateWeapon(){
+        if(weapon != null){
             weapon.SetActive(true);
         }
     }
 
     [ContextMenu("StartAttack")]
-    public void PlayAttack()
-    {
+    public void PlayAttack(){
         StartCoroutine(Attack());
     }
 
@@ -46,8 +44,7 @@ public class AnimatorController : MonoBehaviour
     }
 
     [ContextMenu("PlayDeath")]
-    public void PlayDeath()
-    {
+    public void PlayDeath(){
         animator.SetBool("Death", true);
         PlayDamaged();
     }
@@ -56,20 +53,45 @@ public class AnimatorController : MonoBehaviour
         animator.SetBool("Death", true);
     }
 
-    public IEnumerator Attack()
-    {
+    void Hit(){
+        combat.FinishSlash();
+    }
+
+    void FootL(){
+
+    }
+
+    void FootR(){
+
+    }
+
+    void Land(){
+
+    }
+
+    public IEnumerator Attack(){
+        bool isPlayer = combat.IsPlayer();
+
         animator.SetTrigger("IniatiateCombat");
         combat.StartAttack();
 
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Run"))
-        {
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Run")){
             yield return new WaitForEndOfFrame();
         }
 
-        while (Vector3.Distance(transform.position, target.position) > radiusStopMoving){
-            transform.position += transform.forward * movementSpeed * Time.deltaTime;
-            yield return new WaitForEndOfFrame();
+        if (isPlayer){
+            while (transform.position.z <= target.position.z){
+                transform.position += transform.forward * movementSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
         }
+        else{
+            while (transform.position.z >= target.position.z){
+                transform.position += transform.forward * movementSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+
         combat.ArriveOnTarget();
         animator.SetTrigger("Attack");
 
@@ -88,22 +110,26 @@ public class AnimatorController : MonoBehaviour
         }
         animator.SetTrigger("ReturnPosition");
 
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("ReturnPosition"))
-        {
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("ReturnPosition")){
             yield return new WaitForEndOfFrame();
         }
 
-        while (Vector3.Distance(transform.position, defaultLocation) > radiusStopMoving){
-            transform.position -= transform.forward * returnSpeed * Time.deltaTime;
-            yield return new WaitForEndOfFrame();
+        if (isPlayer){
+            while (transform.position.z >= defaultLocation.z){
+                transform.position -= transform.forward * returnSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
         }
+        else{
+            while (transform.position.z <= defaultLocation.z){
+                transform.position -= transform.forward * returnSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+        transform.position = defaultLocation;
+
         combat.ReturnToPosition();
         animator.SetTrigger("Completed");
     }
-
-    void Hit()
-    {
-        combat.FinishSlash();
-    }
-    
 }
+ 
