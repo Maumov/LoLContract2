@@ -13,7 +13,7 @@ public class Combat : MonoBehaviour
     bool isAttacking;
 
     public delegate void combatDelegate();
-    public event combatDelegate OnStartAttack, OnArriveOnTarget, OnStartSlash, OnFinishSlash, OnReturnToPosition;
+    public event combatDelegate OnReady, OnStartAttack, OnArriveOnTarget, OnStartSlash, OnFinishSlash, OnReturnToPosition;
 
     Combat target;
     Stats stats;
@@ -53,7 +53,6 @@ public class Combat : MonoBehaviour
             isAttacking = true;
             canAttack = false;
             StartCoroutine(animator.Attack());
-
         }
     }
 
@@ -85,15 +84,6 @@ public class Combat : MonoBehaviour
         }
     }
 
-    public void FinishSlash()
-    {
-        if (OnFinishSlash != null)
-        {
-            OnFinishSlash.Invoke();
-        }
-        target.GetDamage(damage);
-    }
-
     public void ReturnToPosition()
     {
         if (OnReturnToPosition != null)
@@ -102,6 +92,23 @@ public class Combat : MonoBehaviour
         }
         isAttacking = false;
         canAttack = true;
+    }
+
+    public void IntroReady()
+    {
+        if (OnReady != null)
+        {
+            OnReady.Invoke();
+        }
+    }
+
+    void Hit()
+    {
+        if (OnFinishSlash != null)
+        {
+            OnFinishSlash.Invoke();
+        }
+        target.GetDamage(damage);
     }
 
     #endregion
