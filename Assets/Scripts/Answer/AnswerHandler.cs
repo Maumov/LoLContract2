@@ -16,6 +16,7 @@ public class AnswerHandler : MonoBehaviour
     }
 
     public void ShowAnswer(Answer ans) {
+        Debug.Log(ans);
         answer = ans;
         answerViewer.Show(answer);
     }
