@@ -10,7 +10,7 @@ public class AnswerViewer : MonoBehaviour
     public List<InputField> incognita1, incognita2;
     AnswerHandler answerHandler;
 
-    void Start() {
+    private void Awake() {
         answerHandler = FindObjectOfType<AnswerHandler>();
     }
 

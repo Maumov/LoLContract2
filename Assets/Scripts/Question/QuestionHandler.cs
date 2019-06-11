@@ -18,14 +18,18 @@ public class QuestionHandler : MonoBehaviour
     [Header("Test")]
     public int testExerciseNumber;
 
-    private void Start() {
+    private void Awake() {
         answerHandler = FindObjectOfType<AnswerHandler>();
         questionViewer = FindObjectOfType<QuestionViewer>();
+    }
+
+    private void Start() {
+       
         SetQuestion(GameManager.GetNewQuestion());
     }
     [ContextMenu("Test")]
     public void QuestionTest() {
-        SetQuestion(testExerciseNumber);
+        SetQuestion(0);
     }
 
     public void SetQuestion(int exerciseNumber) {
@@ -83,23 +87,19 @@ public class QuestionHandler : MonoBehaviour
 
         if(OnAnswerReceived != null) {
             OnAnswerReceived();
-            SetQuestion(GameManager.GetNewQuestion());
+            
         }
-
+       
         if(sw) {
-            Debug.Log("entro");
             if(OnCorrect != null) {
-                Debug.Log("entro2");
                 OnCorrect();
             }
+            SetQuestion(GameManager.GetNewQuestion());
         } else {
-            Debug.Log("entro3");
             if(OnWrong != null) {
-                Debug.Log("entro4");
                 OnWrong();
             }
         }
-        Debug.Log("Resultado: " + sw);
     }
 }
 

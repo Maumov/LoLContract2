@@ -10,12 +10,13 @@ public class AnswerHandler : MonoBehaviour
     AnswerViewer answerViewer;
     QuestionHandler questionHandler;
 
-    private void Start() {
+    private void Awake() {
         answerViewer = FindObjectOfType<AnswerViewer>();
         questionHandler = FindObjectOfType<QuestionHandler>();
     }
 
     public void ShowAnswer(Answer ans) {
+        Debug.Log(ans);
         answer = ans;
         answerViewer.Show(answer);
     }
