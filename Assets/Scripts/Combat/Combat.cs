@@ -34,9 +34,11 @@ public class Combat : MonoBehaviour
         }
         else{
             StartCoroutine(BossCombat());
-            //questionHandler.OnWrong += InitAttack;
+    
         }
     }
+
+    
 
     public bool IsPlayer()
     {
@@ -109,6 +111,7 @@ public class Combat : MonoBehaviour
     #endregion
 
     IEnumerator BossCombat() {
+        yield return new WaitForSeconds(4f);
         Debug.Log("Boss Combat start");
         while(!stats.isDead()) {
             if(nextAttack < Time.time) {

@@ -40,6 +40,7 @@ public class Stats : MonoBehaviour
     }
 
     public bool isDead() {
+        Debug.Log(currentHitPoints);
         return (currentHitPoints <= 0f);
     }
 
