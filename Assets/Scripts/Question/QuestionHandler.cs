@@ -89,12 +89,12 @@ public class QuestionHandler : MonoBehaviour
             OnAnswerReceived();
             
         }
-        SetQuestion(GameManager.GetNewQuestion());
+       
         if(sw) {
-            
             if(OnCorrect != null) {
                 OnCorrect();
             }
+            SetQuestion(GameManager.GetNewQuestion());
         } else {
             if(OnWrong != null) {
                 OnWrong();

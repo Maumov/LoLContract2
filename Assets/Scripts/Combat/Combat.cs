@@ -33,6 +33,7 @@ public class Combat : MonoBehaviour
             questionHandler.OnCorrect += Attack;
         }
         else{
+
             StartCoroutine(BossCombat());
     
         }
@@ -105,18 +106,29 @@ public class Combat : MonoBehaviour
         {
             OnFinishSlash.Invoke();
         }
+        if(target == null) {
+            Combat[] combats = FindObjectsOfType<Combat>();
+            foreach(Combat c in combats) {
+                if(c.isPlayer != isPlayer) {
+                    target = c;
+                }
+            }
+        }
         target.GetDamage(damage);
     }
 
     #endregion
 
+
+
     IEnumerator BossCombat() {
-        yield return new WaitForSeconds(4f);
         Debug.Log("Boss Combat start");
+        yield return new WaitForSeconds(4f);
         while(!stats.isDead()) {
             if(nextAttack < Time.time) {
                 yield return StartCoroutine(WaitAttackTurn());
             }
+            yield return null;
         }
         Debug.Log("Boss Combat end");
         yield return null;
@@ -127,14 +139,6 @@ public class Combat : MonoBehaviour
     }
 
     IEnumerator WaitAttackTurn() {
-        if(target == null) {
-            Combat[] combats = FindObjectsOfType<Combat>();
-            foreach(Combat c in combats) {
-                if(c.isPlayer != isPlayer) {
-                    target = c;
-                }
-            }
-        }
         while(!canAttack) {
             yield return null;
         }
