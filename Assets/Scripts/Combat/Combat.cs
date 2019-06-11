@@ -27,12 +27,7 @@ public class Combat : MonoBehaviour
         stats = GetComponent<Stats>();
         questionHandler = FindObjectOfType<QuestionHandler>();
         nextAttack = Time.time;
-        Combat[] combats = FindObjectsOfType<Combat>();
-        foreach(Combat c in combats) {
-            if(c.isPlayer != isPlayer) {
-                target = c;
-            }
-        }
+        
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
@@ -129,6 +124,14 @@ public class Combat : MonoBehaviour
     }
 
     IEnumerator WaitAttackTurn() {
+        if(target == null) {
+            Combat[] combats = FindObjectsOfType<Combat>();
+            foreach(Combat c in combats) {
+                if(c.isPlayer != isPlayer) {
+                    target = c;
+                }
+            }
+        }
         while(!canAttack) {
             yield return null;
         }
