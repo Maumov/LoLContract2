@@ -23,14 +23,12 @@ public class Stats : MonoBehaviour
 
     public void GetDamage(float damage) {
         currentHitPoints -= damage;
-
+        if(OnDamageReceived != null) {
+            OnDamageReceived();
+        }
         if(currentHitPoints <= 0f) {
             Dead();
-        } else {
-            if(OnDamageReceived != null) {
-                OnDamageReceived();
-            }
-        }
+        } 
     }
 
     public void Dead() {
@@ -42,7 +40,7 @@ public class Stats : MonoBehaviour
     }
 
     public bool isDead() {
-        return currentHitPoints <= 0;
+        return (currentHitPoints <= 0f);
     }
 
 }

@@ -29,7 +29,7 @@ public class QuestionHandler : MonoBehaviour
     }
     [ContextMenu("Test")]
     public void QuestionTest() {
-        SetQuestion(testExerciseNumber);
+        SetQuestion(0);
     }
 
     public void SetQuestion(int exerciseNumber) {
@@ -87,23 +87,19 @@ public class QuestionHandler : MonoBehaviour
 
         if(OnAnswerReceived != null) {
             OnAnswerReceived();
-            SetQuestion(GameManager.GetNewQuestion());
+            
         }
-
+        SetQuestion(GameManager.GetNewQuestion());
         if(sw) {
-            Debug.Log("entro");
+            
             if(OnCorrect != null) {
-                Debug.Log("entro2");
                 OnCorrect();
             }
         } else {
-            Debug.Log("entro3");
             if(OnWrong != null) {
-                Debug.Log("entro4");
                 OnWrong();
             }
         }
-        Debug.Log("Resultado: " + sw);
     }
 }
 
