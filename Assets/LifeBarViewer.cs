@@ -11,6 +11,16 @@ public class LifeBarViewer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("lateStart", 2f);
+        slider = GetComponent<Slider>();
+
+    }
+    
+    void UpdateLifeBar() {
+        slider.value = stats.currentHitPoints / stats.maxHitPoints;
+    }
+
+    void lateStart() {
         Combat[] statss = FindObjectsOfType<Combat>();
 
         foreach(Combat s in statss) {
@@ -18,11 +28,5 @@ public class LifeBarViewer : MonoBehaviour
                 s.GetComponent<Stats>().OnDamageReceived += UpdateLifeBar;
             }
         }
-        slider = GetComponent<Slider>();
-
-    }
-    
-    void UpdateLifeBar() {
-        slider.value = stats.currentHitPoints / stats.maxHitPoints;
     }
 }
