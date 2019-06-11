@@ -144,11 +144,32 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3102932192968088678, guid: c5216eb93a5eed64089c3cb99f3e1336,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 580659302008536352, guid: c5216eb93a5eed64089c3cb99f3e1336,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 580659302008536352, guid: c5216eb93a5eed64089c3cb99f3e1336,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8735608959234585260, guid: c5216eb93a5eed64089c3cb99f3e1336,
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8735608959234585260, guid: c5216eb93a5eed64089c3cb99f3e1336,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 03190308dcbe0bc4c890f41869326ac9,
+        type: 2}
     - target: {fileID: 8627617883198662354, guid: c5216eb93a5eed64089c3cb99f3e1336,
         type: 3}
       propertyPath: target
