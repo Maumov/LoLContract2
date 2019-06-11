@@ -109,13 +109,13 @@ public class Combat : MonoBehaviour
     #endregion
 
     IEnumerator BossCombat() {
-        
+        Debug.Log("Boss Combat start");
         while(!stats.isDead()) {
-
             if(nextAttack < Time.time) {
                 yield return StartCoroutine(WaitAttackTurn());
             }
         }
+        Debug.Log("Boss Combat end");
         yield return null;
     }
 
@@ -137,7 +137,6 @@ public class Combat : MonoBehaviour
         }
         InitAttack();
         nextAttack = Time.time + timeBetweenAttacks;
-
     }
 
     public void GetDamage(float value) {
