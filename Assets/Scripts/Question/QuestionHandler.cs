@@ -180,7 +180,7 @@ public class Question {
             answer.numerator = Random.Range(2,10);
             c = (int)(a * answer.numerator);
             d = (int)(b * answer.numerator);
-            answer.answerType = AnswerType.Fraction;
+            answer.answerType = AnswerType.Number;
             break;
 
             //-----COMBO
