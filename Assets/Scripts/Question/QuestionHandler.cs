@@ -18,9 +18,13 @@ public class QuestionHandler : MonoBehaviour
     [Header("Test")]
     public int testExerciseNumber;
 
-    private void Start() {
+    private void Awake() {
         answerHandler = FindObjectOfType<AnswerHandler>();
         questionViewer = FindObjectOfType<QuestionViewer>();
+    }
+
+    private void Start() {
+       
         SetQuestion(GameManager.GetNewQuestion());
     }
     [ContextMenu("Test")]

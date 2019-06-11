@@ -10,7 +10,7 @@ public class AnswerHandler : MonoBehaviour
     AnswerViewer answerViewer;
     QuestionHandler questionHandler;
 
-    private void Start() {
+    private void Awake() {
         answerViewer = FindObjectOfType<AnswerViewer>();
         questionHandler = FindObjectOfType<QuestionHandler>();
     }
