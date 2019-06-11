@@ -25,10 +25,6 @@ public class AnimatorController : MonoBehaviour
         combat = GetComponent<Combat>();
         stats.OnDamageReceived += PlayDamaged;
         stats.OnDead += Dead;
-
-        OnStep += FootL;
-        OnStep += FootR;
-        OnLand += Land;
     }
     
     // No deja realizarlo en la misma animacion.
@@ -36,6 +32,7 @@ public class AnimatorController : MonoBehaviour
         if(weapon != null){
             weapon.SetActive(true);
         }
+        combat.IntroReady();
     }
 
     [ContextMenu("StartAttack")]
@@ -58,20 +55,23 @@ public class AnimatorController : MonoBehaviour
         animator.SetBool("Death", true);
     }
 
-    void Hit(){
-        combat.FinishSlash();
-    }
-
     void FootL(){
-
+        if (OnStep != null)
+        {
+            OnStep.Invoke();
+        }
     }
 
     void FootR(){
-
+        if (OnStep != null)
+        {
+            OnStep.Invoke();
+        }
     }
 
-    void Land(){
-
+    void Land()
+    {
+        combat.IntroReady();
     }
 
     public IEnumerator Attack(){
