@@ -11,7 +11,19 @@ public class QuestionViewer : MonoBehaviour
     public List<GameObject> tipoPregunta;
 
     public List<TextMeshProUGUI> a, b, c, d, e, f, g;
-    
+
+    private void Start() {
+        Invoke("LateStart", 2f);
+    }
+
+    private void LateStart() {
+        Combat[] combats = FindObjectsOfType<Combat>();
+        foreach(Combat c in combats) {
+            c.OnStartAttack += Hide;
+            c.OnFinishSlash += Show;
+        }
+    }
+
     public void Show(Question quest) {
         foreach(GameObject g in tipoPregunta) {
             g.SetActive(false);
@@ -32,5 +44,10 @@ public class QuestionViewer : MonoBehaviour
             t.text = value;
         }
     }
+    public void Hide() {
 
+    }
+    public void Show() {
+
+    }
 }

@@ -12,6 +12,8 @@ public class Door : MonoBehaviour
     Animator anim;
     AudioSource audio;
 
+    public GameObject DoorStatusOn, DoorStatusOff;
+
     delegate void doorDelegate();
     event doorDelegate OnEnterInteraction, OnExitInteraction;
 
@@ -22,6 +24,7 @@ public class Door : MonoBehaviour
         audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
+        SetDoorStatus();
         if(isLastBoss) {
             if(!GameManager.CanEnterFinalBoss()) {
                 GetComponent<SphereCollider>().enabled = false;
@@ -63,6 +66,26 @@ public class Door : MonoBehaviour
                 OnExitInteraction();
             }
             interacting = false;
+        }
+    }
+
+    void SetDoorStatus() {
+
+        if(GameManager.IsBossKilled(id)) {
+            if(DoorStatusOn != null) {
+                DoorStatusOn.SetActive(true);
+            }
+            if(DoorStatusOff != null) {
+                DoorStatusOff.SetActive(false);
+            }
+            
+        } else {
+            if(DoorStatusOn != null) {
+                DoorStatusOn.SetActive(false);
+            }
+            if(DoorStatusOff != null) {
+                DoorStatusOff.SetActive(true);
+            }
         }
     }
 

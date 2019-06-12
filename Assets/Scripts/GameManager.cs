@@ -34,15 +34,22 @@ public class GameManager
     }
 
     public static bool CanEnterFinalBoss() {
-        if(bossesDone == null) {
-            bossesDone = new List<int>();
-        }
         for(id = 0; id < 12; id++) {
-            if(!bossesDone.Contains(id)) {
+            if(!IsBossKilled(id)) {
                 return false;
             }
         }
         return true;
+    }
+
+    public static bool IsBossKilled(int id) {
+        if(bossesDone == null) {
+            bossesDone = new List<int>();
+        }
+        if(bossesDone.Contains(id)) {
+            return true;
+        }
+        return false;
     }
 
     public static int GetNewQuestion() {
