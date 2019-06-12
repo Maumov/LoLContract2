@@ -55,6 +55,7 @@ MonoBehaviour:
   scene: 
   fadeImage: {fileID: 1237086670986190148}
   fadeSpeed: 1
+  LoadingGameObject: {fileID: 6981396284335155547}
 --- !u!1001 &1045336198213428679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,6 +248,12 @@ PrefabInstance:
 --- !u!224 &3802077802513035621 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4198047708888536226, guid: 672a32f27257290408d37f0639113119,
+    type: 3}
+  m_PrefabInstance: {fileID: 1045336198213428679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6981396284335155547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7954238018529332380, guid: 672a32f27257290408d37f0639113119,
     type: 3}
   m_PrefabInstance: {fileID: 1045336198213428679}
   m_PrefabAsset: {fileID: 0}
