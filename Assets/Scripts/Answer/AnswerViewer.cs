@@ -8,12 +8,10 @@ public class AnswerViewer : MonoBehaviour
     public Answer answer;
     public List<GameObject> tipoRespuesta;
     public List<InputField> incognita1, incognita2;
-    AnswerHandler answerHandler;
 
-    private void Awake() {
-        answerHandler = FindObjectOfType<AnswerHandler>();
-    }
+    public AnswerHandler answerHandler;
 
+    
     public void Show(Answer ans) {
         answer = ans;
         foreach(GameObject g in tipoRespuesta) {
