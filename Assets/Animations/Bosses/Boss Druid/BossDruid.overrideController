@@ -8,4 +8,20 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: BossDruid
   m_Controller: {fileID: 9100000, guid: 5c95fa233a84ce44da4330f272678457, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ab74fd0f9ce2e5e4ebd8ba2f3db5996c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a5c13a37700bd3144af3ab75c5495656, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 567eac9b72cdb3146827015d72ce557b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fee628bfbb1b6164daefc9a8187e4252, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7e9de4ad85410a44b9c0a49ea2b84e00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fd6191a21cc71ae48b28390d8d90b20f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: caa806a74cbf5d14290769c03d7c2a00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9f5178e6ea7baab49bc73120fd6e71fe, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 068fe380d661d644c929ee46603380ce, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d4e89c56afb61c34b968fbaddca9be7b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cff30203bd03919419e6cbab8b87d6f8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c1684b1a13c9274a88d2734ec06fad4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 614ea9a7c09c5c343ad1d80f92ba3457, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad5eedfdd9b96d0429bc7250df901bea, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ed1304d60acf1ca4e88dfda635d2f5a8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5b1cfbe495a310349bf74cd3894125d2, type: 2}

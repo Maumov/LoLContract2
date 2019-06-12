@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public List<int> casosAPreguntar;
     LoadingScreen loadingScreen;
     Animator anim;
+    AudioSource audio;
 
     delegate void doorDelegate();
     event doorDelegate OnEnterInteraction, OnExitInteraction;
@@ -16,6 +17,7 @@ public class Door : MonoBehaviour
 
 
     private void Start() {
+        audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
     }
@@ -30,6 +32,7 @@ public class Door : MonoBehaviour
 
     public void Use() {
         anim.SetTrigger("Open");
+        audio.Play();
         Invoke("EnterDoor", 1f);
     }
 

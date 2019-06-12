@@ -8,4 +8,20 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: BossPig
   m_Controller: {fileID: 9100000, guid: 5c95fa233a84ce44da4330f272678457, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 567eac9b72cdb3146827015d72ce557b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b1cd12ff330cb2b48b5597c566d24e5a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ab74fd0f9ce2e5e4ebd8ba2f3db5996c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c950b59115918ad4cbf8e448cab8bd66, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 068fe380d661d644c929ee46603380ce, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 99322621a0533de48892dacd528b9429, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: caa806a74cbf5d14290769c03d7c2a00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 87d9caae444dfce4aa09231dcdb44f3a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7e9de4ad85410a44b9c0a49ea2b84e00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 50fe120b1c1ae504ab2b8f26b34dcb31, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ed1304d60acf1ca4e88dfda635d2f5a8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 931b2581cc7a2d84faa266b7a99031f2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 614ea9a7c09c5c343ad1d80f92ba3457, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5126102a97f9e9046896698d99cef19d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cff30203bd03919419e6cbab8b87d6f8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fd31aa673f99ad84da387bfe3e66069c, type: 2}
