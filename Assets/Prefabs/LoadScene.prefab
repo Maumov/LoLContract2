@@ -8,35 +8,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3532583626483931307}
   m_CullTransparentMesh: 0
---- !u!114 &8096528946056040986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3532583626483931307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!1 &4483124840473024268
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 
-  fadeImage: {fileID: 8096528946056040986}
+  fadeImage: {fileID: 1237086670986190148}
   fadeSpeed: 1
 --- !u!1001 &1045336198213428679
 PrefabInstance:
@@ -216,45 +187,10 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4092550046783704603, guid: 672a32f27257290408d37f0639113119,
+    - target: {fileID: 5909027505846578512, guid: 672a32f27257290408d37f0639113119,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4092550046783704603, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4268395929373700097, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4268395929373700097, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6893078969393613414, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1924929762926062107, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1924929762926062107, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 1924929762926062107, guid: 672a32f27257290408d37f0639113119,
-        type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 576
+      propertyPath: m_fontSize
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 7128482894789467867, guid: 672a32f27257290408d37f0639113119,
         type: 3}
@@ -286,6 +222,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4092550046783704603, guid: 672a32f27257290408d37f0639113119,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092550046783704603, guid: 672a32f27257290408d37f0639113119,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4268395929373700097, guid: 672a32f27257290408d37f0639113119,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4268395929373700097, guid: 672a32f27257290408d37f0639113119,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a32f27257290408d37f0639113119, type: 3}
 --- !u!224 &3802077802513035621 stripped
@@ -300,3 +256,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1045336198213428679}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1237086670986190148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2281852206692890755, guid: 672a32f27257290408d37f0639113119,
+    type: 3}
+  m_PrefabInstance: {fileID: 1045336198213428679}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532583626483931307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
