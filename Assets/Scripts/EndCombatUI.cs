@@ -26,4 +26,10 @@ public class EndCombatUI : MonoBehaviour
     void ShowUI() {
         UIToSpawn.SetActive(true);
     }
+
+    public void ButtonPressed() {
+        LoadingScreen loadingScreen = FindObjectOfType<LoadingScreen>();
+        loadingScreen.scene = "Hub";
+        loadingScreen.ChangeLevel();
+    }
 }
