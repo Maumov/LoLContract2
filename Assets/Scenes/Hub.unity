@@ -8263,6 +8263,12 @@ PrefabInstance:
       propertyPath: isCombo
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7784371359651511542, guid: 9a778425a41acf84dad6c508cca69017,
+        type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 194140800146496287, guid: 1f7fe1eb745e4ad4294af6b2e6e54cce,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a778425a41acf84dad6c508cca69017, type: 3}
 --- !u!4 &490407026 stripped
