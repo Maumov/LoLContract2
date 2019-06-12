@@ -10,6 +10,9 @@ public class LoadingScreen : MonoBehaviour
 
     public Image fadeImage;
     public float fadeSpeed;
+
+    public GameObject LoadingGameObject;
+
     private void Start()
     {
 
@@ -38,9 +41,11 @@ public class LoadingScreen : MonoBehaviour
             fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, fade);
             yield return null;
         }
+        LoadingGameObject.SetActive(true);
     }
 
     IEnumerator FadeIn() {
+        LoadingGameObject.SetActive(false);
         float fade = 1f;
         while(fade >= 0f) {
             fade -= Time.deltaTime * fadeSpeed;
