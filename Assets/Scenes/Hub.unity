@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6937,6 +6937,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 394694249}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &396946258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8096528946056040986, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+    type: 3}
+  m_PrefabInstance: {fileID: 893154316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &398401331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7367298540698728412, guid: 3ec2c687ef41537488f202aad71d2cab,
@@ -14848,16 +14860,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6665558957188253847, guid: d14b50a14567f4c4ab4ebed001c0ed98,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665558957188253847, guid: d14b50a14567f4c4ab4ebed001c0ed98,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4483124840473024268, guid: d14b50a14567f4c4ab4ebed001c0ed98,
         type: 3}
       propertyPath: m_Name
@@ -14923,6 +14925,16 @@ PrefabInstance:
       propertyPath: scene
       value: Combat
       objectReference: {fileID: 0}
+    - target: {fileID: 1097509315118506932, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: fadeImage
+      value: 
+      objectReference: {fileID: 396946258}
+    - target: {fileID: 1097509315118506932, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: fadeSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8139881097423811514, guid: d14b50a14567f4c4ab4ebed001c0ed98,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -14932,6 +14944,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015456639370223491, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950934508826077898, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665558957188253847, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665558957188253847, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981396284335155547, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14b50a14567f4c4ab4ebed001c0ed98, type: 3}
