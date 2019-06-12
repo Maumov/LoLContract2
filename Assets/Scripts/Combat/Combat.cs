@@ -39,8 +39,6 @@ public class Combat : MonoBehaviour
         }
     }
 
-    
-
     public bool IsPlayer()
     {
         return isPlayer;

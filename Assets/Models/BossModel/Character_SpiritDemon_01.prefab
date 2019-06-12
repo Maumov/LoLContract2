@@ -1544,6 +1544,7 @@ GameObject:
   - component: {fileID: 8803502653568150941}
   - component: {fileID: 6698190896580477919}
   - component: {fileID: 6648320393678050748}
+  - component: {fileID: 3627698515644754404}
   m_Layer: 0
   m_Name: Character_SpiritDemon_01
   m_TagString: Untagged
@@ -1617,8 +1618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  animator: {fileID: 0}
-  questionHandler: {fileID: 0}
+  damage: 0
+  timeBetweenAttacks: 0
 --- !u!114 &6648320393678050748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,6 +1634,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHitPoints: 0
   currentHitPoints: 0
+--- !u!114 &3627698515644754404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984465787874249372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  step: {fileID: 0}
+  slash: {fileID: 0}
+  readySound: {fileID: 0}
 --- !u!1 &3985441584936563374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,10 +1973,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3989302908397312244}
     m_Modifications:
-    - target: {fileID: 1876479836436568, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
-      propertyPath: m_Name
-      value: Small_Energy_Soft_FX
-      objectReference: {fileID: 0}
     - target: {fileID: 4463003867515204, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09571618
@@ -2005,6 +2017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1876479836436568, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
+      propertyPath: m_Name
+      value: Small_Energy_Soft_FX
+      objectReference: {fileID: 0}
     - target: {fileID: 198461462444000560, guid: fe8a785dacf0f634da597527ea1b09a6,
         type: 3}
       propertyPath: ShapeModule.radius.value
@@ -2025,10 +2041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3989180961078981468}
     m_Modifications:
-    - target: {fileID: 1876479836436568, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
-      propertyPath: m_Name
-      value: Small_Energy_Soft_FX (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4463003867515204, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0009999275
@@ -2072,6 +2084,10 @@ PrefabInstance:
     - target: {fileID: 4463003867515204, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876479836436568, guid: fe8a785dacf0f634da597527ea1b09a6, type: 3}
+      propertyPath: m_Name
+      value: Small_Energy_Soft_FX (1)
       objectReference: {fileID: 0}
     - target: {fileID: 198461462444000560, guid: fe8a785dacf0f634da597527ea1b09a6,
         type: 3}

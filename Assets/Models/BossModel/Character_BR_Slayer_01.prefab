@@ -1314,6 +1314,7 @@ GameObject:
   - component: {fileID: 5705982559745742782}
   - component: {fileID: 3392799280601766787}
   - component: {fileID: 8656484578354495361}
+  - component: {fileID: 7978847695914727620}
   m_Layer: 0
   m_Name: Character_BR_Slayer_01
   m_TagString: Untagged
@@ -1386,8 +1387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  animator: {fileID: 0}
-  questionHandler: {fileID: 0}
+  damage: 0
+  timeBetweenAttacks: 0
 --- !u!114 &8656484578354495361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +1403,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHitPoints: 0
   currentHitPoints: 0
+--- !u!114 &7978847695914727620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3484978601736430339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  step: {fileID: 0}
+  slash: {fileID: 0}
+  readySound: {fileID: 0}
 --- !u!1 &3484980920328971091
 GameObject:
   m_ObjectHideFlags: 0

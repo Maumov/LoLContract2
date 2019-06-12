@@ -23,6 +23,9 @@ public class AnimatorController : MonoBehaviour
         animator = GetComponent<Animator>();
         stats = GetComponent<Stats>();
         combat = GetComponent<Combat>();
+        if (combat.IsPlayer()){
+            combat.OnReady += ActivateWeapon;
+        }
         stats.OnDamageReceived += PlayDamaged;
         stats.OnDead += Dead;
     }
@@ -32,7 +35,6 @@ public class AnimatorController : MonoBehaviour
         if(weapon != null){
             weapon.SetActive(true);
         }
-        combat.IntroReady();
     }
 
     [ContextMenu("StartAttack")]
