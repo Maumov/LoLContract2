@@ -723,6 +723,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   UIToSpawn: {fileID: 2971102317052766524}
+  revive: {fileID: 0}
+  countDown: {fileID: 4854911895054007995}
+  timer: 10
 --- !u!1 &6962475213619631517
 GameObject:
   m_ObjectHideFlags: 0

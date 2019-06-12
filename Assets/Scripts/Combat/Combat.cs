@@ -123,6 +123,13 @@ public class Combat : MonoBehaviour
         Debug.Log("Boss Combat start");
         yield return new WaitForSeconds(4f);
         while(!stats.isDead()) {
+
+            if(target != null) {
+                if(target.GetComponent<Stats>().isDead()) {
+                    nextAttack = Time.time + timeBetweenAttacks;
+                    yield return null;
+                }
+            }
             if(nextAttack < Time.time) {
                 yield return StartCoroutine(WaitAttackTurn());
             }

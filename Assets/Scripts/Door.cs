@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public int id;
+    public bool isLastBoss;
     public GameObject boss;
     public List<int> casosAPreguntar;
     LoadingScreen loadingScreen;
@@ -20,6 +22,11 @@ public class Door : MonoBehaviour
         audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
+        if(isLastBoss) {
+            if(!GameManager.CanEnterFinalBoss()) {
+                GetComponent<SphereCollider>().enabled = false;
+            }
+        }
     }
 
     private void Update() {
@@ -31,13 +38,14 @@ public class Door : MonoBehaviour
     }
 
     public void Use() {
+        FindObjectOfType<PlayerMovement>().enabled = false;
         anim.SetTrigger("Open");
         audio.Play();
         Invoke("EnterDoor", 1f);
     }
 
     void EnterDoor() {
-        GameManager.SetQuestions(casosAPreguntar, boss);
+        GameManager.SetQuestions(casosAPreguntar, boss,id);
         loadingScreen.ChangeLevel();
     }
 
