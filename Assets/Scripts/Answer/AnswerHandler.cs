@@ -7,12 +7,11 @@ public class AnswerHandler : MonoBehaviour
 {  
     
     public Answer answer;
-    AnswerViewer answerViewer;
-    QuestionHandler questionHandler;
+    public AnswerViewer answerViewer;
+    public QuestionHandler questionHandler;
 
     private void Awake() {
-        answerViewer = FindObjectOfType<AnswerViewer>();
-        questionHandler = FindObjectOfType<QuestionHandler>();
+        
     }
 
     public void ShowAnswer(Answer ans) {

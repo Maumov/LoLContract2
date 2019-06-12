@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnswerViewer : MonoBehaviour
-{
+public class AnswerViewer : MonoBehaviour {
     public Answer answer;
     public List<GameObject> tipoRespuesta;
     public List<InputField> incognita1, incognita2;
-    AnswerHandler answerHandler;
 
-    private void Awake() {
-        answerHandler = FindObjectOfType<AnswerHandler>();
+    public AnswerHandler answerHandler;
+
+    private void Start() {
+        Invoke("LateStart", 2f);
+    }
+
+    private void LateStart() {
+        Combat[] combats = FindObjectsOfType<Combat>();
+        foreach(Combat c in combats) {
+            c.OnStartAttack += Hide;
+            c.OnFinishSlash += Show;
+        }
     }
 
     public void Show(Answer ans) {
@@ -33,5 +41,12 @@ public class AnswerViewer : MonoBehaviour
             a.denominator = int.Parse(incognita2[(int)answer.answerType].text);
         }
         answerHandler.CheckAnswer(a);
+    }
+
+    public void Hide() {
+
+    }
+    public void Show() {
+
     }
 }

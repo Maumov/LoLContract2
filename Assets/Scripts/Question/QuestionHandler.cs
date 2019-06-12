@@ -12,16 +12,13 @@ public class QuestionHandler : MonoBehaviour
 
     public Question question;
 
-    AnswerHandler answerHandler;
-    QuestionViewer questionViewer;
+    public AnswerHandler answerHandler;
+    public QuestionViewer questionViewer;
 
     [Header("Test")]
     public int testExerciseNumber;
 
-    private void Awake() {
-        answerHandler = FindObjectOfType<AnswerHandler>();
-        questionViewer = FindObjectOfType<QuestionViewer>();
-    }
+    
 
     private void Start() {
        

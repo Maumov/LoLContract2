@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using LoLSDK;
 
-
-public class GameManager : MonoBehaviour
+public class GameManager
 {
     public static int progress;
     public static int maxProgress;
@@ -13,9 +12,44 @@ public class GameManager : MonoBehaviour
     public static List<int> casosAPreguntar;
     public static GameObject boss;
     static int currentQuestion = 0;
+    static int id;
+    static List<int> bossesDone;
 
     public static void UpdateProgress() {
-        LOLSDK.Instance.SubmitProgress(score, progress, maxProgress);
+        score++;
+
+        if(bossesDone == null) {
+            bossesDone = new List<int>();
+        }
+
+        if(!bossesDone.Contains(id)) {
+            bossesDone.Add(id);
+            progress++;
+        }
+        if(LOLSDK.Instance.IsInitialized) {
+            LOLSDK.Instance.SubmitProgress(score, progress, maxProgress);
+        }
+        Debug.Log(string.Format("Score: {0}, Progress: {1}, MaxProgress: {2}", score, progress, maxProgress));
+        
+    }
+
+    public static bool CanEnterFinalBoss() {
+        for(id = 0; id < 12; id++) {
+            if(!IsBossKilled(id)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static bool IsBossKilled(int id) {
+        if(bossesDone == null) {
+            bossesDone = new List<int>();
+        }
+        if(bossesDone.Contains(id)) {
+            return true;
+        }
+        return false;
     }
 
     public static int GetNewQuestion() {
@@ -33,10 +67,11 @@ public class GameManager : MonoBehaviour
         return value;
     }
 
-    public static void SetQuestions(List<int> casos, GameObject theBoss) {
+    public static void SetQuestions(List<int> casos, GameObject theBoss, int i) {
         casosAPreguntar = casos;
         boss = theBoss;
         currentQuestion = 0;
+        id = i;
     }
 
     public static bool posibleRandomQuestions(int value) {

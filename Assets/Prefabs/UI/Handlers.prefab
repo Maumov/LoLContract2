@@ -49,7 +49,7 @@ MonoBehaviour:
     numerator: 0
     denominator: 0
   answerViewer: {fileID: 0}
-  questionHandler: {fileID: 0}
+  questionHandler: {fileID: 7954078441269158689}
 --- !u!114 &7954078441269158689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,5 +64,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoTutorial:
     texto: 
-  answerHandler: {fileID: 0}
+  question:
+    exerciseNumber: 0
+    a: 0
+    b: 0
+    c: 0
+    d: 0
+    e: 0
+    f: 0
+    g: 0
+    answer:
+      answerType: 0
+      numerator: 0
+      denominator: 0
+  answerHandler: {fileID: 595353899233305270}
   questionViewer: {fileID: 0}
+  testExerciseNumber: 0
