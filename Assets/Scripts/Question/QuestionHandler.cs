@@ -34,7 +34,9 @@ public class QuestionHandler : MonoBehaviour
     }
 
     public void SetQuestion(int exerciseNumber) {
-        question = new Question();
+        if(!GameManager.posibleRandomQuestions(exerciseNumber)) {
+            question = new Question();
+        }
         question.exerciseNumber = exerciseNumber;
         question.SetRandomValues();
         SetAnswerType();
