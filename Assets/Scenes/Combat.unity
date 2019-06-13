@@ -1969,6 +1969,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eacc2e2d42827b747ac289ebfe41fae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &87349237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7954078441269158689, guid: 728266167489c69439b168da4a51dd92,
+    type: 3}
+  m_PrefabInstance: {fileID: 87349235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac504113e7d6e1c49b1246a5617cbdcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &96091110
 GameObject:
   m_ObjectHideFlags: 0
@@ -28516,6 +28528,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2218847892144422808, guid: bdbaa48812b326c4aa5cfe52e501d29b,
+        type: 3}
+      propertyPath: questionHandler
+      value: 
+      objectReference: {fileID: 87349237}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdbaa48812b326c4aa5cfe52e501d29b, type: 3}
 --- !u!224 &1855840849 stripped
