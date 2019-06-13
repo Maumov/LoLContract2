@@ -44,9 +44,15 @@ public class AnswerViewer : MonoBehaviour {
     }
 
     public void Hide() {
-
+        Animator[] anim = GetComponentsInChildren<Animator>();
+        foreach(Animator a in anim) {
+            a.SetBool("IsHiden", true);
+        }
     }
     public void Show() {
-
+        Animator[] anim = GetComponentsInChildren<Animator>();
+        foreach(Animator a in anim) {
+            a.SetBool("IsHiden", false);
+        }
     }
 }
