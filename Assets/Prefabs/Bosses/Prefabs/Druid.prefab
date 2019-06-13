@@ -391,21 +391,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370356604235697384}
     m_Modifications:
-    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+    - target: {fileID: 2445870047510651273, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
-      propertyPath: step
-      value: 
-      objectReference: {fileID: 6844199219675803108}
-    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 6199374370753628414}
-    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
-        type: 3}
-      propertyPath: readySound
-      value: 
-      objectReference: {fileID: 8919213914722258013}
+      propertyPath: m_Name
+      value: Character_ForestGuardian_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2442543188924493907, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,11 +466,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2445870047510651273, guid: 9b02a6da345b91b4c86becede13a66fa,
-        type: 3}
-      propertyPath: m_Name
-      value: Character_ForestGuardian_01
-      objectReference: {fileID: 0}
     - target: {fileID: 2442381072811738043, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -512,6 +497,33 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 6844199219675803108}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 6199374370753628414}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 8919213914722258013}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: readyEffect
+      value: 
+      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
+        type: 3}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: getHitEffect
+      value: 
+      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b02a6da345b91b4c86becede13a66fa, type: 3}
 --- !u!4 &788535487216606489 stripped

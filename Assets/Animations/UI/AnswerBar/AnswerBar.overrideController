@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AnswerBar
+  m_Controller: {fileID: 9100000, guid: 8fc4b8c149d2def41b383c079e9204c9, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a570f3c51a6ddf24f843829d40302ad8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 41dcf6880b8c129448d11fb8cf13cb03, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 90463ccbb4a78a64ab013a4c6fc9c7ec, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 86e05e18bcabccc4496a4d8d8fb6974b, type: 2}

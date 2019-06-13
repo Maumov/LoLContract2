@@ -75,6 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+  getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
   step: {fileID: 4015285657933287353}
   slash: {fileID: 6394536103790681211}
   readySound: {fileID: 1717306464783168549}

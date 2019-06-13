@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ce2a497fd59f7bc4eaa32bf5ed7304e3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+  - getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
+  - step: {instanceID: 0}
+  - slash: {instanceID: 0}
+  - readySound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

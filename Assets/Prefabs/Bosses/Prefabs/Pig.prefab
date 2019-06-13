@@ -333,6 +333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+  getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
   step: {fileID: 441920228931460485}
   slash: {fileID: 1832652876831325724}
   readySound: {fileID: 9129990372584501113}

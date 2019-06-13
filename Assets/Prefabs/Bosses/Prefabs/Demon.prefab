@@ -391,21 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2362107202308139942}
     m_Modifications:
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: step
-      value: 
-      objectReference: {fileID: 6855748365446933589}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 2984150443074547899}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: readySound
-      value: 
-      objectReference: {fileID: 1153287712179393537}
     - target: {fileID: 1679188234829178341, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
       propertyPath: m_Name
@@ -501,6 +486,33 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 6855748365446933589}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 2984150443074547899}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 1153287712179393537}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: getHitEffect
+      value: 
+      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
+        type: 3}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: readyEffect
+      value: 
+      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
+        type: 3}
     - target: {fileID: 1593637578898120653, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
       propertyPath: m_ApplyRootMotion

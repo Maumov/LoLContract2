@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundController : MonoBehaviour
+public class EffectsController : MonoBehaviour
 {
     [Header("Sounds")]
     public AudioSource step;
     public AudioSource slash;
     public AudioSource readySound;
-
+    public AudioSource damageReceived;
 
     private void Start()
     {
@@ -26,6 +26,7 @@ public class SoundController : MonoBehaviour
 
     void PlayReadySound()
     {
+        ;
         readySound.Play();
     }
 

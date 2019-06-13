@@ -391,21 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1005170296505324477}
     m_Modifications:
-    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: step
-      value: 
-      objectReference: {fileID: 8446384371175796061}
-    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 375118893606050610}
-    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: readySound
-      value: 
-      objectReference: {fileID: 4088619645806727528}
     - target: {fileID: 3030117950953145185, guid: b6916d938262fca48a9c60e1bdf4101e,
         type: 3}
       propertyPath: m_Name
@@ -492,6 +477,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: bf7b83d902a1b0342822605f68f193a7,
         type: 2}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 8446384371175796061}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 375118893606050610}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 4088619645806727528}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: readyEffect
+      value: 
+      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
+        type: 3}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: getHitEffect
+      value: 
+      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
+        type: 3}
     - target: {fileID: 7763202989098555457, guid: b6916d938262fca48a9c60e1bdf4101e,
         type: 3}
       propertyPath: target

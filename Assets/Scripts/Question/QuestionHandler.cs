@@ -5,6 +5,10 @@ using UnityEngine;
 public class QuestionHandler : MonoBehaviour
 {
 
+    [Header("SFX")]
+    public AudioSource correctSound;
+    public AudioSource incorrectSound;
+
     public delegate void delegateQuestion();
     public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
 
@@ -89,11 +93,13 @@ public class QuestionHandler : MonoBehaviour
        
         if(sw) {
             if(OnCorrect != null) {
+                correctSound.Play();
                 OnCorrect();
             }
             SetQuestion(GameManager.GetNewQuestion());
         } else {
             if(OnWrong != null) {
+                incorrectSound.Play();
                 OnWrong();
             }
         }

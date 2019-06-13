@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+  getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
   step: {fileID: 756656940792941904}
   slash: {fileID: 1411645770927750162}
   readySound: {fileID: 9161647711402758708}
@@ -470,6 +472,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95824196730489130, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: a4942c8cd7f18314d8c9e1e2b4317e10,
+        type: 2}
     - target: {fileID: 1408128151367181573, guid: 0d42bc61d684259409d481c6f5dd5d5c,
         type: 3}
       propertyPath: target
@@ -485,12 +493,6 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 95824196730489130, guid: 0d42bc61d684259409d481c6f5dd5d5c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: a4942c8cd7f18314d8c9e1e2b4317e10,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
 --- !u!1 &182468924068544899 stripped
