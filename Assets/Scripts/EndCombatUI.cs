@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class EndCombatUI : MonoBehaviour
-{
+public class EndCombatUI : MonoBehaviour {
     public bool isPlayer;
 
     public GameObject UIToSpawn;
@@ -18,7 +17,7 @@ public class EndCombatUI : MonoBehaviour
     public GameObject FinalBossUI;
 
     private void Start() {
-        Invoke("LateStart", 2f);    
+        Invoke("LateStart", 2f);
     }
 
     void LateStart() {
@@ -42,7 +41,6 @@ public class EndCombatUI : MonoBehaviour
                 DisableButton();
             }
         }
-        
     }
 
     void DisableButton() {
@@ -65,6 +63,11 @@ public class EndCombatUI : MonoBehaviour
         }
     }
 
+    public void HideUI() {
+        UIToSpawn.SetActive(false);
+        FinalBossUI.SetActive(false);
+    }
+
     void StartCountDown() {
         timerStarted = true;
     }
@@ -74,4 +77,5 @@ public class EndCombatUI : MonoBehaviour
         loadingScreen.scene = "Hub";
         loadingScreen.ChangeLevel();
     }
+
 }

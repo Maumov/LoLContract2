@@ -28,7 +28,6 @@ public class QuestionHandler : MonoBehaviour
     }
 
     public void SetQuestion(int exerciseNumber) {
-        Debug.Log(exerciseNumber);
         if(!GameManager.posibleRandomQuestions(exerciseNumber)) {
             question = new Question();
         }

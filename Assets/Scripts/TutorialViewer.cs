@@ -40,8 +40,6 @@ public class TutorialViewer : MonoBehaviour
         exercises[questionHandler.question.exerciseNumber].Steps[currentStep].SetActive(true);
     }
 
-
-
     public void NextStepButtonPressed() {
         currentStep++;
         if(currentStep >= exercises[questionHandler.question.exerciseNumber].Steps.Count) {
