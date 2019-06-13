@@ -40,10 +40,10 @@ public class Door : MonoBehaviour
                     }
                 } else {
                     if(DoorsStatusOn[i] != null) {
-                        DoorsStatusOn[i].SetActive(true);
+                        DoorsStatusOn[i].SetActive(false);
                     }
                     if(DoorsStatusOff[i] != null) {
-                        DoorsStatusOff[i].SetActive(false);
+                        DoorsStatusOff[i].SetActive(true);
                     }
                 }
             }
