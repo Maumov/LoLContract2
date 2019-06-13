@@ -14,6 +14,9 @@ public class EndCombatUI : MonoBehaviour
 
     public float timer;
     bool timerStarted = false;
+
+    public GameObject FinalBossUI;
+
     private void Start() {
         Invoke("LateStart", 2f);    
     }
@@ -49,9 +52,17 @@ public class EndCombatUI : MonoBehaviour
     void ShowUI() {
         if(!isPlayer) {
             GameManager.UpdateProgress();
+            if(GameManager.id == 13) {
+                FinalBossUI.SetActive(true);
+                UIToSpawn.SetActive(false);
+            } else {
+                FinalBossUI.SetActive(false);
+                UIToSpawn.SetActive(true);
+            }
+        } else {
+            StartCountDown();
+            UIToSpawn.SetActive(true);
         }
-        StartCountDown();
-        UIToSpawn.SetActive(true);
     }
 
     void StartCountDown() {

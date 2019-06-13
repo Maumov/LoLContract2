@@ -4931,6 +4931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4483124840473024268, guid: d14b50a14567f4c4ab4ebed001c0ed98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4321639844105815251, guid: d14b50a14567f4c4ab4ebed001c0ed98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15988,6 +15993,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844478779731043612, guid: b64f4d6a5630d274299f31885529f642,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844478779731043612, guid: b64f4d6a5630d274299f31885529f642,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5537766708241202597, guid: b64f4d6a5630d274299f31885529f642,
         type: 3}
