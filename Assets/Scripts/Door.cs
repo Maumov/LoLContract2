@@ -63,11 +63,11 @@ public class Door : MonoBehaviour
         FindObjectOfType<PlayerMovement>().enabled = false;
         anim.SetTrigger("Open");
         audio.Play();
+        GameManager.SetQuestions(casosAPreguntar, boss, id);
         Invoke("EnterDoor", 1f);
     }
 
     void EnterDoor() {
-        GameManager.SetQuestions(casosAPreguntar, boss,id);
         loadingScreen.ChangeLevel();
     }
 

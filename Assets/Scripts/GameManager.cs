@@ -114,10 +114,10 @@ public class GameManager
 
     public static int ReturnRandomQuestion() {
         int r = Random.Range(0, casosAPreguntar.Count);
-        while(posibleRandomQuestions(r)) {
+        while(posibleRandomQuestions(casosAPreguntar[r])) {
             r = Random.Range(0, casosAPreguntar.Count);
         }
-        return r;
+        return casosAPreguntar[r];
     }
 
     public void TutorialStart()
