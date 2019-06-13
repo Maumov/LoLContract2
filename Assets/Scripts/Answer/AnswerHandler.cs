@@ -8,6 +8,7 @@ public class AnswerHandler : MonoBehaviour
     
     public Answer answer;
     public AnswerViewer answerViewer;
+    public AnswerViewer answerViewerRevive;
     public QuestionHandler questionHandler;
 
     private void Awake() {
@@ -18,6 +19,7 @@ public class AnswerHandler : MonoBehaviour
         Debug.Log(ans);
         answer = ans;
         answerViewer.Show(answer);
+        answerViewerRevive.Show(answer);
     }
 
     // Llamada por el boton

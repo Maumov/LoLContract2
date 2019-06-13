@@ -6089,7 +6089,6 @@ MonoBehaviour:
     - {fileID: 176540063294512882}
   - tutorial: {fileID: 4051406907680264360}
     Steps:
-    - {fileID: 0}
     - {fileID: 2593967812231071809}
     - {fileID: 4612721561116335495}
     - {fileID: 5285263325848792583}

@@ -18,11 +18,9 @@ public class QuestionHandler : MonoBehaviour
 
     public AnswerHandler answerHandler;
     public QuestionViewer questionViewer;
-
+    public QuestionViewer questionViewerRevive;
     [Header("Test")]
     public int testExerciseNumber;
-
-    
 
     private void Start() {
        
@@ -50,6 +48,7 @@ public class QuestionHandler : MonoBehaviour
 
     public void ShowQuestion() {
         questionViewer.Show(question);
+        questionViewerRevive.Show(question);
         if(OnQuestionSet != null) {
             OnQuestionSet();
         }
