@@ -28,12 +28,9 @@ public class QuestionHandler : MonoBehaviour
        
         SetQuestion(GameManager.GetNewQuestion());
     }
-    [ContextMenu("Test")]
-    public void QuestionTest() {
-        SetQuestion(0);
-    }
 
     public void SetQuestion(int exerciseNumber) {
+        Debug.Log(exerciseNumber);
         if(!GameManager.posibleRandomQuestions(exerciseNumber)) {
             question = new Question();
         }
@@ -43,13 +40,13 @@ public class QuestionHandler : MonoBehaviour
         ShowQuestion();
     }
 
-    public void SetQuestion(int exerciseNumber, int a, int b, int c ,int d) {
-        question = new Question();
-        question.exerciseNumber = exerciseNumber;
-        question.SetSpecificValues(a,b,c,d);
-        SetAnswerType();
-        ShowQuestion();
-    }
+    //public void SetQuestion(int exerciseNumber, int a, int b, int c ,int d) {
+    //    question = new Question();
+    //    question.exerciseNumber = exerciseNumber;
+    //    question.SetSpecificValues(a,b,c,d);
+    //    SetAnswerType();
+    //    ShowQuestion();
+    //}
 
     public void ShowQuestion() {
         questionViewer.Show(question);
