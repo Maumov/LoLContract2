@@ -27,11 +27,8 @@ public class LoadingScreen : MonoBehaviour
     IEnumerator LoadBackgroundScene()
     {
         yield return StartCoroutine(FadeOut());
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
+        SceneManager.LoadScene(scene);
+        
     }
 
     IEnumerator FadeOut() {
