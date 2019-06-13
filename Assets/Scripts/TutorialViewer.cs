@@ -12,6 +12,8 @@ public class TutorialViewer : MonoBehaviour
 
     int currentStep = 0;
 
+    bool canAttack = true;
+
     public void TutorialButtonPressed() {
         if(tutorials.activeSelf) {
             HideTutorial();
@@ -20,8 +22,15 @@ public class TutorialViewer : MonoBehaviour
             exercises[questionHandler.question.exerciseNumber].tutorial.SetActive(true);
             currentStep = 0;
             ShowStep();
+            canAttack = false;
         }
         
+    }
+
+    private void Update() {
+        if(!canAttack) {
+            Combat.canAttack = false;
+        }    
     }
 
     void ShowStep() {
@@ -46,11 +55,16 @@ public class TutorialViewer : MonoBehaviour
     void HideTutorial() {
         tutorials.SetActive(false);
         foreach(Tutorial g in exercises) {
+            Debug.Log(g.tutorial.name);
             g.tutorial.SetActive(false);
             foreach(GameObject o in g.Steps) {
+                Debug.Log(o.name);
                 o.SetActive(false);
             }
+            
         }
+        canAttack = true;
+        Combat.canAttack = true;
     }
 
 }
