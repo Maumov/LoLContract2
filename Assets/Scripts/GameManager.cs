@@ -119,4 +119,14 @@ public class GameManager
         }
         return r;
     }
+
+    public void TutorialStart()
+    {
+
+    }
+
+    public void TutorialFinish()
+    {
+
+    }
 }

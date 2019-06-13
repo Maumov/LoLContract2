@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &2500872781331370479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182468924068544899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-  getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
-  step: {fileID: 756656940792941904}
-  slash: {fileID: 1411645770927750162}
-  readySound: {fileID: 9161647711402758708}
 --- !u!1 &4246382255326785939
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +391,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651877858581374513}
     m_Modifications:
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 756656940792941904}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 1411645770927750162}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 9161647711402758708}
     - target: {fileID: 1293356793197548, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
       propertyPath: m_Name
       value: Character_BR_BigOrk_01
@@ -493,14 +491,23 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6769668926235160502, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769668926235160502, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329439276027331756, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 130
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
---- !u!1 &182468924068544899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1293356793197548, guid: 0d42bc61d684259409d481c6f5dd5d5c,
-    type: 3}
-  m_PrefabInstance: {fileID: 183762237639275119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &188385350927664681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4958464907473990, guid: 0d42bc61d684259409d481c6f5dd5d5c,

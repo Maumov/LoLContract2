@@ -440,9 +440,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   UIToSpawn: {fileID: 2971102317052766524}
-  revive: {fileID: 0}
+  revive: {fileID: 3534485619103662743}
   countDown: {fileID: 4854911895054007995}
   timer: 10
+  FinalBossUI: {fileID: 0}
 --- !u!1 &6962475213619631517
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +680,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4280163977
   m_fontColor: {r: 0.5377358, g: 0.11921501, b: 0.11921501, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3779,3 +3780,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 953178892067067855}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3534485619103662743 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4339038846016050520, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+    type: 3}
+  m_PrefabInstance: {fileID: 953178892067067855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
