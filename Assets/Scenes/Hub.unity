@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27869,6 +27869,16 @@ PrefabInstance:
       propertyPath: DoorsStatusOff.Array.data[11]
       value: 
       objectReference: {fileID: 1540575981}
+    - target: {fileID: 7784371359651511542, guid: 9a778425a41acf84dad6c508cca69017,
+        type: 3}
+      propertyPath: DoorStatusOff
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784371359651511542, guid: 9a778425a41acf84dad6c508cca69017,
+        type: 3}
+      propertyPath: DoorStatusOn
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6911646976683237515, guid: 9a778425a41acf84dad6c508cca69017,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27947,7 +27957,7 @@ PrefabInstance:
     - target: {fileID: 4318997204812624728, guid: 9a778425a41acf84dad6c508cca69017,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4565092561996133943, guid: 9a778425a41acf84dad6c508cca69017,
         type: 3}
