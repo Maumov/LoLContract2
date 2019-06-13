@@ -12,7 +12,7 @@ public class GameManager
     public static List<int> casosAPreguntar;
     public static GameObject boss;
     static int currentQuestion = 0;
-    static int id;
+    public static int id;
     static List<int> bossesDone;
 
     public static void UpdateProgress() {
