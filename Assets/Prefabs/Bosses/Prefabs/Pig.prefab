@@ -321,23 +321,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &108992252014566286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099669041868449637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  readyEffect: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-  getHitEffect: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
-  step: {fileID: 441920228931460485}
-  slash: {fileID: 1832652876831325724}
-  readySound: {fileID: 9129990372584501113}
 --- !u!1 &7300028305041372710
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +391,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6469701130651261380}
     m_Modifications:
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 441920228931460485}
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 1832652876831325724}
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 9129990372584501113}
     - target: {fileID: 728152428537438484, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: m_Name
@@ -514,14 +512,23 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6318650700315306482, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318650700315306482, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560638610098967495, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 160
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0522995e0f5684089fca018e1a887c, type: 3}
---- !u!1 &2099669041868449637 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 728152428537438484, guid: 0a0522995e0f5684089fca018e1a887c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1673490889294202481}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2102945241669321047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 726846003297617702, guid: 0a0522995e0f5684089fca018e1a887c,

@@ -524,6 +524,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 704e29b94a2251248986d6f55cfa361a,
         type: 2}
+    - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617542760787967790, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 130
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16e2e124c0a90d4897e110fe7d6ec4c, type: 3}
 --- !u!4 &9115928054336499918 stripped

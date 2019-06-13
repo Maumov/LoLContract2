@@ -1365,9 +1365,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4817502157356852}
   - component: {fileID: 95035460417453950}
-  - component: {fileID: 8332355591109928955}
   - component: {fileID: 4345477847702684535}
   - component: {fileID: 4026308115282958489}
+  - component: {fileID: 8332355591109928955}
   - component: {fileID: 4041441782623336117}
   m_Layer: 0
   m_Name: MutantGuy
@@ -1421,20 +1421,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8332355591109928955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544180832531774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750bf79b64d3eb742b1dd3d918f1bbb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHitPoints: 0
-  currentHitPoints: 0
 --- !u!114 &4345477847702684535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,6 +1453,20 @@ MonoBehaviour:
   isPlayer: 0
   damage: 0
   timeBetweenAttacks: 0
+--- !u!114 &8332355591109928955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544180832531774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750bf79b64d3eb742b1dd3d918f1bbb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 0
+  currentHitPoints: 0
 --- !u!114 &4041441782623336117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,6 +1482,7 @@ MonoBehaviour:
   step: {fileID: 0}
   slash: {fileID: 0}
   readySound: {fileID: 0}
+  damageReceived: {fileID: 0}
 --- !u!1 &1553465033527808
 GameObject:
   m_ObjectHideFlags: 0
