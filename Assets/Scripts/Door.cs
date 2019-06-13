@@ -19,6 +19,7 @@ public class Door : MonoBehaviour
 
     bool interacting;
 
+    public List<GameObject> DoorsStatusOn, DoorsStatusOff;
 
     private void Start() {
         audio = GetComponent<AudioSource>();
@@ -29,6 +30,24 @@ public class Door : MonoBehaviour
             if(!GameManager.CanEnterFinalBoss()) {
                 GetComponent<SphereCollider>().enabled = false;
             }
+            for(int i = 0; i <  12; i++) {
+                if(GameManager.IsBossKilled(i)) {
+                    if(DoorsStatusOn[i] != null) {
+                        DoorsStatusOn[i].SetActive(true);
+                    }
+                    if(DoorsStatusOff[i] != null) {
+                        DoorsStatusOff[i].SetActive(false);
+                    }
+                } else {
+                    if(DoorsStatusOn[i] != null) {
+                        DoorsStatusOn[i].SetActive(true);
+                    }
+                    if(DoorsStatusOff[i] != null) {
+                        DoorsStatusOff[i].SetActive(false);
+                    }
+                }
+            }
+            
         }
     }
 
