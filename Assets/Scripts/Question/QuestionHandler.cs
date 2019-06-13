@@ -34,7 +34,9 @@ public class QuestionHandler : MonoBehaviour
     }
 
     public void SetQuestion(int exerciseNumber) {
-        question = new Question();
+        if(!GameManager.posibleRandomQuestions(exerciseNumber)) {
+            question = new Question();
+        }
         question.exerciseNumber = exerciseNumber;
         question.SetRandomValues();
         SetAnswerType();
@@ -125,10 +127,12 @@ public class Question {
     public Answer answer;
 
     public void SetRandomValues() {
-        a = Random.Range(2, 10);
-        b = Random.Range(2, 10);
-        c = Random.Range(2, 10);
-        d = Random.Range(2, 10);
+        if(!GameManager.posibleRandomQuestions(exerciseNumber)) {
+            a = Random.Range(2, 10);
+            b = Random.Range(2, 10);
+            c = Random.Range(2, 10);
+            d = Random.Range(2, 10);
+        } 
         SetValues();
     }
 

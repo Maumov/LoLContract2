@@ -10,7 +10,12 @@ public class StatsFX : MonoBehaviour
     public ParticleFX DeadFX;
     public ParticleFX ReviveFX;
 
-    
+    public AudioSource audioSource;
+    public AudioClip DamageSFX;
+    public AudioClip DeadSFX;
+    public AudioClip ReviveSFX;
+
+
     void Start()
     {
         stats = GetComponent<Stats>();
@@ -21,19 +26,29 @@ public class StatsFX : MonoBehaviour
 
     void Damage() {
         InstantiateParticle(DamageFX);
+        PlaySFX(DamageSFX);
     }
 
     void Dead() {
         InstantiateParticle(DeadFX);
+        PlaySFX(DeadSFX);
     }
 
     void Revive() {
         InstantiateParticle(ReviveFX);
+        PlaySFX(ReviveSFX);
     }
 
     void InstantiateParticle(ParticleFX FX) {
         Instantiate(FX.particle, FX.positionOffset, Quaternion.identity, transform);
     }
+
+    void PlaySFX(AudioClip audioClip = null) {
+        if(audioClip != null) {
+            audioSource.PlayOneShot(audioClip);
+        }
+    }
+
 
 }
 

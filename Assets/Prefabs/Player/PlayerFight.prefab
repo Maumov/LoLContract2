@@ -1799,6 +1799,7 @@ GameObject:
   - component: {fileID: 374085855845807103}
   - component: {fileID: 5521254792612665807}
   - component: {fileID: 8363950688541009757}
+  - component: {fileID: 8579984827085117437}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1931,6 +1932,28 @@ MonoBehaviour:
   step: {fileID: 5068383867923924706}
   slash: {fileID: 6656316263541023464}
   readySound: {fileID: 8287294267105255598}
+  damageReceived: {fileID: 0}
+--- !u!114 &8579984827085117437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521254793651277004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1a01159411d20498cd294b4cb0b747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  DeadFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  ReviveFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &5521254793651278826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,6 +3100,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5521254793651482134}
     m_Modifications:
+    - target: {fileID: 148826, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
+      propertyPath: m_Name
+      value: SM_Wep_Crysta_Halberdl_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 148826, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 495852, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.8
@@ -3132,14 +3163,6 @@ PrefabInstance:
     - target: {fileID: 495852, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
       propertyPath: m_LocalScale.z
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 148826, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
-      propertyPath: m_Name
-      value: SM_Wep_Crysta_Halberdl_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 148826, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13804f18b6210c345856ee67131e8d6a, type: 3}

@@ -452,7 +452,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1158,7 +1158,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2972,7 +2972,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -5214,9 +5214,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6983565260819819505}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2218847892144422808}
+        m_MethodName: TutorialButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5343,9 +5343,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6983565260819819505}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2218847892144422808}
+        m_MethodName: NextStepButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5918,11 +5918,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5948,6 +5948,7 @@ GameObject:
   - component: {fileID: 1907143183682474727}
   - component: {fileID: 1907143183682474726}
   - component: {fileID: 1907143183682474721}
+  - component: {fileID: 2218847892144422808}
   m_Layer: 5
   m_Name: TutorialPrefab
   m_TagString: Untagged
@@ -6036,6 +6037,96 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2218847892144422808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907143183682474720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c732a414fe5b2324f89ce68712aa1055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionHandler: {fileID: 0}
+  tutorials: {fileID: 6983565260819819505}
+  exercises:
+  - tutorial: {fileID: 1907143182528950240}
+    Steps:
+    - {fileID: 4876511186484077297}
+    - {fileID: 6142841191076316911}
+    - {fileID: 2920563965845447920}
+  - tutorial: {fileID: 6137191705680143751}
+    Steps:
+    - {fileID: 8792320365070570430}
+    - {fileID: 4843858669924425466}
+    - {fileID: 5745174944949131375}
+  - tutorial: {fileID: 608827573039527684}
+    Steps:
+    - {fileID: 195976151720535572}
+    - {fileID: 7996214371681306305}
+  - tutorial: {fileID: 7819561913670059839}
+    Steps:
+    - {fileID: 5190711942078753478}
+    - {fileID: 6610060288643157722}
+    - {fileID: 5026080761378059265}
+  - tutorial: {fileID: 5809747498833162918}
+    Steps:
+    - {fileID: 1993615101436175522}
+    - {fileID: 7766505950533033603}
+    - {fileID: 3794701267361813654}
+  - tutorial: {fileID: 5809747498833162918}
+    Steps:
+    - {fileID: 1993615101436175522}
+    - {fileID: 7766505950533033603}
+    - {fileID: 3794701267361813654}
+  - tutorial: {fileID: 6426620236759718780}
+    Steps:
+    - {fileID: 2593967812231071809}
+    - {fileID: 4612721561116335495}
+    - {fileID: 5285263325848792583}
+    - {fileID: 176540063294512882}
+  - tutorial: {fileID: 4051406907680264360}
+    Steps:
+    - {fileID: 0}
+    - {fileID: 2593967812231071809}
+    - {fileID: 4612721561116335495}
+    - {fileID: 5285263325848792583}
+    - {fileID: 176540063294512882}
+  - tutorial: {fileID: 4051406907680264360}
+    Steps:
+    - {fileID: 2438793886616456154}
+    - {fileID: 918350320302788382}
+    - {fileID: 4142815265852364524}
+    - {fileID: 6068634653688204830}
+    - {fileID: 2189638460186256751}
+  - tutorial: {fileID: 4051406907680264360}
+    Steps:
+    - {fileID: 2438793886616456154}
+    - {fileID: 918350320302788382}
+    - {fileID: 4142815265852364524}
+    - {fileID: 6068634653688204830}
+    - {fileID: 2189638460186256751}
+  - tutorial: {fileID: 4051406907680264360}
+    Steps:
+    - {fileID: 2438793886616456154}
+    - {fileID: 918350320302788382}
+    - {fileID: 4142815265852364524}
+    - {fileID: 6068634653688204830}
+    - {fileID: 2189638460186256751}
+  - tutorial: {fileID: 6366580989789778327}
+    Steps:
+    - {fileID: 2438793886616456154}
+    - {fileID: 918350320302788382}
+    - {fileID: 4142815265852364524}
+    - {fileID: 6068634653688204830}
+    - {fileID: 2189638460186256751}
+  - tutorial: {fileID: 7819561913670059839}
+    Steps:
+    - {fileID: 5190711942078753478}
+    - {fileID: 6610060288643157722}
+    - {fileID: 5026080761378059265}
 --- !u!1 &1965721598505705830
 GameObject:
   m_ObjectHideFlags: 0
@@ -7473,7 +7564,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -12103,7 +12194,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -13796,7 +13887,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -16038,7 +16129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &650094800697831247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16644,7 +16735,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -19258,7 +19349,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -27788,7 +27879,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
