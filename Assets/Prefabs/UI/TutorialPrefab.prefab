@@ -5918,11 +5918,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5948,6 +5948,7 @@ GameObject:
   - component: {fileID: 1907143183682474727}
   - component: {fileID: 1907143183682474726}
   - component: {fileID: 1907143183682474721}
+  - component: {fileID: 2218847892144422808}
   m_Layer: 5
   m_Name: TutorialPrefab
   m_TagString: Untagged
@@ -6036,6 +6037,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2218847892144422808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907143183682474720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c732a414fe5b2324f89ce68712aa1055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionHandler: {fileID: 0}
+  tutorials: {fileID: 0}
+  exercises: []
 --- !u!1 &1965721598505705830
 GameObject:
   m_ObjectHideFlags: 0
