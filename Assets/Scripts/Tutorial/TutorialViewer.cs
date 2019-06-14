@@ -15,7 +15,7 @@ public class TutorialViewer : MonoBehaviour
     bool canAttack = true;
 
     private void Start() {
-        TutorialButtonPressed();
+        Invoke("TutorialButtonPressed",1f);
     }
 
     public void TutorialButtonPressed() {
