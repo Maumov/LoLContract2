@@ -7,7 +7,6 @@ public class EndCombatUI : MonoBehaviour {
     public bool isPlayer;
 
     public GameObject UIToSpawn;
-
     public Button revive;
     public TextMeshProUGUI countDown;
     public TextMeshProUGUI scoreText;
@@ -49,9 +48,9 @@ public class EndCombatUI : MonoBehaviour {
     }
 
     void ShowUI() {
-        if(!isPlayer) {
+        if(!isPlayer) { 
             GameManager.UpdateProgress();
-            if(GameManager.id == 13) {
+            if(GameManager.id == 12) {
                 FinalBossUI.SetActive(true);
                 UIToSpawn.SetActive(false);
             } else {
@@ -61,7 +60,7 @@ public class EndCombatUI : MonoBehaviour {
             }
         } else {
             StartCountDown();
-            UIToSpawn.SetActive(true);
+            UIToSpawn.SetActive(true);  
         }
     }
 
