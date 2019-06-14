@@ -1,0 +1,34 @@
+﻿***Boss 1 - 2 - 3 - 4 - 5 - 6 -  disminuir tiempo entre ataques
+***Agregar otro paso a tutorial 4 donde se muestre igual que la pregunta
+***no poder undir boton de tutorial mientras esta la pantalla de victoria
+***tutorial 1 y 2, cambiar el orden de la division
+***fondo de victoria full oscuro/ fondo rojo
+***Puedes mover el slider de la vida a voluntad, corregir eso
+***Tutorial 1 y 2 poner numero sobre fraccion
+***fondo you win mas transparente
+***Agregar Lineas a las fracciones de pregunta
+***Poner en pregunta el simbolo de division en vez de /
+***Poner MaxProgress
+***anubis 20 atkspeed
+***b3 +5 en daño y + 15-20 vida
+***b5 +7 atksp
+***b6 +5 atksp
+***b9 + 20 vida -2atkspd
+***b10 -5daño -20 vida - 5atksp 
+***b11 +5daño + 3atksp
+***3 tutorial 1 corrido
+***B3 +20 vida
+***revisar boss 7
+***Aumentar countdown de revivir
+
+-Final boss no muestra final win
+- revisar boton de revive para ver que hace
+-Entre venci al boss1, toque un mensaje de consola, volvi al juego entre en puerta 2 y sucedio el bug de acumular ataques
+se desbugeo entrando y terminando el tutorial
+-pregunta  respuesta aparece cuando el player volvio al puesto(Opcional)
+-Cambiar sonido de boton por el sonido de click/respuesta correcta o incorrecta proyecto anterior
+- pregunta 8.3 es fraccion y aparece como numero la respuesta (caso10)
+- Caso 11 aparece respuesta de number, y es fraccion, ademas aparece como respuesta = 0
+- Caso 8 puedes colocar una respuesta y cuenta en los 2 para cierto, deben llenarse ambas
+- Caso 15 aparece respuesta tipo numero cuando es tipo fraccion, y la respuesta aparece en 0
+-Null reference answerHandler.CheckAnswer(a) 43Line
