@@ -8,7 +8,6 @@ public class QuestionHandler : MonoBehaviour
     public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
 
     public InfoTutorial infoTutorial;
-    public Stats player;
     public Question question;
 
     public AnswerHandler answerHandler;
