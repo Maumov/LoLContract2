@@ -1610,9 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LandFX:
-    particle: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    positionOffset: {x: 0, y: 0, z: 0}
+  LandFX: {fileID: 0}
   source: {fileID: 6535911838207792644}
   step: {fileID: 8300000, guid: b954ed4f25323b94aab813d8c07af797, type: 3}
   slash: {fileID: 8300000, guid: 70d8e079d51b30f468f898f12b13f1a1, type: 3}
@@ -1639,8 +1637,8 @@ MonoBehaviour:
     particle: {fileID: 0}
     positionOffset: {x: 0, y: 0, z: 0}
   audioSource: {fileID: 6535911838207792644}
-  DamageSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
-  DeadSFX: {fileID: 8300000, guid: 49a5c7f139c22bc4c85093ca7881229b, type: 3}
+  DamageSFX: {fileID: 8300000, guid: 49a5c7f139c22bc4c85093ca7881229b, type: 3}
+  DeadSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
   ReviveSFX: {fileID: 0}
 --- !u!1 &945602730737655028
 GameObject:
@@ -1928,6 +1926,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 939179891042680320}
     m_Modifications:
+    - target: {fileID: 139086, guid: 68c25faae213c7540bd07a9d6ddf465c, type: 3}
+      propertyPath: m_Name
+      value: Spikes
+      objectReference: {fileID: 0}
     - target: {fileID: 448048, guid: 68c25faae213c7540bd07a9d6ddf465c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.083012834
@@ -1983,10 +1985,6 @@ PrefabInstance:
     - target: {fileID: 448048, guid: 68c25faae213c7540bd07a9d6ddf465c, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 139086, guid: 68c25faae213c7540bd07a9d6ddf465c, type: 3}
-      propertyPath: m_Name
-      value: Spikes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68c25faae213c7540bd07a9d6ddf465c, type: 3}

@@ -177,16 +177,6 @@ PrefabInstance:
       propertyPath: LandFX
       value: 
       objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 169597666045050760}
-    - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
       propertyPath: damage
@@ -201,6 +191,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxHitPoints
       value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 169597666045050760}
+    - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0586de0f603d5a448bbb529993938b54, type: 3}

@@ -992,9 +992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LandFX:
-    particle: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    positionOffset: {x: 0, y: 0, z: 0}
+  LandFX: {fileID: 0}
   source: {fileID: 6786183163479392979}
   step: {fileID: 8300000, guid: b954ed4f25323b94aab813d8c07af797, type: 3}
   slash: {fileID: 8300000, guid: 17dab5fbd4ee5bc4aa1f0459f32b461a, type: 3}
@@ -1021,8 +1019,8 @@ MonoBehaviour:
     particle: {fileID: 0}
     positionOffset: {x: 0, y: 0, z: 0}
   audioSource: {fileID: 6786183163479392979}
-  DamageSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
-  DeadSFX: {fileID: 8300000, guid: 49a5c7f139c22bc4c85093ca7881229b, type: 3}
+  DamageSFX: {fileID: 8300000, guid: 49a5c7f139c22bc4c85093ca7881229b, type: 3}
+  DeadSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
   ReviveSFX: {fileID: 0}
 --- !u!1 &1679189532374340199
 GameObject:
@@ -1930,6 +1928,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1677339723301962659}
     m_Modifications:
+    - target: {fileID: 138024, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
+      propertyPath: m_Name
+      value: Double Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 452112, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.172
@@ -1973,10 +1975,6 @@ PrefabInstance:
     - target: {fileID: 452112, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 69.34901
-      objectReference: {fileID: 0}
-    - target: {fileID: 138024, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
-      propertyPath: m_Name
-      value: Double Sword
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d137d44990918a48bfc447d3dda3796, type: 3}
