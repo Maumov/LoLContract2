@@ -6,29 +6,14 @@
 	"end": 200,
 	"door": 200,
 	"intro_1": 200,
-	"intro_2": 200,
+	"intro_2": 200, 
+        "intro_3": 200,
 	"firstRevive": 200,
 	"killBoss6": 200,
 	"killBoss12": 200,
 	"enterLastBoss": 200,
 	"killLastBoss": 200
 	}
-  },
-  "es": {
- 	"loading": "Cargando...",
-	"play": "Jugar",
-	"end": "¡Finalmente libre, Gracias por ayudarme a salir del castillo!",
-	"door": "Puerta Abierta",
-
-	"intro_1": "Encerrado en este castillo por años... Al fin podre salir de este lugar, solo debo vencer a los 12 guardianes y podre salir.",
-	"intro_2": "Cada puerta me llevara hacia un guardian, que debere derrotar.",
-	"firstRevive": "El destino me quiere vivo",
-
-	"killBoss6": "He terminado con la mitad de los guardianes, pronto podre escapar",
-	"killBoss12": "He derrotado a todos los guardianes, al fin soy libre",
-	"enterLastBoss": "Crei que era la salida, pero parece que hay un ultimo guardian esperando, sera una dura batalla",
-	"killLastBoss": "La salida, veo la salida, es mi momento de escapar de aqui."
-
   },
 "en":{
 
@@ -37,9 +22,10 @@
 	"end": "Finally free, thank you for helping me getting out of the castle!",
 	"door": "Door Opened",
 
-	"intro_1": "Locked up in this place for so many years... Finally I can get out of this place, I just have to defeat the 12 guardians and I will be free.",
-	"intro_2": "Every door will take me to a guardian that I have to defeat.",
-	"firstRevive": "Destiny wants me alive",
+	"intro_1": "Locked up in this place for so many years...",
+        "intro_2": " Finally I can get out of this place, I just have to defeat the 12 guardians and I will be free.",
+	"intro_3": "Every door will take me to a guardian that I have to defeat.",
+	"firstRevive": "Destiny wants me alive", "intro_3": "",
 
 	"killBoss6": "I have defeated half of the guardians, soon I will escape.",
 	"killBoss12": "I have defeated all the guardians, I must enter the final door.",
