@@ -10,6 +10,7 @@ public class EndCombatUI : MonoBehaviour {
 
     public Button revive;
     public TextMeshProUGUI countDown;
+    public TextMeshProUGUI scoreText;
 
     public float timer;
     bool timerStarted = false;
@@ -54,6 +55,7 @@ public class EndCombatUI : MonoBehaviour {
                 FinalBossUI.SetActive(true);
                 UIToSpawn.SetActive(false);
             } else {
+                scoreText.text = GameManager.score.ToString();
                 FinalBossUI.SetActive(false);
                 UIToSpawn.SetActive(true);
             }

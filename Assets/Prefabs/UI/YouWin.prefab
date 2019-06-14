@@ -663,6 +663,7 @@ MonoBehaviour:
   UIToSpawn: {fileID: 3271564888466687584}
   revive: {fileID: 0}
   countDown: {fileID: 0}
+  scoreText: {fileID: 5537766708890280138}
   timer: 10
   FinalBossUI: {fileID: 958283004828197372}
 --- !u!1 &5537766709743856836
