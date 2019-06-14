@@ -7,10 +7,11 @@ public class ReviveUI : MonoBehaviour
     EndCombatUI endCombatUI;
  
     private void Start() {
+        endCombatUI = GetComponent<EndCombatUI>();
         Invoke("LateStart", 2f);
     }
 
-    void LateStart() {
+    void LateStart() {  
         Combat[] statss = FindObjectsOfType<Combat>();
         foreach(Combat s in statss) {
             if(s.isPlayer) {

@@ -117,6 +117,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: LandFX.particle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 4337672812088690, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
       propertyPath: m_LocalRotation.x
       value: -2.917858e-16

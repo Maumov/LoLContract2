@@ -56,7 +56,7 @@ public class QuestionHandler : MonoBehaviour
 
     }
 
-    public void CheckAnswer(Answer respuesta, bool isRevive) {
+    public void CheckAnswer(Answer respuesta) {
 
         bool sw = false;
 
@@ -84,7 +84,7 @@ public class QuestionHandler : MonoBehaviour
         }
 
         if (sw) {
-            if (!isRevive)
+            if (!player.isDead())
             {
                 if (OnCorrect != null)
                 {
@@ -97,7 +97,7 @@ public class QuestionHandler : MonoBehaviour
             }
             SetQuestion(GameManager.GetNewQuestion());
         } else {
-            if (!isRevive)
+            if (!player.isDead())
             {
                 if (OnWrong != null)
                 {

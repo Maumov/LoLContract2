@@ -167,6 +167,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
         type: 3}
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: LandFX.positionOffset.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
       propertyPath: target

@@ -187,6 +187,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
         type: 3}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: LandFX.positionOffset.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174651070083685040, guid: 9b02a6da345b91b4c86becede13a66fa,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 281034762258514315, guid: 9b02a6da345b91b4c86becede13a66fa,
         type: 3}
       propertyPath: damage

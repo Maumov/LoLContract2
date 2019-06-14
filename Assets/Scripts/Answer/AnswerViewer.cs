@@ -40,7 +40,7 @@ public class AnswerViewer : MonoBehaviour {
         if(incognita2[(int)answer.answerType].text != "") {
             a.denominator = int.Parse(incognita2[(int)answer.answerType].text);
         }
-        answerHandler.CheckAnswer(a, this);
+        answerHandler.CheckAnswer(a);
     }
 
     public void Hide() {

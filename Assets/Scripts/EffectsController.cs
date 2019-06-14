@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EffectsController : MonoBehaviour
 {
+    Combat combat;
+    [Header("Particles")]
+    public GameObject LandFX;
+
     [Header("Sounds")]
     public AudioSource source;
     public AudioClip step;
@@ -15,7 +19,7 @@ public class EffectsController : MonoBehaviour
         Combat combat = GetComponent<Combat>();
         AnimatorController animator = GetComponent<AnimatorController>();
         combat.OnFinishSlash += PlaySlashSound;
-        combat.OnReady += PlayReadySound;
+        combat.OnReady += PlayReady;
         animator.OnStep += PlayStepSound;
     }
 
@@ -24,8 +28,9 @@ public class EffectsController : MonoBehaviour
         PlaySFX(step);
     }
 
-    void PlayReadySound()
+    void PlayReady()
     {
+        InstantiateParticle(LandFX);
         PlaySFX(readySound);
     }
 
@@ -39,6 +44,22 @@ public class EffectsController : MonoBehaviour
         if (audioClip != null)
         {
             source.PlayOneShot(audioClip);
+        }
+    }
+
+    void InstantiateParticle(ParticleFX FX)
+    {
+        if (FX != null || FX.particle != null)
+        {
+            Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
+        }
+    }
+
+    void InstantiateParticle(GameObject FX)
+    {
+        if (FX != null)
+        {
+            Instantiate(FX, transform.position, Quaternion.identity, transform);
         }
     }
 }

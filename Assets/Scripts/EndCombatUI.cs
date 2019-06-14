@@ -66,7 +66,10 @@ public class EndCombatUI : MonoBehaviour {
 
     public void HideUI() {
         UIToSpawn.SetActive(false);
-        FinalBossUI.SetActive(false);
+        if(FinalBossUI != null)
+        {
+            FinalBossUI.SetActive(false);
+        }
     }
 
     void StartCountDown() {

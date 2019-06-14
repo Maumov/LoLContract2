@@ -32,31 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1699919071365312151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056858201012258196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd1a01159411d20498cd294b4cb0b747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageFX:
-    particle: {fileID: 0}
-    positionOffset: {x: 0, y: 0, z: 0}
-  DeadFX:
-    particle: {fileID: 0}
-    positionOffset: {x: 0, y: 0, z: 0}
-  ReviveFX:
-    particle: {fileID: 0}
-    positionOffset: {x: 0, y: 0, z: 0}
-  audioSource: {fileID: 0}
-  DamageSFX: {fileID: 0}
-  DeadSFX: {fileID: 0}
-  ReviveSFX: {fileID: 0}
 --- !u!1 &7690340426656118047
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,14 +202,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
         type: 3}
+    - target: {fileID: 6668892883134011168, guid: c5216eb93a5eed64089c3cb99f3e1336,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5216eb93a5eed64089c3cb99f3e1336, type: 3}
---- !u!1 &5056858201012258196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8677449900515045306, guid: c5216eb93a5eed64089c3cb99f3e1336,
-    type: 3}
-  m_PrefabInstance: {fileID: 4486129522863368750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5060659672501623154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8681528448464941916, guid: c5216eb93a5eed64089c3cb99f3e1336,

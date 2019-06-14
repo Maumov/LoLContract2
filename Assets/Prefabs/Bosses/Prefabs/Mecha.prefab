@@ -167,6 +167,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
         type: 3}
+    - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 7763202989098555457, guid: b6916d938262fca48a9c60e1bdf4101e,
         type: 3}
       propertyPath: target

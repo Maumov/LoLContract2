@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3794915069567802644}
+  - component: {fileID: 5090288893101639947}
   m_Layer: 0
-  m_Name: ReviveParticlePrefab
+  m_Name: OldReviveParticlePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3794915069567802645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.852539, y: 1.0585938, z: 3.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1235968326996137350}
@@ -32,6 +33,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5090288893101639947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794915069567802645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb440ab2e47265f45b90c5d2fc9355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAnimation: 1
+  delay: 2
 --- !u!1001 &3794915068778071560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39,25 +54,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3794915069567802644}
     m_Modifications:
-    - target: {fileID: 3587195465108285536, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
-        type: 3}
-      propertyPath: m_Name
-      value: FX_Ghost_Dust
-      objectReference: {fileID: 0}
     - target: {fileID: 3587195465108486912, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.852539
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3587195465108486912, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1285938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3587195465108486912, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.40625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3587195465108486912, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
         type: 3}
@@ -113,6 +123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587195465108285536, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
+        type: 3}
+      propertyPath: m_Name
+      value: FX_Ghost_Dust
       objectReference: {fileID: 0}
     - target: {fileID: 3587195465089096562, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
         type: 3}
@@ -189,6 +204,16 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3587195465089096562, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587195465089096562, guid: ba1ee34cfb4951342bbca34c85a1bbc6,
+        type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1ee34cfb4951342bbca34c85a1bbc6, type: 3}
 --- !u!4 &388004885022752008 stripped
@@ -204,11 +229,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3794915069567802644}
     m_Modifications:
-    - target: {fileID: 2705877789310541002, guid: 2a40063616434b747b96499082adcdc3,
-        type: 3}
-      propertyPath: m_Name
-      value: FX_LightRayCube (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2705877789310909958, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}
       propertyPath: m_RootOrder
@@ -232,7 +252,7 @@ PrefabInstance:
     - target: {fileID: 2705877789310909958, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0585938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705877789310909958, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}
@@ -272,12 +292,17 @@ PrefabInstance:
     - target: {fileID: 2705877789310909958, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.852539
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705877789310909958, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.40625
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705877789310541002, guid: 2a40063616434b747b96499082adcdc3,
+        type: 3}
+      propertyPath: m_Name
+      value: FX_LightRayCube (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2705877789317958730, guid: 2a40063616434b747b96499082adcdc3,
         type: 3}

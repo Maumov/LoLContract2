@@ -580,6 +580,7 @@ GameObject:
   - component: {fileID: 580659302008536352}
   - component: {fileID: 3102932192968088678}
   - component: {fileID: 6668892883134011168}
+  - component: {fileID: 6462752596935609910}
   m_Layer: 0
   m_Name: Character_AncientWarrior_01
   m_TagString: Untagged
@@ -681,10 +682,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LandFX:
+    particle: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    positionOffset: {x: 0, y: 0.25, z: 0}
   source: {fileID: 1912339251528080449}
   step: {fileID: 8300000, guid: f40be8d2a4ef7e745af2af267fd7379b, type: 3}
   slash: {fileID: 8300000, guid: 4e4aa6d98e48cba448a97f10eb0eb38f, type: 3}
   readySound: {fileID: 8300000, guid: 7f6548da0e6833248b8730a90442a412, type: 3}
+--- !u!114 &6462752596935609910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8677449900515045306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1a01159411d20498cd294b4cb0b747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageFX:
+    particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+  DeadFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  ReviveFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1912339251528080449}
+  DamageSFX: {fileID: 8300000, guid: 49a5c7f139c22bc4c85093ca7881229b, type: 3}
+  DeadSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
+  ReviveSFX: {fileID: 0}
 --- !u!1 &8677464027526040478
 GameObject:
   m_ObjectHideFlags: 0

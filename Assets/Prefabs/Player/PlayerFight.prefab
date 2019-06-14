@@ -1735,6 +1735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LandFX: {fileID: 0}
   source: {fileID: 5068383867923924706}
   step: {fileID: 8300000, guid: f40be8d2a4ef7e745af2af267fd7379b, type: 3}
   slash: {fileID: 8300000, guid: 70d8e079d51b30f468f898f12b13f1a1, type: 3}
@@ -1753,10 +1754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageFX:
     particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0, y: 0.25, z: 0}
   DeadFX:
     particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0, y: 0.25, z: 0}
   ReviveFX:
     particle: {fileID: 3794915069567802645, guid: 92b6bfefdc382334eb09bf87e15acfc1,
       type: 3}
@@ -1764,7 +1765,7 @@ MonoBehaviour:
   audioSource: {fileID: 5068383867923924706}
   DamageSFX: {fileID: 8300000, guid: f40be8d2a4ef7e745af2af267fd7379b, type: 3}
   DeadSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
-  ReviveSFX: {fileID: 0}
+  ReviveSFX: {fileID: 8300000, guid: 471103d3a8ab66b47a09506782cd704a, type: 3}
 --- !u!1 &5521254793651278826
 GameObject:
   m_ObjectHideFlags: 0

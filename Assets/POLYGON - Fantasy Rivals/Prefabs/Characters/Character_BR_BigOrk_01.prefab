@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 6769668926235160502}
   - component: {fileID: 3329439276027331756}
   - component: {fileID: 7357758444812101605}
+  - component: {fileID: 7905660762413252299}
   m_Layer: 0
   m_Name: Character_BR_BigOrk_01
   m_TagString: Untagged
@@ -713,10 +714,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2a497fd59f7bc4eaa32bf5ed7304e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LandFX:
+    particle: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    positionOffset: {x: 0, y: 0.25, z: 0}
   source: {fileID: 4000320495587230977}
   step: {fileID: 8300000, guid: 294a6f7d43d07484282de2a0d9a1c751, type: 3}
   slash: {fileID: 8300000, guid: 420075d95c1d10349812f5c395da6f96, type: 3}
   readySound: {fileID: 8300000, guid: 7f6548da0e6833248b8730a90442a412, type: 3}
+--- !u!114 &7905660762413252299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293356793197548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1a01159411d20498cd294b4cb0b747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageFX:
+    particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+  DeadFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  ReviveFX:
+    particle: {fileID: 0}
+    positionOffset: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 4000320495587230977}
+  DamageSFX: {fileID: 8300000, guid: a8003b9584069cf42a57d1f6ed5a662d, type: 3}
+  DeadSFX: {fileID: 8300000, guid: 4c53fa45027329046bf7f08e8c034690, type: 3}
+  ReviveSFX: {fileID: 0}
 --- !u!1 &1315224913767900
 GameObject:
   m_ObjectHideFlags: 0

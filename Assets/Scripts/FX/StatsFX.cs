@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class StatsFX : MonoBehaviour
 {
-
     Stats stats;
+    [Header("Particles")]
     public ParticleFX DamageFX;
     public ParticleFX DeadFX;
     public ParticleFX ReviveFX;
 
+    [Header("Sounds")]
     public AudioSource audioSource;
     public AudioClip DamageSFX;
     public AudioClip DeadSFX;
     public AudioClip ReviveSFX;
-
 
     void Start()
     {
@@ -40,9 +40,10 @@ public class StatsFX : MonoBehaviour
     }
 
     void InstantiateParticle(ParticleFX FX) {
-        if(FX != null)
+        if(FX != null || FX.particle != null)
         {
-            Instantiate(FX.particle, FX.positionOffset, Quaternion.identity, transform);
+            Debug.Log(transform.position);
+            Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
         }
     }
 
@@ -51,8 +52,6 @@ public class StatsFX : MonoBehaviour
             audioSource.PlayOneShot(audioClip);
         }
     }
-
-
 }
 
 [System.Serializable]
@@ -60,4 +59,3 @@ public class ParticleFX {
     public GameObject particle;
     public Vector3 positionOffset;
 }
-
