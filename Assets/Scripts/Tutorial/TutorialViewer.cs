@@ -53,10 +53,8 @@ public class TutorialViewer : MonoBehaviour
     void HideTutorial() {
         tutorials.SetActive(false);
         foreach(Tutorial g in exercises) {
-            Debug.Log(g.tutorial.name);
             g.tutorial.SetActive(false);
             foreach(GameObject o in g.Steps) {
-                Debug.Log(o.name);
                 o.SetActive(false);
             }
             
