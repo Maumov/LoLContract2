@@ -562,17 +562,17 @@ PrefabInstance:
     - target: {fileID: 8587559658110405528, guid: dd895edc6038d044c972f74c881d87a9,
         type: 3}
       propertyPath: damage
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8587559658110405528, guid: dd895edc6038d044c972f74c881d87a9,
         type: 3}
       propertyPath: timeBetweenAttacks
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8714154063218527531, guid: dd895edc6038d044c972f74c881d87a9,
         type: 3}
       propertyPath: maxHitPoints
-      value: 120
+      value: 135
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd895edc6038d044c972f74c881d87a9, type: 3}

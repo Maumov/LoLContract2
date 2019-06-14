@@ -391,21 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6469701130651261380}
     m_Modifications:
-    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
-        type: 3}
-      propertyPath: step
-      value: 
-      objectReference: {fileID: 441920228931460485}
-    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 1832652876831325724}
-    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
-        type: 3}
-      propertyPath: readySound
-      value: 
-      objectReference: {fileID: 9129990372584501113}
     - target: {fileID: 728152428537438484, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: m_Name
@@ -481,6 +466,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 441920228931460485}
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 1832652876831325724}
+    - target: {fileID: 3122374585838069692, guid: 0a0522995e0f5684089fca018e1a887c,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 9129990372584501113}
     - target: {fileID: 814425322051127500, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: m_Controller
@@ -515,17 +515,17 @@ PrefabInstance:
     - target: {fileID: 6318650700315306482, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: damage
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6318650700315306482, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: timeBetweenAttacks
-      value: 30
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 7560638610098967495, guid: 0a0522995e0f5684089fca018e1a887c,
         type: 3}
       propertyPath: maxHitPoints
-      value: 160
+      value: 140
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0522995e0f5684089fca018e1a887c, type: 3}

@@ -1946,14 +1946,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageFX:
-    particle: {fileID: 0}
+    particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
     positionOffset: {x: 0, y: 0, z: 0}
   DeadFX:
-    particle: {fileID: 0}
+    particle: {fileID: 135726, guid: b8fd5155356c32f4c81ecdf9b62cbc64, type: 3}
     positionOffset: {x: 0, y: 0, z: 0}
   ReviveFX:
-    particle: {fileID: 0}
+    particle: {fileID: 3794915069567802645, guid: 92b6bfefdc382334eb09bf87e15acfc1,
+      type: 3}
     positionOffset: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 0}
+  DamageSFX: {fileID: 0}
+  DeadSFX: {fileID: 0}
+  ReviveSFX: {fileID: 0}
 --- !u!1 &5521254793651278826
 GameObject:
   m_ObjectHideFlags: 0

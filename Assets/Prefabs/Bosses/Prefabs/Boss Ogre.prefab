@@ -391,21 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651877858581374513}
     m_Modifications:
-    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
-        type: 3}
-      propertyPath: step
-      value: 
-      objectReference: {fileID: 756656940792941904}
-    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 1411645770927750162}
-    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
-        type: 3}
-      propertyPath: readySound
-      value: 
-      objectReference: {fileID: 9161647711402758708}
     - target: {fileID: 1293356793197548, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
       propertyPath: m_Name
       value: Character_BR_BigOrk_01
@@ -454,6 +439,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: step
+      value: 
+      objectReference: {fileID: 756656940792941904}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 1411645770927750162}
+    - target: {fileID: 7357758444812101605, guid: 0d42bc61d684259409d481c6f5dd5d5c,
+        type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 9161647711402758708}
     - target: {fileID: 4337672812088690, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}
       propertyPath: m_LocalRotation.x
       value: -2.917858e-16
@@ -499,12 +499,12 @@ PrefabInstance:
     - target: {fileID: 6769668926235160502, guid: 0d42bc61d684259409d481c6f5dd5d5c,
         type: 3}
       propertyPath: timeBetweenAttacks
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3329439276027331756, guid: 0d42bc61d684259409d481c6f5dd5d5c,
         type: 3}
       propertyPath: maxHitPoints
-      value: 130
+      value: 145
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d42bc61d684259409d481c6f5dd5d5c, type: 3}

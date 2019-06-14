@@ -6,7 +6,7 @@ using LoLSDK;
 public class GameManager
 {
     public static int progress;
-    public static int maxProgress;
+    public static int maxProgress = 13;
     public static int score;
 
     public static List<int> casosAPreguntar;

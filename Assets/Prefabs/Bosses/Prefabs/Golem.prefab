@@ -391,6 +391,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2371648214108544870}
     m_Modifications:
+    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Character_BR_FortGolem_01
+      objectReference: {fileID: 0}
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -461,11 +466,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Character_BR_FortGolem_01
-      objectReference: {fileID: 0}
     - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: m_Controller
@@ -532,7 +532,7 @@ PrefabInstance:
     - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: timeBetweenAttacks
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
