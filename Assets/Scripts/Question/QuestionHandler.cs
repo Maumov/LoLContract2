@@ -177,7 +177,7 @@ public class Question {
             answer.numerator = Random.Range(2,10);
             c = (int)(a * answer.numerator);
             d = (int)(b * answer.numerator);
-            answer.answerType = AnswerType.Number;
+            answer.answerType = AnswerType.Fraction;
             break;
 
             //-----COMBO
@@ -193,15 +193,23 @@ public class Question {
             case 9:
             answer.numerator = b;
             answer.denominator = b;
+            answer.answerType = AnswerType.Fraction;
             break;
 
             case 10:
             answer.numerator = e + f;
             answer.denominator = g;
+            answer.answerType = AnswerType.Fraction;
             break;
             //----------
             case 11:
+            answer.numerator = e + f;
+            answer.denominator = g;
             //------muestra interfaz
+            answer.answerType = AnswerType.Fraction;
+            
+
+
             break;
             //--------COMBO
             case 12:
@@ -226,6 +234,9 @@ public class Question {
             break;
 
             case 15:
+            answer.numerator = e + f;
+            answer.denominator = g;
+            answer.answerType = AnswerType.Fraction;
             //------Vacio
             break;
             
