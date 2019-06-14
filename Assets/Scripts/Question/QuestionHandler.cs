@@ -208,8 +208,6 @@ public class Question {
             //------muestra interfaz
             answer.answerType = AnswerType.Fraction;
             
-
-
             break;
             //--------COMBO
             case 12:

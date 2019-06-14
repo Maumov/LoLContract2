@@ -1,6 +1,36 @@
 ﻿{
   "_meta": {
     "maxChars": {
+	"loading": 200,
+	"play": 200,
+	"end": 200,
+	"door": 200,
+	"intro_1": 200,
+	"intro_2": 200,
+	"firstRevive": 200,
+	"killBoss6": 200,
+	"killBoss12": 200,
+	"enterLastBoss": 200,
+	"killLastBoss": 200
+	}
+  },
+  "es": {
+ 	"loading": "Cargando...",
+	"play": "Jugar",
+	"end": "¡Finalmente libre, Gracias por ayudarme a salir del castillo!",
+	"door": "Puerta Abierta",
+
+	"intro_1": "Encerrado en este castillo por años... Al fin podre salir de este lugar, solo debo vencer a los 12 guardianes y podre salir.",
+	"intro_2": "Cada puerta me llevara hacia un guardian, que debere derrotar.",
+	"firstRevive": "El destino me quiere vivo",
+
+	"killBoss6": "He terminado con la mitad de los guardianes, pronto podre escapar",
+	"killBoss12": "He derrotado a todos los guardianes, al fin soy libre",
+	"enterLastBoss": "Crei que era la salida, pero parece que hay un ultimo guardian esperando, sera una dura batalla",
+	"killLastBoss": "La salida, veo la salida, es mi momento de escapar de aqui."
+
+  },
+"en":{
 
 	"loading": "Loading...",
 	"play": "Play",
@@ -16,21 +46,5 @@
 	"enterLastBoss": "I thought this door was the way out, but it looks like there is a final guardian waiting for me, this will be a really hard fight.",
 	"killLastBoss": "The way out! I can see it, it's my chance to get out of here."
 
-	
-  },
-  "es": {
- "loading": "Cargando...",
-	"play": "Jugar",
-	"end": "¡Finalmente libre, Gracias por ayudarme a salir del castillo!",
-	"door": "Puerta Abierta",
-
-	"intro_1": "Encerrado en este castillo por años... Al fin podre salir de este lugar, solo debo vencer a los 12 guardianes y podre salir.",
-	"intro_2": "Cada puerta me llevara hacia un guardian, que debere derrotar.",
-	"firstRevive": "El destino me quiere vivo",
-
-	"killBoss6": "He terminado con la mitad de los guardianes, pronto podre escapar",
-	"killBoss12": "He derrotado a todos los guardianes, al fin soy libre",
-	"enterLastBoss": "Crei que era la salida, pero parece que hay un ultimo guardian esperando, sera una dura batalla",
-	"killLastBoss": "La salida, veo la salida, es mi momento de escapar de aqui."
-
-  }}
+	}
+}
