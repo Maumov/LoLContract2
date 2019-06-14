@@ -16,9 +16,12 @@ public class EndCombatUI : MonoBehaviour {
     float timeRemaining = 0f;
     bool timerStarted = false;
 
+    float timeInFight;
+
     public GameObject FinalBossUI;
 
     private void Start() {
+        timeInFight = 0f;
         Invoke("LateStart", 2f);
     }
 
@@ -32,6 +35,9 @@ public class EndCombatUI : MonoBehaviour {
     }
 
     private void Update() {
+
+        timeInFight += Time.deltaTime;
+
         if(countDown != null) {
             if(!timerStarted) {
                 return;
@@ -41,6 +47,7 @@ public class EndCombatUI : MonoBehaviour {
             countDown.text = ((int)timeRemaining).ToString();
             if(timeRemaining <= 0f) {
                 DisableButton();
+                timerStarted = false;
             }
         }
     }
@@ -51,7 +58,8 @@ public class EndCombatUI : MonoBehaviour {
 
     void ShowUI() {
         if(!isPlayer) { 
-            GameManager.UpdateProgress();
+            
+            GameManager.UpdateProgress(1250 - (int)timeInFight);
             if(GameManager.id == 12) {
                 FinalBossUI.SetActive(true);
                 UIToSpawn.SetActive(false);
@@ -75,12 +83,14 @@ public class EndCombatUI : MonoBehaviour {
     }
 
     void StartCountDown() {
+        revive.interactable = true;
         timeRemaining = timer;
         countDown.text = ((int)timeRemaining).ToString();
         timerStarted = true;
     }
 
     public void ButtonPressed() {
+      
         LoadingScreen loadingScreen = FindObjectOfType<LoadingScreen>();
         loadingScreen.scene = "Hub";
         loadingScreen.ChangeLevel();

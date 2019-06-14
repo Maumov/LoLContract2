@@ -30,7 +30,7 @@ public class MissionViewer : MonoBehaviour
         text.text = SharedState.LanguageDefs[textos[currentShowing].ToString()];
     }
 
-    void Hide() {
+    public void Hide() {
         gameObject.SetActive(false);
     }
 }
