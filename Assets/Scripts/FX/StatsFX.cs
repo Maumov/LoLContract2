@@ -63,3 +63,7 @@ public class ParticleFX {
         {
             Debug.Log(transform.position);
             Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
+        if(FX != null && FX.particle != null)
+        {
+            Debug.Log(transform.position);
+            Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
