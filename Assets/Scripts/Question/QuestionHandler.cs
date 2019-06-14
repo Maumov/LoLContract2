@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestionHandler : MonoBehaviour
 {
     public delegate void delegateQuestion();
-    public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
+    public event delegateQuestion OnAnswerReceived, OnCorrect, OnCorrectRevive, OnWrong, OnWrongRevive, OnQuestionSet;
 
     public InfoTutorial infoTutorial;
 
@@ -56,7 +56,7 @@ public class QuestionHandler : MonoBehaviour
 
     }
 
-    public void CheckAnswer(Answer respuesta) {
+    public void CheckAnswer(Answer respuesta, bool isRevive) {
 
         bool sw = false;
 
@@ -82,15 +82,37 @@ public class QuestionHandler : MonoBehaviour
             OnAnswerReceived();
             
         }
-       
-        if(sw) {
-            if(OnCorrect != null) {
-                OnCorrect();
+
+        if (sw) {
+            if (!isRevive)
+            {
+                if (OnCorrect != null)
+                {
+                    OnCorrect();
+                } 
+            }
+            else
+            {
+                if (OnCorrectRevive != null)
+                {
+                    OnCorrectRevive();
+                }
             }
             SetQuestion(GameManager.GetNewQuestion());
         } else {
-            if(OnWrong != null) {
-                OnWrong();
+            if (!isRevive)
+            {
+                if (OnWrong != null)
+                {
+                    OnWrong();
+                }
+            }
+            else
+            {
+                if (OnWrongRevive != null)
+                {
+                    OnWrongRevive();
+                }
             }
         }
     }

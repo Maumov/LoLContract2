@@ -23,9 +23,14 @@ public class AnswerHandler : MonoBehaviour
     }
 
     // Llamada por el boton
-    public void CheckAnswer( Answer answer )
+    public void CheckAnswer( Answer answer, AnswerViewer viewer)
     {
-        questionHandler.CheckAnswer(answer);
+        bool isReviveViewer = false;
+        if(viewer = answerViewerRevive)
+        {
+            isReviveViewer = true;
+        }
+        questionHandler.CheckAnswer(answer, isReviveViewer);
     }
     
 }
