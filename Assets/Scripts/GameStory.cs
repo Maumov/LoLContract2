@@ -20,13 +20,19 @@ public class GameStory : MonoBehaviour
         }
         if(count == 0) {
             viewer.SetTexts(Intro);
+        } else {
+            if(count == 6) {
+                viewer.SetTexts(Boss6Killed);
+            } else {
+                if(count == 12) {
+                    viewer.SetTexts(Boss12Killed);
+                } else {
+                    viewer.Hide();
+                }
+            }
+            
         }
-        if(count == 6) {
-            viewer.SetTexts(Boss6Killed);
-        }
-        if(count == 12) {
-            viewer.SetTexts(Boss12Killed);
-        }
+        
 
     }
 

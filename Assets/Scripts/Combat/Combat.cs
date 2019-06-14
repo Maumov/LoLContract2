@@ -25,6 +25,7 @@ public class Combat : MonoBehaviour
 
     private void Start(){
         stats = GetComponent<Stats>();
+        stats.OnDamageReceived += DamageReceived;
         questionHandler = FindObjectOfType<QuestionHandler>();
         nextAttack = Time.time;
         
@@ -49,6 +50,10 @@ public class Combat : MonoBehaviour
             canAttack = false;
             StartCoroutine(animator.Attack());
         }
+    }
+
+    void DamageReceived() {
+        nextAttack += timeBetweenAttacks;
     }
 
     // Delegates triggers
