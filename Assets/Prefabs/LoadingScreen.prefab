@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 4458752910443602806}
   - component: {fileID: 933239179796026824}
   - component: {fileID: 5909027505846578512}
+  - component: {fileID: 515005447540461077}
   m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
@@ -309,6 +310,19 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &515005447540461077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870022717523245553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a358f2a5ed1d85d48b4ead14652ccf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: loading
 --- !u!1 &4123048973046594116
 GameObject:
   m_ObjectHideFlags: 0
