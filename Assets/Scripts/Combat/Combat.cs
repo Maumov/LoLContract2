@@ -31,8 +31,7 @@ public class Combat : MonoBehaviour
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
-        }
-        else{
+        }else{
 
             StartCoroutine(BossCombat());
     
@@ -140,7 +139,11 @@ public class Combat : MonoBehaviour
     }
 
     public void Attack() {
-        StartCoroutine(WaitAttackTurn());
+        if(stats.isDead()) {
+            stats.Revive();
+        } else {
+            StartCoroutine(WaitAttackTurn());
+        }
     }
 
     IEnumerator WaitAttackTurn() {
