@@ -21,19 +21,24 @@ public class EffectsController : MonoBehaviour
 
     void PlayStepSound()
     {
-        source.clip = step;
-        source.Play();
+        PlaySFX(step);
     }
 
     void PlayReadySound()
     {
-        source.clip = readySound;
-        source.Play();
+        PlaySFX(readySound);
     }
 
     void PlaySlashSound()
     {
-        source.clip = slash;
-        source.Play();
+        PlaySFX(slash);
+    }
+
+    void PlaySFX(AudioClip audioClip = null)
+    {
+        if (audioClip != null)
+        {
+            source.PlayOneShot(audioClip);
+        }
     }
 }

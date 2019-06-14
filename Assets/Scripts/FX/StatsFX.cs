@@ -40,7 +40,10 @@ public class StatsFX : MonoBehaviour
     }
 
     void InstantiateParticle(ParticleFX FX) {
-        Instantiate(FX.particle, FX.positionOffset, Quaternion.identity, transform);
+        if(FX != null)
+        {
+            Instantiate(FX.particle, FX.positionOffset, Quaternion.identity, transform);
+        }
     }
 
     void PlaySFX(AudioClip audioClip = null) {
