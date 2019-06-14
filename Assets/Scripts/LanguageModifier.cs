@@ -9,7 +9,11 @@ public class LanguageModifier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<TextMeshPro>().text = SharedState.LanguageDefs[key];
+        TextMeshProUGUI text = GetComponent<TextMeshProUGUI>();
+        if(text != null) {
+            GetComponent<TextMeshProUGUI>().text = SharedState.LanguageDefs[key];
+        } 
+        
     }
     
 }

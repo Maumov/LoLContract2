@@ -6,20 +6,8 @@ public class MissionViewer : MonoBehaviour
 {
     public List<string> textos;
     public int currentShowing;
-    TextMeshPro text;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
+    public TextMeshProUGUI text;
+    
     public void SetTexts(List<string> t) {
         textos = new List<string>();
         textos.AddRange(t);

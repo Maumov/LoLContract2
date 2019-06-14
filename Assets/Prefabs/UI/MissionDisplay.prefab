@@ -522,6 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textos: []
   currentShowing: 0
+  text: {fileID: 5864496200390385099}
 --- !u!1 &5864496202289109788
 GameObject:
   m_ObjectHideFlags: 0

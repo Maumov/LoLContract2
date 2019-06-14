@@ -27,6 +27,7 @@ public class LoadingScreen : MonoBehaviour
     IEnumerator LoadBackgroundScene()
     {
         yield return StartCoroutine(FadeOut());
+        yield return null;
         SceneManager.LoadScene(scene);
         
     }
