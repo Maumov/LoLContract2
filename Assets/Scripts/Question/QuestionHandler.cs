@@ -174,6 +174,7 @@ public class Question {
 
             case 7:
             answer.numerator = Random.Range(2,10);
+            answer.denominator = answer.numerator;   
             c = (int)(a * answer.numerator);
             d = (int)(b * answer.numerator);
             answer.answerType = AnswerType.Fraction;
