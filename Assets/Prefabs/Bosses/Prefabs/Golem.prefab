@@ -69,6 +69,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2371648214108544870}
     m_Modifications:
+    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Character_BR_FortGolem_01
+      objectReference: {fileID: 0}
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,11 +144,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Character_BR_FortGolem_01
-      objectReference: {fileID: 0}
     - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: m_Controller
@@ -177,6 +177,21 @@ PrefabInstance:
       propertyPath: LandFX
       value: 
       objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: target
@@ -196,21 +211,6 @@ PrefabInstance:
         type: 3}
       propertyPath: returnSpeed
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b33102456829844b80f356a31745bb, type: 3}
