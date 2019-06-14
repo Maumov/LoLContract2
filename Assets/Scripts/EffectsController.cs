@@ -49,7 +49,7 @@ public class EffectsController : MonoBehaviour
 
     void InstantiateParticle(ParticleFX FX)
     {
-        if (FX != null || FX.particle != null)
+        if (FX != null && FX.particle != null)
         {
             Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
         }
