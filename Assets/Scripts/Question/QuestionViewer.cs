@@ -20,7 +20,7 @@ public class QuestionViewer : MonoBehaviour
         Combat[] combats = FindObjectsOfType<Combat>();
         foreach(Combat c in combats) {
             c.OnStartAttack += Hide;
-            c.OnFinishSlash += Show;
+            c.OnReturnToPosition += Show;
         }
     }
 

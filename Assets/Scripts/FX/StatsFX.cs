@@ -40,7 +40,7 @@ public class StatsFX : MonoBehaviour
     }
 
     void InstantiateParticle(ParticleFX FX) {
-        if(FX != null && FX.particle != null)
+        if(FX != null || FX.particle != null)
         {
             Debug.Log(transform.position);
             Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
@@ -59,3 +59,7 @@ public class ParticleFX {
     public GameObject particle;
     public Vector3 positionOffset;
 }
+        if(FX != null && FX.particle != null)
+        {
+            Debug.Log(transform.position);
+            Instantiate(FX.particle, transform.position + FX.positionOffset, Quaternion.identity, transform);
