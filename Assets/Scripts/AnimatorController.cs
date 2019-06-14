@@ -28,6 +28,7 @@ public class AnimatorController : MonoBehaviour
         }
         stats.OnDamageReceived += PlayDamaged;
         stats.OnDead += Dead;
+        stats.OnRevive += Revive;
     }
     
     // No deja realizarlo en la misma animacion.
@@ -55,6 +56,11 @@ public class AnimatorController : MonoBehaviour
 
     public void Dead() {
         animator.SetBool("Death", true);
+    }
+
+    public void Revive()
+    {
+        animator.SetTrigger("Resurrection");
     }
 
     void FootL(){
