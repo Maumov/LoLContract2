@@ -11,7 +11,9 @@ public class EndCombatUI : MonoBehaviour {
     public TextMeshProUGUI countDown;
     public TextMeshProUGUI scoreText;
 
-    public float timer;
+
+    public float timer = 20f;
+    float timeRemaining = 0f;
     bool timerStarted = false;
 
     public GameObject FinalBossUI;
@@ -34,10 +36,10 @@ public class EndCombatUI : MonoBehaviour {
             if(!timerStarted) {
                 return;
             }
-            timer -= Time.deltaTime;
-            timer = Mathf.Clamp(timer, 0f, 100f);
-            countDown.text = ((int)timer).ToString();
-            if(timer <= 0f) {
+            timeRemaining -= Time.deltaTime;
+            timeRemaining = Mathf.Clamp(timeRemaining, 0f, 100f);
+            countDown.text = ((int)timeRemaining).ToString();
+            if(timeRemaining <= 0f) {
                 DisableButton();
             }
         }
@@ -73,6 +75,8 @@ public class EndCombatUI : MonoBehaviour {
     }
 
     void StartCountDown() {
+        timeRemaining = timer;
+        countDown.text = ((int)timeRemaining).ToString();
         timerStarted = true;
     }
 

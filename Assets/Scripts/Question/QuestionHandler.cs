@@ -84,29 +84,15 @@ public class QuestionHandler : MonoBehaviour
         }
 
         if (sw) {
-            if (!player.isDead())
+            if (OnCorrect != null)
             {
-                if (OnCorrect != null)
-                {
-                    OnCorrect();
-                } 
-            }
-            else
-            {
-                player.Revive();
-            }
+                OnCorrect();
+            } 
             SetQuestion(GameManager.GetNewQuestion());
         } else {
-            if (!player.isDead())
+            if (OnWrong != null)
             {
-                if (OnWrong != null)
-                {
-                    OnWrong();
-                }
-            }
-            else
-            {
-                player.Revive();
+                OnWrong();
             }
         }
     }

@@ -25,7 +25,7 @@ public class LifeBarViewer : MonoBehaviour
 
         foreach(Combat s in statss) {
             if(s.isPlayer == isPlayer) {
-                s.GetComponent<Stats>().OnDamageReceived += UpdateLifeBar;
+                s.GetComponent<Stats>().OnHpChange += UpdateLifeBar;
                 stats = s.GetComponent<Stats>();
             }
         }

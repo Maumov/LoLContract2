@@ -8,7 +8,7 @@ public class Stats : MonoBehaviour
     public float currentHitPoints;
 
     public delegate void statsDelegate();
-    public event statsDelegate OnDead, OnDamageReceived, OnRevive;
+    public event statsDelegate OnDead, OnDamageReceived, OnRevive, OnHpChange;
 
     private void Start() {
         currentHitPoints = maxHitPoints;
@@ -16,8 +16,12 @@ public class Stats : MonoBehaviour
 
     public void Revive() {
         currentHitPoints = maxHitPoints;
+        
         if(OnRevive != null) {
             OnRevive();
+        }
+        if(OnHpChange != null) {
+            OnHpChange();
         }
     }
 
@@ -25,6 +29,9 @@ public class Stats : MonoBehaviour
         currentHitPoints -= damage;
         if(OnDamageReceived != null) {
             OnDamageReceived();
+        }
+        if(OnHpChange != null) {
+            OnHpChange();
         }
         if(currentHitPoints <= 0f) {
             Dead();
