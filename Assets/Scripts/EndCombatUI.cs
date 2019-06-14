@@ -62,6 +62,7 @@ public class EndCombatUI : MonoBehaviour {
             GameManager.UpdateProgress(1250 - (int)timeInFight);
             if(GameManager.id == 12) {
                 FinalBossUI.SetActive(true);
+                Invoke("EndGame", 2f);
                 UIToSpawn.SetActive(false);
             } else {
                 scoreText.text = GameManager.score.ToString();
@@ -80,6 +81,10 @@ public class EndCombatUI : MonoBehaviour {
         {
             FinalBossUI.SetActive(false);
         }
+    }
+
+    void EndGame() {
+        GameManager.FinishGame();
     }
 
     void StartCountDown() {

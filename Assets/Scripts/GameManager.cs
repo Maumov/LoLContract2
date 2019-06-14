@@ -15,6 +15,11 @@ public class GameManager
     public static int id;
     static List<int> bossesDone;
 
+    public static void FinishGame() {
+        LOLSDK.Instance.CompleteGame();
+    }
+
+
     public static void UpdateProgress(int hp = 0) {
         hp = Mathf.Clamp(hp, 200, 1250);
         score += hp;
