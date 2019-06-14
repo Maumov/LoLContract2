@@ -17642,8 +17642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Intro:
-  - Intro_1
-  - Intro_2
+  - intro_1
+  - intro_2
   Boss6Killed:
   - killBoss6
   Boss12Killed:

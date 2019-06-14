@@ -25,7 +25,9 @@ public class MissionViewer : MonoBehaviour
     }
 
     void Show() {
-        text.text = SharedState.LanguageDefs[textos[currentShowing]];
+        string s = SharedState.LanguageDefs[textos[currentShowing]];
+        Debug.Log(s);
+        text.text = SharedState.LanguageDefs[textos[currentShowing].ToString()];
     }
 
     void Hide() {
