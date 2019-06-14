@@ -186,6 +186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissionDisplay
       objectReference: {fileID: 0}
+    - target: {fileID: 4339533300258335714, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -261,6 +266,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5864496200390385099, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 5864496200411287018, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -275,11 +285,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339533300258335714, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
