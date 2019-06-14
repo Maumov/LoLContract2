@@ -7,7 +7,6 @@ public class EndCombatUI : MonoBehaviour {
     public bool isPlayer;
 
     public GameObject UIToSpawn;
-
     public Button revive;
     public TextMeshProUGUI countDown;
     public TextMeshProUGUI scoreText;

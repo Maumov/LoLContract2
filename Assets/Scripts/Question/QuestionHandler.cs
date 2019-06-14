@@ -5,10 +5,10 @@ using UnityEngine;
 public class QuestionHandler : MonoBehaviour
 {
     public delegate void delegateQuestion();
-    public event delegateQuestion OnAnswerReceived, OnCorrect, OnCorrectRevive, OnWrong, OnWrongRevive, OnQuestionSet;
+    public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
 
     public InfoTutorial infoTutorial;
-
+    public Stats player;
     public Question question;
 
     public AnswerHandler answerHandler;
@@ -93,10 +93,7 @@ public class QuestionHandler : MonoBehaviour
             }
             else
             {
-                if (OnCorrectRevive != null)
-                {
-                    OnCorrectRevive();
-                }
+                player.Revive();
             }
             SetQuestion(GameManager.GetNewQuestion());
         } else {
@@ -109,10 +106,7 @@ public class QuestionHandler : MonoBehaviour
             }
             else
             {
-                if (OnWrongRevive != null)
-                {
-                    OnWrongRevive();
-                }
+                player.Revive();
             }
         }
     }
