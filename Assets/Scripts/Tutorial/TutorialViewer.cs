@@ -14,6 +14,10 @@ public class TutorialViewer : MonoBehaviour
 
     bool canAttack = true;
 
+    private void Start() {
+        TutorialButtonPressed();
+    }
+
     public void TutorialButtonPressed() {
         if(tutorials.activeSelf) {
             HideTutorial();
