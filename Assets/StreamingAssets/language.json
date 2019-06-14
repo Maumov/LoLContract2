@@ -1,44 +1,7 @@
 ﻿{
   "_meta": {
     "maxChars": {
-      "welcome": 20,
-      "readyToPlay": 20,
-      "pressContinue": 50,
-      "greatJob": 20,
-      "onePlusOne": 30,
-      "0": 30,
 
-	  "enterTheCode": 20,
-	  "of": 10,
-	  "next": 20,
-	  "ok": 20,
-	  "loading": 50,
-	  "play": 10,
-	  "end": 30,
-	  "door": 30,
-
-	  "intro_1": 30,
-	  "intro_2": 30,
-
-	  "firstRevive": 30,
-	  "killBoss6": 30,
-	  "killBoss12": 30,
-	  "enterLastBoss": 30,
-	  "killLastBoss": 30
-    }
-  },
-  "en": {
-    "welcome": "Welcome!",
-    "readyToPlay": "Are you ready to play?",
-    "greatJob": "Great job!",
-    "pressContinue": "Press the next button to continue.",
-    "onePlusOne": "One + One = Two",
-	"0": "One + One = Two",
-
-	"enterTheCode": "Value",
-	"of": "of",
-	"next": "Next",
-	"ok": "Ok",
 	"loading": "Loading...",
 	"play": "Play",
 	"end": "Finally free, thank you for helping me getting out of the castle!",
@@ -50,23 +13,13 @@
 
 	"killBoss6": "I have defeated half of the guardians, soon I will escape.",
 	"killBoss12": "I have defeated all the guardians, I am finally free.",
-	"enterLastBoss": "I though this door was the way out, but it looks like there are a final guardian waiting for me, this will be a really hard fight.",
+	"enterLastBoss": "I thought this door was the way out, but it looks like there is a final guardian waiting for me, this will be a really hard fight.",
 	"killLastBoss": "The way out! I can see it, it's my chance to get out of here."
 
 	
   },
   "es": {
-    "welcome": "¡Bienvenido!",
-    "readyToPlay": "¿Estás listo para jugar?",
-    "greatJob": "¡Gran trabajo!",
-    "pressContinue": "Presione el botón 'siguiente' para continuar.",
-    "onePlusOne": "Uno + Uno = Dos",
-
-	"enterTheCode": "Valor",
-	"of": "de",
-	"next": "Siguiente",
-	"ok": "Ok",
-	"loading": "Cargando...",
+ "loading": "Cargando...",
 	"play": "Jugar",
 	"end": "¡Finalmente libre, Gracias por ayudarme a salir del castillo!",
 	"door": "Puerta Abierta",
@@ -80,26 +33,4 @@
 	"enterLastBoss": "Crei que era la salida, pero parece que hay un ultimo guardian esperando, sera una dura batalla",
 	"killLastBoss": "La salida, veo la salida, es mi momento de escapar de aqui."
 
-  },
-  "zh": {
-    "welcome": "欢迎！",
-    "readyToPlay": "你准备好玩吗",
-    "greatJob": "做得好！",
-    "pressContinue": "按“下一步”按钮继续。",
-    "onePlusOne": "一+一=二"
-  },
-  "jp": {
-    "welcome": "ようこそ!",
-    "readyToPlay": "あなたは遊ぶ準備ができていますか？",
-    "greatJob": "よくやった！",
-    "pressContinue": "続行するには '次へ'ボタンを押してください。",
-    "onePlusOne": "1 + 1 = 2"
-  },
-  "ru": {
-    "welcome": "Добро пожаловать!",
-    "readyToPlay": "Вы готовы играть?",
-    "greatJob": "Отличная работа!",
-    "pressContinue": "Нажмите следующую кнопку, чтобы продолжить.",
-    "onePlusOne": "один + один"
-  }
-}
+  }}
