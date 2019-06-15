@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1890495635384212117, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3124858787908962289, guid: b6916d938262fca48a9c60e1bdf4101e,
         type: 3}
       propertyPath: m_ApplyRootMotion
@@ -155,6 +160,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: bf7b83d902a1b0342822605f68f193a7,
         type: 2}
+    - target: {fileID: 5432659031568625150, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432659031568625150, guid: b6916d938262fca48a9c60e1bdf4101e,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7921042896030092054, guid: b6916d938262fca48a9c60e1bdf4101e,
         type: 3}
       propertyPath: readyEffect
@@ -191,21 +206,6 @@ PrefabInstance:
         type: 3}
       propertyPath: returnSpeed
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5432659031568625150, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: damage
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5432659031568625150, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1890495635384212117, guid: b6916d938262fca48a9c60e1bdf4101e,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6916d938262fca48a9c60e1bdf4101e, type: 3}
