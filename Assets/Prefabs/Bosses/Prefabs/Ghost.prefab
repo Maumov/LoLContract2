@@ -144,6 +144,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4763625596079254977, guid: a0e9d77eaae0cb045a26e6bf11780e26,
+        type: 3}
+      propertyPath: LandFX.positionOffset.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763625596079254977, guid: a0e9d77eaae0cb045a26e6bf11780e26,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 6020075752641663898, guid: a0e9d77eaae0cb045a26e6bf11780e26,
         type: 3}
       propertyPath: target
@@ -164,26 +174,6 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 4763625596079254977, guid: a0e9d77eaae0cb045a26e6bf11780e26,
-        type: 3}
-      propertyPath: LandFX.positionOffset.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4763625596079254977, guid: a0e9d77eaae0cb045a26e6bf11780e26,
-        type: 3}
-      propertyPath: LandFX
-      value: 
-      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    - target: {fileID: 2099843536513683199, guid: a0e9d77eaae0cb045a26e6bf11780e26,
-        type: 3}
-      propertyPath: damage
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2099843536513683199, guid: a0e9d77eaae0cb045a26e6bf11780e26,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 886376865156776350, guid: a0e9d77eaae0cb045a26e6bf11780e26,
         type: 3}
       propertyPath: m_Controller
@@ -195,10 +185,20 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2099843536513683199, guid: a0e9d77eaae0cb045a26e6bf11780e26,
+        type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099843536513683199, guid: a0e9d77eaae0cb045a26e6bf11780e26,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2454606785480224454, guid: a0e9d77eaae0cb045a26e6bf11780e26,
         type: 3}
       propertyPath: maxHitPoints
-      value: 120
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0e9d77eaae0cb045a26e6bf11780e26, type: 3}

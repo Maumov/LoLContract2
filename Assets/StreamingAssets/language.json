@@ -7,7 +7,8 @@
 	"door": 200,
 	"intro_1": 200,
 	"intro_2": 200, 
-        "intro_3": 200,
+    "intro_3": 200,
+	"intro_4": 200,
 	"firstRevive": 200,
 	"killBoss6": 200,
 	"killBoss12": 200,
@@ -19,16 +20,17 @@
 
 	"loading": "Loading...",
 	"play": "Play",
-	"end": "Finally free, thank you for helping me getting out of the castle!",
+	"end": "Finally free, thank you so much for playing!",
 	"door": "Door Opened",
 
 	"intro_1": "Locked up in this place for so many years...",
-        "intro_2": " Finally I can get out of this place, I just have to defeat the 12 guardians and I will be free.",
-	"intro_3": "Every door will take me to a guardian that I have to defeat.",
-	"firstRevive": "Destiny wants me alive", "intro_3": "",
+    "intro_2": "Finally I can get out of this place, I just have to defeat the 12 guardians and I will be free.",
+	"intro_3": "I have to move with the keyboard to the doors and press 'Space' to open it.",
+	"intro_4": "That way I will defeat the guardian and get out of this castle.",
+	"firstRevive": "Destiny wants me alive",
 
-	"killBoss6": "I have defeated half of the guardians, soon I will escape.",
-	"killBoss12": "I have defeated all the guardians, I must enter the final door.",
+	"killBoss6": "I have cleared half of the doors, soon I will escape.",
+	"killBoss12": "I have cleared all of the doors, I must enter the final door.",
 	"enterLastBoss": "I thought this door was the way out, but it looks like there is a final guardian waiting for me, this will be a really hard fight.",
 	"killLastBoss": "The way out! I can see it, it's my chance to get out of here."
 

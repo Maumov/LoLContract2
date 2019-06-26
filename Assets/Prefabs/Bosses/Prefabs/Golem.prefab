@@ -177,21 +177,6 @@ PrefabInstance:
       propertyPath: LandFX
       value: 
       objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: target
@@ -211,6 +196,21 @@ PrefabInstance:
         type: 3}
       propertyPath: returnSpeed
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b33102456829844b80f356a31745bb, type: 3}

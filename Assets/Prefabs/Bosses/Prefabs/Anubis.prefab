@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 3102932192968088678, guid: c5216eb93a5eed64089c3cb99f3e1336,
         type: 3}
       propertyPath: maxHitPoints
-      value: 120
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 580659302008536352, guid: c5216eb93a5eed64089c3cb99f3e1336,
         type: 3}
