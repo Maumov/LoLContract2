@@ -27,7 +27,7 @@ public class Combat : MonoBehaviour
         stats = GetComponent<Stats>();
         stats.OnDamageReceived += DamageReceived;
         questionHandler = FindObjectOfType<QuestionHandler>();
-        nextAttack = Time.time;
+        nextAttack = Time.time + timeBetweenAttacks;
         
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
