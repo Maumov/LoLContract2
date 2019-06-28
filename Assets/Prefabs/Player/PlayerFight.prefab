@@ -1695,7 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  damage: 20
+  damage: 15
   timeBetweenAttacks: 0
 --- !u!114 &374085855845807103
 MonoBehaviour:

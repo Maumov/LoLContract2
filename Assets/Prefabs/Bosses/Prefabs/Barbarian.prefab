@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 8714154063218527531, guid: dd895edc6038d044c972f74c881d87a9,
         type: 3}
       propertyPath: maxHitPoints
-      value: 135
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd895edc6038d044c972f74c881d87a9, type: 3}

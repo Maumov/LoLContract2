@@ -164,11 +164,6 @@ PrefabInstance:
       propertyPath: returnSpeed
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 8656484578354495361, guid: fb8b68234a83c7948bcdabe4f4f4e73b,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 140
-      objectReference: {fileID: 0}
     - target: {fileID: 7978847695914727620, guid: fb8b68234a83c7948bcdabe4f4f4e73b,
         type: 3}
       propertyPath: getHitEffect
@@ -211,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656484578354495361, guid: fb8b68234a83c7948bcdabe4f4f4e73b,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb8b68234a83c7948bcdabe4f4f4e73b, type: 3}

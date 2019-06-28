@@ -129,11 +129,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8332355591109928955, guid: 2defc119d6864e543aafe18b98f19472,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 160
-      objectReference: {fileID: 0}
     - target: {fileID: 4041441782623336117, guid: 2defc119d6864e543aafe18b98f19472,
         type: 3}
       propertyPath: readyEffect
@@ -156,6 +151,21 @@ PrefabInstance:
       propertyPath: LandFX
       value: 
       objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    - target: {fileID: 8332355591109928955, guid: 2defc119d6864e543aafe18b98f19472,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026308115282958489, guid: 2defc119d6864e543aafe18b98f19472,
+        type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026308115282958489, guid: 2defc119d6864e543aafe18b98f19472,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4345477847702684535, guid: 2defc119d6864e543aafe18b98f19472,
         type: 3}
       propertyPath: target
@@ -170,16 +180,6 @@ PrefabInstance:
         type: 3}
       propertyPath: returnDuration
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026308115282958489, guid: 2defc119d6864e543aafe18b98f19472,
-        type: 3}
-      propertyPath: damage
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026308115282958489, guid: 2defc119d6864e543aafe18b98f19472,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2defc119d6864e543aafe18b98f19472, type: 3}

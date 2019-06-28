@@ -177,11 +177,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 13db9ba64cadcb84d802cfe11e1622bf,
         type: 2}
-    - target: {fileID: 8096114488468898412, guid: 37df75166be935043a6803560e713c0e,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 8784570494908233121, guid: 37df75166be935043a6803560e713c0e,
         type: 3}
       propertyPath: target
@@ -211,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096114488468898412, guid: 37df75166be935043a6803560e713c0e,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37df75166be935043a6803560e713c0e, type: 3}
