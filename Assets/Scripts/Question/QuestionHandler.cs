@@ -55,6 +55,31 @@ public class QuestionHandler : MonoBehaviour
 
     }
 
+    public Answer MCD(Answer a) {
+        Answer simplified = new Answer();
+        simplified.answerType = a.answerType;
+        simplified.numerator = a.numerator;
+        simplified.denominator = a.denominator;
+        int divisor = 0;
+        int maxValue = a.numerator < a.denominator ? a.numerator : a.denominator;
+        for(int i = 1; i < maxValue; i++) {
+            if((a.numerator % i == 0) && (a.denominator % i == 0)) {
+                divisor = i;
+            }
+        }
+        simplified.numerator /= divisor;
+        simplified.denominator /= divisor;
+
+        return simplified;
+    }
+
+    bool CompareFraction(Answer a, Answer b) {
+        if((MCD(a).numerator == MCD(b).numerator) && (MCD(a).denominator == MCD(b).denominator) {
+            return true;
+        }
+        return false;
+    }
+
     public void CheckAnswer(Answer respuesta) {
 
         bool sw = false;
@@ -71,7 +96,8 @@ public class QuestionHandler : MonoBehaviour
             }
             break;
             case AnswerType.Fraction:
-            if((question.answer.numerator == respuesta.numerator) && (question.answer.denominator == respuesta.denominator)) {
+            //if((question.answer.numerator == respuesta.numerator) && (question.answer.denominator == respuesta.denominator)) {
+            if(CompareFraction(question.answer, respuesta)) {
                 sw = true;
             }
             break;
