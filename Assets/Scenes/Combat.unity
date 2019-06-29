@@ -17242,12 +17242,12 @@ PrefabInstance:
     - target: {fileID: 3731378338822427992, guid: 2465f817c5357b54bb7859ab841c0201,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3731378338822427992, guid: 2465f817c5357b54bb7859ab841c0201,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7177718486935733017, guid: 2465f817c5357b54bb7859ab841c0201,
         type: 3}
