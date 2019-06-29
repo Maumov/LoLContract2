@@ -9,6 +9,11 @@
 	"intro_2": 200, 
     "intro_3": 200,
 	"intro_4": 200,
+	"tutorial1_1": 200,
+	"tutorial1_2": 200,
+	"tutorial3_1": 200,
+	"tutorial4_1": 200,
+	"tutorial4_2": 200,
 	"firstRevive": 200,
 	"killBoss6": 200,
 	"killBoss12": 200,
@@ -27,6 +32,15 @@
     "intro_2": "Finally I can get out of this place, I just have to defeat the 12 guardians and I will be free.",
 	"intro_3": "I have to move with the keyboard to the doors and press 'Space' to open them.",
 	"intro_4": "That way I will defeat the guardian and get out of this castle.",
+
+	"tutorial1_1": "Since there are 2 portions of 1/2 in 1 unit then there must be 3 times 2 portions in 3 units.",
+	"tutorial1_2": "So 3 ÷ 1/2 = 3 x 2 = 6",
+
+	"tutorial3_1": "Since 3 ÷ 1/2 = 6, then 6 times 1/2 must be equal to 3",
+
+	"tutorial4_1": "Since I am dividing a whole number number by a fraction (4 ÷ 2/3). I can turn the whole number into a fraction (4/1)",
+	"tutorial4_2": "Now that I have a division of fractions. I can solve it by doing a cross multiplication.",
+
 	"firstRevive": "Destiny wants me alive",
 
 	"killBoss6": "I have cleared half of the doors, soon I will escape.",

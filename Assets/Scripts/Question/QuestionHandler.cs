@@ -74,7 +74,7 @@ public class QuestionHandler : MonoBehaviour
     }
 
     bool CompareFraction(Answer a, Answer b) {
-        if((MCD(a).numerator == MCD(b).numerator) && (MCD(a).denominator == MCD(b).denominator) {
+        if((MCD(a).numerator == MCD(b).numerator) && (MCD(a).denominator == MCD(b).denominator)) {
             return true;
         }
         return false;
