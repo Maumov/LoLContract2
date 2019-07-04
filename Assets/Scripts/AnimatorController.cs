@@ -82,6 +82,27 @@ public class AnimatorController : MonoBehaviour
         combat.IntroReady();
     }
 
+    public IEnumerator Heal() {
+
+        //HEAL !
+        combat.StartAttack();
+        yield return new WaitForSeconds(0.8f);
+        animator.SetTrigger("Win");
+        yield return new WaitForSeconds(0.8f);
+        stats.Heal();
+        yield return new WaitForSeconds(0.6f);
+        combat.ReturnToPosition();
+        yield return null;
+    }
+
+    public IEnumerator Defend() {
+
+        //DEFEND !
+        combat.ReturnToPosition();
+        yield return null;
+    }
+
+
     public IEnumerator Attack(){
 
         animator.SetTrigger("IniatiateCombat");

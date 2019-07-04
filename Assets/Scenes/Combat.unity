@@ -31793,6 +31793,36 @@ PrefabInstance:
       propertyPath: answerHandler
       value: 
       objectReference: {fileID: 87349236}
+    - target: {fileID: 4339038846016050520, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339038846016050520, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418741011183967971, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418741011183967971, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Curarse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352182408789283609, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352182408789283609, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Escudo
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4438786079352280439, guid: 1d5331128dbaa3048a0855e2be65ebeb, type: 3}
     - {fileID: 4520897466579161505, guid: 1d5331128dbaa3048a0855e2be65ebeb, type: 3}

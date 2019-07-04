@@ -38,6 +38,15 @@ public class Stats : MonoBehaviour
         } 
     }
 
+    public void Heal() {
+        currentHitPoints += 10f;
+        currentHitPoints = Mathf.Clamp(currentHitPoints, -10f, maxHitPoints);
+
+        if(OnHpChange != null) {
+            OnHpChange();
+        }
+    }
+
     public void Dead() {
 
         if(OnDead != null) {

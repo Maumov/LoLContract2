@@ -24,6 +24,8 @@ public class Combat : MonoBehaviour
     float nextAttack;
     TimerViewer timerViewer;
 
+    string actionToDo;
+
     private void Start(){
         stats = GetComponent<Stats>();
         stats.OnDamageReceived += DamageReceived;
@@ -48,7 +50,19 @@ public class Combat : MonoBehaviour
         if(!isAttacking) {
             isAttacking = true;
             canAttack = false;
-            StartCoroutine(animator.Attack());
+            if(IsPlayer()) {
+                if(actionToDo == "Attack") {
+                    StartCoroutine(animator.Attack());
+                }
+                if(actionToDo == "Curarse") {
+                    StartCoroutine(animator.Heal());
+                }
+                if(actionToDo == "Escudo") {
+                    StartCoroutine(animator.Defend());
+                }
+            } else {
+                StartCoroutine(animator.Attack());
+            }
         }
     }
 
@@ -154,7 +168,8 @@ public class Combat : MonoBehaviour
         yield return null;
     }
 
-    public void Attack() {
+    public void Attack(string accion) {
+        actionToDo = accion;
         if(stats.isDead()) {
             stats.Revive();
         } else {
