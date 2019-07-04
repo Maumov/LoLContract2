@@ -22,6 +22,7 @@ public class Combat : MonoBehaviour
     [Header("Boss Combat Values")]
     public float timeBetweenAttacks;
     float nextAttack;
+    TimerViewer timerViewer;
 
     private void Start(){
         stats = GetComponent<Stats>();
@@ -33,9 +34,8 @@ public class Combat : MonoBehaviour
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
         }else{
-
+            timerViewer = FindObjectOfType<TimerViewer>();
             StartCoroutine(BossCombat());
-    
         }
     }
 
@@ -53,7 +53,7 @@ public class Combat : MonoBehaviour
     }
 
     void DamageReceived() {
-        nextAttack += timeBetweenAttacks;
+        nextAttack = Time.time + timeBetweenAttacks;
     }
 
     // Delegates triggers
@@ -124,8 +124,10 @@ public class Combat : MonoBehaviour
 
 
     IEnumerator BossCombat() {
+
         Debug.Log("Boss Combat start");
-        yield return new WaitForSeconds(4f);
+        //yield return new WaitForSeconds(4f);
+
         while(!stats.isDead()) {
 
             if(target != null) {
@@ -134,11 +136,20 @@ public class Combat : MonoBehaviour
                     yield return null;
                 }
             }
+
+            if(TutorialViewer.isShowing) {
+                nextAttack += Time.deltaTime;
+            } else {
+                timerViewer.UpdateValue((nextAttack - Time.time) / timeBetweenAttacks);
+            }
+
             if(nextAttack < Time.time) {
                 yield return StartCoroutine(WaitAttackTurn());
             }
             yield return null;
+
         }
+
         Debug.Log("Boss Combat end");
         yield return null;
     }
@@ -162,4 +173,5 @@ public class Combat : MonoBehaviour
     public void GetDamage(float value) {
         stats.GetDamage(value);
     }
+
 }

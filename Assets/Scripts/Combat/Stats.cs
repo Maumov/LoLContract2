@@ -10,7 +10,7 @@ public class Stats : MonoBehaviour
     public delegate void statsDelegate();
     public event statsDelegate OnDead, OnDamageReceived, OnRevive, OnHpChange;
 
-    private void Start() {
+    private void Awake() {
         currentHitPoints = maxHitPoints;
     }
 

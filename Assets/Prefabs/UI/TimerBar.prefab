@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 5082577409114446707}
   - component: {fileID: 5082577409114446704}
   - component: {fileID: 5082577409114446705}
+  - component: {fileID: 7801918291077936539}
   m_Layer: 5
   m_Name: TimerBar
   m_TagString: Untagged
@@ -409,6 +410,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7801918291077936539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082577409114446711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af601d7ef2ed4ea458c07aa12d3d40c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2798053365029951465}
 --- !u!1 &5082577410064706208
 GameObject:
   m_ObjectHideFlags: 0
