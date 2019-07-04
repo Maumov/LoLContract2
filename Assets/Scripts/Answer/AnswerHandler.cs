@@ -23,9 +23,9 @@ public class AnswerHandler : MonoBehaviour
     }
 
     // Llamada por el boton
-    public void CheckAnswer( Answer answer)
+    public void CheckAnswer( Answer answer, string accion)
     {
-        questionHandler.CheckAnswer(answer);
+        questionHandler.CheckAnswer(answer, accion);
     }
     
 }

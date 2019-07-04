@@ -32,7 +32,7 @@ public class AnswerViewer : MonoBehaviour {
         incognita2[(int)answer.answerType].text = "";
     }
 
-    public void ButtonPressed() {
+    public void ButtonPressed(string botonPresionado) {
         Answer a = new Answer();
         if(incognita1[(int)answer.answerType].text != "") {
             a.numerator = int.Parse(incognita1[(int)answer.answerType].text);
@@ -40,7 +40,7 @@ public class AnswerViewer : MonoBehaviour {
         if(incognita2[(int)answer.answerType].text != "") {
             a.denominator = int.Parse(incognita2[(int)answer.answerType].text);
         }
-        answerHandler.CheckAnswer(a);
+        answerHandler.CheckAnswer(a, botonPresionado);
     }
 
     public void Hide() {

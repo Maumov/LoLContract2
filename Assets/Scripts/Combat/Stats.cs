@@ -10,7 +10,7 @@ public class Stats : MonoBehaviour
     public delegate void statsDelegate();
     public event statsDelegate OnDead, OnDamageReceived, OnRevive, OnHpChange;
 
-    private void Start() {
+    private void Awake() {
         currentHitPoints = maxHitPoints;
     }
 
@@ -36,6 +36,15 @@ public class Stats : MonoBehaviour
         if(currentHitPoints <= 0f) {
             Dead();
         } 
+    }
+
+    public void Heal() {
+        currentHitPoints += 10f;
+        currentHitPoints = Mathf.Clamp(currentHitPoints, -10f, maxHitPoints);
+
+        if(OnHpChange != null) {
+            OnHpChange();
+        }
     }
 
     public void Dead() {

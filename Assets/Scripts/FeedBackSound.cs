@@ -16,9 +16,9 @@ public class FeedBackSound : MonoBehaviour
         handler.OnWrong += PlayWrongSound;
     }
 
-    void PlayCorrectSound()
+    void PlayCorrectSound(string accion)
     {
-        incorrectSound.Play();
+        correctSound.Play();
     }
 
     void PlayWrongSound()

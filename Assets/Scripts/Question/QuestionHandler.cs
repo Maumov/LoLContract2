@@ -5,7 +5,9 @@ using UnityEngine;
 public class QuestionHandler : MonoBehaviour
 {
     public delegate void delegateQuestion();
-    public event delegateQuestion OnAnswerReceived, OnCorrect, OnWrong, OnQuestionSet;
+    public delegate void delegateQuestion2(string val);
+    public event delegateQuestion2 OnCorrect;
+    public event delegateQuestion OnAnswerReceived, OnWrong, OnQuestionSet;
 
     public InfoTutorial infoTutorial;
     public Question question;
@@ -80,7 +82,7 @@ public class QuestionHandler : MonoBehaviour
         return false;
     }
 
-    public void CheckAnswer(Answer respuesta) {
+    public void CheckAnswer(Answer respuesta, string accion) {
 
         bool sw = false;
 
@@ -111,7 +113,7 @@ public class QuestionHandler : MonoBehaviour
         if (sw) {
             if (OnCorrect != null)
             {
-                OnCorrect();
+                OnCorrect(accion);
             } 
             SetQuestion(GameManager.GetNewQuestion());
         } else {

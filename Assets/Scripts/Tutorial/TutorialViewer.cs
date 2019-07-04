@@ -14,6 +14,8 @@ public class TutorialViewer : MonoBehaviour
 
     bool canAttack = true;
 
+    public static bool isShowing;
+
     private void Start() {
         Invoke("TutorialButtonPressed",1f);
     }
@@ -21,6 +23,7 @@ public class TutorialViewer : MonoBehaviour
     public void TutorialButtonPressed() {
         if(tutorials.activeSelf) {
             HideTutorial();
+            
         } else {
             tutorials.SetActive(true);
             exercises[questionHandler.question.exerciseNumber].tutorial.SetActive(true);
@@ -38,6 +41,7 @@ public class TutorialViewer : MonoBehaviour
     }
 
     void ShowStep() {
+        isShowing = true;
         foreach(GameObject g in exercises[questionHandler.question.exerciseNumber].Steps) {
             g.SetActive(false);
         }
@@ -65,6 +69,7 @@ public class TutorialViewer : MonoBehaviour
         }
         canAttack = true;
         Combat.canAttack = true;
+        isShowing = false;
     }
 
 }

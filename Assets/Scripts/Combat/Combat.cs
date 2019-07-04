@@ -22,6 +22,9 @@ public class Combat : MonoBehaviour
     [Header("Boss Combat Values")]
     public float timeBetweenAttacks;
     float nextAttack;
+    TimerViewer timerViewer;
+
+    string actionToDo;
 
     private void Start(){
         stats = GetComponent<Stats>();
@@ -33,9 +36,8 @@ public class Combat : MonoBehaviour
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
         }else{
-
+            timerViewer = FindObjectOfType<TimerViewer>();
             StartCoroutine(BossCombat());
-    
         }
     }
 
@@ -48,12 +50,24 @@ public class Combat : MonoBehaviour
         if(!isAttacking) {
             isAttacking = true;
             canAttack = false;
-            StartCoroutine(animator.Attack());
+            if(IsPlayer()) {
+                if(actionToDo == "Attack") {
+                    StartCoroutine(animator.Attack());
+                }
+                if(actionToDo == "Curarse") {
+                    StartCoroutine(animator.Heal());
+                }
+                if(actionToDo == "Escudo") {
+                    StartCoroutine(animator.Defend());
+                }
+            } else {
+                StartCoroutine(animator.Attack());
+            }
         }
     }
 
     void DamageReceived() {
-        nextAttack += timeBetweenAttacks;
+        nextAttack = Time.time + timeBetweenAttacks;
     }
 
     // Delegates triggers
@@ -124,8 +138,10 @@ public class Combat : MonoBehaviour
 
 
     IEnumerator BossCombat() {
+
         Debug.Log("Boss Combat start");
-        yield return new WaitForSeconds(4f);
+        //yield return new WaitForSeconds(4f);
+
         while(!stats.isDead()) {
 
             if(target != null) {
@@ -134,16 +150,26 @@ public class Combat : MonoBehaviour
                     yield return null;
                 }
             }
+
+            if(TutorialViewer.isShowing) {
+                nextAttack += Time.deltaTime;
+            } else {
+                timerViewer.UpdateValue((nextAttack - Time.time) / timeBetweenAttacks);
+            }
+
             if(nextAttack < Time.time) {
                 yield return StartCoroutine(WaitAttackTurn());
             }
             yield return null;
+
         }
+
         Debug.Log("Boss Combat end");
         yield return null;
     }
 
-    public void Attack() {
+    public void Attack(string accion) {
+        actionToDo = accion;
         if(stats.isDead()) {
             stats.Revive();
         } else {
@@ -162,4 +188,5 @@ public class Combat : MonoBehaviour
     public void GetDamage(float value) {
         stats.GetDamage(value);
     }
+
 }

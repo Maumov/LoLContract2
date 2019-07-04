@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17259,6 +17259,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2798053365029951465, guid: 2465f817c5357b54bb7859ab841c0201,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2465f817c5357b54bb7859ab841c0201, type: 3}
 --- !u!1001 &1102819694
@@ -31788,6 +31793,36 @@ PrefabInstance:
       propertyPath: answerHandler
       value: 
       objectReference: {fileID: 87349236}
+    - target: {fileID: 4339038846016050520, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339038846016050520, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418741011183967971, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418741011183967971, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Curarse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352182408789283609, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352182408789283609, guid: 1d5331128dbaa3048a0855e2be65ebeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Escudo
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4438786079352280439, guid: 1d5331128dbaa3048a0855e2be65ebeb, type: 3}
     - {fileID: 4520897466579161505, guid: 1d5331128dbaa3048a0855e2be65ebeb, type: 3}
