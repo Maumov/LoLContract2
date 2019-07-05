@@ -23,12 +23,14 @@ public class Door : MonoBehaviour
 
     public List<GameObject> DoorsStatusOn, DoorsStatusOff;
     bool statusIsOn;
+
+    public GameObject spaceCanvas;
     private void Start() {
         //GameManager.ResetDoorsValues();
         audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
-        
+        spaceCanvas = GameObject.Find("SpaceCanvas");
         Invoke("LateStart", 1f);
     }
 
@@ -63,6 +65,7 @@ public class Door : MonoBehaviour
                 }
             }
         }
+        spaceCanvas.SetActive(false);
     }
 
     private void Update() {
@@ -97,14 +100,17 @@ public class Door : MonoBehaviour
             if(OnEnterInteraction != null) {
                 OnEnterInteraction();
             }
+            spaceCanvas.SetActive(true);
             interacting = true;
         }
     }
     private void OnTriggerExit(Collider other) {
+        
         if(other.gameObject.tag.Equals("Player")) {
             if(OnExitInteraction != null) {
                 OnExitInteraction();
             }
+            spaceCanvas.SetActive(false);
             interacting = false;
         }
     }
