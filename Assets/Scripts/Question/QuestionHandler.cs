@@ -275,7 +275,14 @@ public class Question {
             break;
 
             case 17:
-
+            if((a * d) < (c * b) ) {
+                int temp1 = a;
+                int temp2 = d;
+                a = c;
+                d = b;
+                c = temp1;
+                b = temp2;
+            }
             answer.numerator = (a * d) - (c * b);
             answer.denominator = b * d;
             answer.answerType = AnswerType.Fraction;
