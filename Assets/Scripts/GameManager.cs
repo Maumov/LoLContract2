@@ -179,7 +179,7 @@ public class GameManager
 [System.Serializable]
 public class DoorValues {
     public int puertaId;
-    public int id;
+    public int id = -2;
     public GameObject boss;
     public List<int> casosAPreguntar;
 }

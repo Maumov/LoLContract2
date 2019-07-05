@@ -39,7 +39,7 @@ public class Stats : MonoBehaviour
     }
 
     public void Heal() {
-        currentHitPoints += 10f;
+        currentHitPoints += (maxHitPoints * 0.4f);
         currentHitPoints = Mathf.Clamp(currentHitPoints, -10f, maxHitPoints);
 
         if(OnHpChange != null) {

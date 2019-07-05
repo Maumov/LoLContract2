@@ -110,15 +110,23 @@ public class Door : MonoBehaviour
     }
 
     void SetDoorStatus() {
-
         if(doorValues != null) {
-            if(DoorStatusOn != null) {
-                DoorStatusOn.SetActive(true);
+            if(GameManager.IsBossKilled(doorValues.id)) {
+                if(DoorStatusOn != null) {
+                    DoorStatusOn.SetActive(true);
+                }
+                if(DoorStatusOff != null) {
+                    DoorStatusOff.SetActive(false);
+                }
+                statusIsOn = true;
+            } else {
+                if(DoorStatusOn != null) {
+                    DoorStatusOn.SetActive(false);
+                }
+                if(DoorStatusOff != null) {
+                    DoorStatusOff.SetActive(true);
+                }
             }
-            if(DoorStatusOff != null) {
-                DoorStatusOff.SetActive(false);
-            }
-            statusIsOn = true;
         } else {
             if(DoorStatusOn != null) {
                 DoorStatusOn.SetActive(false);
@@ -127,6 +135,7 @@ public class Door : MonoBehaviour
                 DoorStatusOff.SetActive(true);
             }
         }
+        
     }
 
 }

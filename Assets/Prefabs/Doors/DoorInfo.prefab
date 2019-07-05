@@ -44,51 +44,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doors:
-  - puertaId: 
+  - puertaId: -1
     id: 0
     boss: {fileID: 2450176934364439906, guid: 0ebe0f6743bd75040a721ee86cecfb6d, type: 3}
     casosAPreguntar: 00000000
-  - puertaId: 
+  - puertaId: -1
     id: 1
     boss: {fileID: 290732083568266481, guid: 9d2e35f198df586469541b201a646e9d, type: 3}
     casosAPreguntar: 01000000
-  - puertaId: 
+  - puertaId: -1
     id: 2
     boss: {fileID: 6525254619129564816, guid: 3b2e18a1748e3674888b2d3539130b60, type: 3}
     casosAPreguntar: 0200000003000000
-  - puertaId: 
+  - puertaId: -1
     id: 3
     boss: {fileID: 131741052505100425, guid: 992e329bbc035cf4bbebed93507771e7, type: 3}
     casosAPreguntar: 04000000
-  - puertaId: 
+  - puertaId: -1
     id: 4
     boss: {fileID: 2760015410570002239, guid: 9f197511256678b4cb4d013e038c44ae, type: 3}
     casosAPreguntar: 05000000
-  - puertaId: 
+  - puertaId: -1
     id: 5
     boss: {fileID: 6756571303000333860, guid: 9a94456a92eafcd4fb18a9ca473ded96, type: 3}
     casosAPreguntar: 06000000
-  - puertaId: 
+  - puertaId: -1
     id: 6
     boss: {fileID: 7517590833123729668, guid: 6ba21895e9d14c840a6ee90d58400b9a, type: 3}
     casosAPreguntar: 07000000
-  - puertaId: 
+  - puertaId: -1
     id: 7
     boss: {fileID: 8410682514956532894, guid: 161c9be3181858844875edc5472604fd, type: 3}
     casosAPreguntar: 08000000090000000a0000000b000000
-  - puertaId: 
+  - puertaId: -1
     id: 8
     boss: {fileID: 4798684855006713027, guid: e1d21d106d076504c9b36701f18118a2, type: 3}
     casosAPreguntar: 0c0000000d0000000e0000000f000000
-  - puertaId: 
+  - puertaId: -1
     id: 9
     boss: {fileID: 7300028305041372710, guid: 1eb24b221fdf0fc4eb0af0488ca40f58, type: 3}
     casosAPreguntar: 1000000011000000
-  - puertaId: 
+  - puertaId: 0
     id: 10
     boss: {fileID: 7853405646655214918, guid: 1e73f2fcc6a4dd743ba039bed3343678, type: 3}
     casosAPreguntar: 12000000
-  - puertaId: 
+  - puertaId: -1
     id: 11
     boss: {fileID: 194140800146496287, guid: 1f7fe1eb745e4ad4294af6b2e6e54cce, type: 3}
     casosAPreguntar: 13000000

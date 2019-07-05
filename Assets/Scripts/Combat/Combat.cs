@@ -18,12 +18,20 @@ public class Combat : MonoBehaviour
     Combat target;
     Stats stats;
 
+    
+    [Header("Boss Combat Values Attack 1")]
     public int damage;
-    [Header("Boss Combat Values")]
     public float timeBetweenAttacks;
     float nextAttack;
-    TimerViewer timerViewer;
+    public TimerViewer timerViewer;
+    [Header("Boss Combat Values Attack 2")]
+    public int damage2;
+    public float timeBetweenAttacks2;
+    float nextAttack2;
+    public TimerViewer timerViewer2;
 
+    bool isAttack1;
+    bool isCurrentAttack1;
     string actionToDo;
 
     private void Start(){
@@ -31,12 +39,12 @@ public class Combat : MonoBehaviour
         stats.OnDamageReceived += DamageReceived;
         questionHandler = FindObjectOfType<QuestionHandler>();
         nextAttack = Time.time + timeBetweenAttacks;
-        
+        nextAttack2 = Time.time + timeBetweenAttacks2;
         animator = GetComponent<AnimatorController>();
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
         }else{
-            timerViewer = FindObjectOfType<TimerViewer>();
+            //timerViewer = FindObjectOfType<TimerViewer>();
             StartCoroutine(BossCombat());
         }
     }
@@ -130,7 +138,11 @@ public class Combat : MonoBehaviour
                 }
             }
         }
-        target.GetDamage(damage);
+        if(isCurrentAttack1) {
+            target.GetDamage(damage);
+        } else {
+            target.GetDamage(damage2);
+        }
     }
 
     #endregion
@@ -147,17 +159,25 @@ public class Combat : MonoBehaviour
             if(target != null) {
                 if(target.GetComponent<Stats>().isDead()) {
                     nextAttack = Time.time + timeBetweenAttacks;
+                    nextAttack2 = Time.time + timeBetweenAttacks2;
                     yield return null;
                 }
             }
 
             if(TutorialViewer.isShowing) {
                 nextAttack += Time.deltaTime;
+                nextAttack2 += Time.deltaTime;
             } else {
                 timerViewer.UpdateValue((nextAttack - Time.time) / timeBetweenAttacks);
+                timerViewer2.UpdateValue((nextAttack2 - Time.time) / timeBetweenAttacks2);
             }
 
             if(nextAttack < Time.time) {
+                isAttack1 = true;
+                yield return StartCoroutine(WaitAttackTurn());
+            }
+            if(nextAttack2 < Time.time) {
+                isAttack1 = false;
                 yield return StartCoroutine(WaitAttackTurn());
             }
             yield return null;
@@ -173,6 +193,7 @@ public class Combat : MonoBehaviour
         if(stats.isDead()) {
             stats.Revive();
         } else {
+            isCurrentAttack1 = true;
             StartCoroutine(WaitAttackTurn());
         }
     }
@@ -182,7 +203,14 @@ public class Combat : MonoBehaviour
             yield return null;
         }
         InitAttack();
-        nextAttack = Time.time + timeBetweenAttacks;
+        if(isAttack1) {
+            isCurrentAttack1 = true;
+            nextAttack = Time.time + timeBetweenAttacks;
+        } else {
+            isCurrentAttack1 = false;
+            nextAttack2 = Time.time + timeBetweenAttacks2;
+        }
+        
     }
 
     public void GetDamage(float value) {

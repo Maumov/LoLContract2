@@ -58,13 +58,13 @@ public class LOLAPI : MonoBehaviour
 
     // Use language to populate UI
     void HandleLanguageDefs(string json) {
-        Debug.Log(json.ToString());
+       // Debug.Log(json.ToString());
         JSONNode langDefs = JSON.Parse(json);
 
         // Example of accessing language strings
         // Debug.Log(langDefs);
         // Debug.Log(langDefs["welcome"]);
-        Debug.Log(langDefs.ToString());
+     //   Debug.Log(langDefs.ToString());
         SharedState.LanguageDefs = langDefs;
     }
 
@@ -94,7 +94,7 @@ public class LOLAPI : MonoBehaviour
             // the platform payload, which includes only a single language.
             JSONNode langDefs = JSON.Parse(langDataAsJson);
             // use the languageCode from startGame.json captured above
-            Debug.Log(langDefs[langCode].ToString());
+            //Debug.Log(langDefs[langCode].ToString());
             HandleLanguageDefs(langDefs[langCode].ToString());
         }
 
