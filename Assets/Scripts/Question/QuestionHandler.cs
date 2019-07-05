@@ -15,6 +15,9 @@ public class QuestionHandler : MonoBehaviour
     public AnswerHandler answerHandler;
     public QuestionViewer questionViewer;
     public QuestionViewer questionViewerRevive;
+
+    int errors = 0;
+
     [Header("Test")]
     public int testExerciseNumber;
 
@@ -107,7 +110,6 @@ public class QuestionHandler : MonoBehaviour
 
         if(OnAnswerReceived != null) {
             OnAnswerReceived();
-            
         }
 
         if (sw) {
@@ -120,6 +122,11 @@ public class QuestionHandler : MonoBehaviour
             if (OnWrong != null)
             {
                 OnWrong();
+                errors++;
+                if(errors >= 3) {
+                    errors = 0;
+                    FindObjectOfType<TutorialViewer>().TutorialButtonPressed();
+                }
             }
         }
     }
