@@ -15,28 +15,30 @@ public class GameManager
     public static int id;
     static List<int> bossesDone;
     static List<int> doorsOrganized;
-    //static List<DoorValues> doorsValues;
+    static List<DoorValues> doorsValues;
 
     public static void FinishGame() {
         LOLSDK.Instance.CompleteGame();
     }
 
-    //public static void ResetDoorsValues() {
-    //    doorsValues = new List<DoorValues>();
-    //}
+    public static void ResetDoorsValues() {
+    }
 
-    //public static void AddDoorsValues(DoorValues doorValues) {
-    //    doorsValues.Add(doorValues);
-    //}
+    public static void AddDoorsValues(DoorValues doorValues) {
+        if(doorsValues == null) {
+            doorsValues = new List<DoorValues>();
+        }
+        doorsValues.Add(doorValues);
+    }
 
-    //public static DoorValues GetDoorValuesById(int id) {
-    //    foreach(DoorValues dv in doorsValues) {
-    //        if(dv.id == id) {
-    //            return dv;
-    //        }
-    //    }
-    //    return null;
-    //}
+    public static DoorValues GetDoorValuesById(int id) {
+        foreach(DoorValues dv in doorsValues) {
+            if(dv.id == id) {
+                return dv;
+            }
+        }
+        return null;
+    }
 
     public static void UpdateProgress(int hp = 0) {
         hp = Mathf.Clamp(hp, 200, 1250);
@@ -164,9 +166,10 @@ public class GameManager
 
     }
 }
-//[System.Serializable]
-//public class DoorValues {
-//    public int id;
-//    public GameObject boss;
-//    public List<int> casosAPreguntar;
-//}
+[System.Serializable]
+public class DoorValues {
+    public string puertaId;
+    public int id;
+    public GameObject boss;
+    public List<int> casosAPreguntar;
+}
