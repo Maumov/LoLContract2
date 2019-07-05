@@ -28,7 +28,7 @@ public class Combat : MonoBehaviour
     public int damage2;
     public float timeBetweenAttacks2;
     float nextAttack2;
-    public TimerViewer timerViewer2;
+    //public TimerViewer timerViewer2;
 
     bool isAttack1;
     bool isCurrentAttack1;
@@ -44,7 +44,7 @@ public class Combat : MonoBehaviour
         if (isPlayer){
             questionHandler.OnCorrect += Attack;
         }else{
-            //timerViewer = FindObjectOfType<TimerViewer>();
+            timerViewer = FindObjectOfType<TimerViewer>();
             StartCoroutine(BossCombat());
         }
     }
@@ -168,8 +168,9 @@ public class Combat : MonoBehaviour
                 nextAttack += Time.deltaTime;
                 nextAttack2 += Time.deltaTime;
             } else {
-                timerViewer.UpdateValue((nextAttack - Time.time) / timeBetweenAttacks);
-                timerViewer2.UpdateValue((nextAttack2 - Time.time) / timeBetweenAttacks2);
+                float val1 = (nextAttack - Time.time) / timeBetweenAttacks;
+                float val2 = (nextAttack2 - Time.time) / timeBetweenAttacks2;
+                timerViewer.UpdateValue( val1, val2 );
             }
 
             if(nextAttack < Time.time) {

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimerViewer : MonoBehaviour
 {
 
-    public Image image;
+    public Image image, image2;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,8 @@ public class TimerViewer : MonoBehaviour
         
     }
 
-    public void UpdateValue(float value) {
+    public void UpdateValue(float value, float value2) {
         image.fillAmount = value;
+        image2.fillAmount = value2;
     }
 }
