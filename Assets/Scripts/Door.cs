@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public int id;
+    public int puertaId;
+    public DoorValues doorValues;
+    //public int id;
     public bool isLastBoss;
-    public GameObject boss;
-    public List<int> casosAPreguntar;
+    //public GameObject boss;
+    //public List<int> casosAPreguntar;
     LoadingScreen loadingScreen;
     Animator anim;
     AudioSource audio;
@@ -26,12 +28,24 @@ public class Door : MonoBehaviour
         audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
+        
+        Invoke("LateStart", 1f);
+    }
+
+    void LateStart() {
+        //DoorValues doorValues = new DoorValues();
+        //doorValues.id = id;
+        //doorValues.boss = boss;
+        //doorValues.casosAPreguntar = casosAPreguntar;
+        //GameManager.AddDoorsValues(doorValues);
+        //DoorValues doorValues = new DoorValues();
+        doorValues = GameManager.GetDoorValuesById(puertaId);
         SetDoorStatus();
         if(isLastBoss) {
             if(!GameManager.CanEnterFinalBoss()) {
                 GetComponent<SphereCollider>().enabled = false;
             }
-            for(int i = 0; i <  12; i++) {
+            for(int i = 0; i < 12; i++) {
                 if(GameManager.IsBossKilled(i)) {
                     if(DoorsStatusOn[i] != null) {
                         DoorsStatusOn[i].SetActive(true);
@@ -47,18 +61,9 @@ public class Door : MonoBehaviour
                         DoorsStatusOff[i].SetActive(true);
                     }
                 }
-            }        
+            }
         }
-        //Invoke("LateStart", 1f);
     }
-
-    //void LateStart() {
-    //    DoorValues doorValues = new DoorValues();
-    //    doorValues.id = id;
-    //    doorValues.boss = boss;
-    //    doorValues.casosAPreguntar = casosAPreguntar;
-    //    GameManager.AddDoorsValues(doorValues);
-    //}
 
     private void Update() {
         if(interacting) {
@@ -74,18 +79,12 @@ public class Door : MonoBehaviour
         audio.Play();
 
         if(!statusIsOn) {
-            Door[] doors = FindObjectsOfType<Door>();
-            foreach(Door d in doors) {
-                int nextBossId = GameManager.NextBossId();
-                if(d.id == nextBossId) {
-                    id = d.id;
-                    boss = d.boss;
-                    casosAPreguntar = d.casosAPreguntar;
-                }
-            }
+            int nextBossId = GameManager.NextBossId();
+            GameManager.SetDoorIdToValues(puertaId, nextBossId);
+            doorValues = GameManager.GetDoorValuesById(puertaId);
         }
 
-        GameManager.SetQuestions(casosAPreguntar, boss, id);
+        GameManager.SetQuestions(doorValues.casosAPreguntar, doorValues.boss, doorValues.id);
         Invoke("EnterDoor", 1f);
     }
 
@@ -112,7 +111,7 @@ public class Door : MonoBehaviour
 
     void SetDoorStatus() {
 
-        if(GameManager.IsBossKilled(id)) {
+        if(doorValues != null) {
             if(DoorStatusOn != null) {
                 DoorStatusOn.SetActive(true);
             }

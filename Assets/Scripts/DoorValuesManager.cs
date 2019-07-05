@@ -5,4 +5,8 @@ using UnityEngine;
 public class DoorValuesManager : MonoBehaviour
 {
     public List<DoorValues> doors;
+
+    private void Start() {
+        GameManager.AddDoorsValues(doors.ToArray());
+    }
 }

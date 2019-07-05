@@ -24,20 +24,29 @@ public class GameManager
     public static void ResetDoorsValues() {
     }
 
-    public static void AddDoorsValues(DoorValues doorValues) {
+    public static void AddDoorsValues(DoorValues[] doorValues) {
         if(doorsValues == null) {
             doorsValues = new List<DoorValues>();
+            doorsValues.AddRange(doorValues);
         }
-        doorsValues.Add(doorValues);
+        
     }
 
-    public static DoorValues GetDoorValuesById(int id) {
+    public static DoorValues GetDoorValuesById(int puertaId) {
         foreach(DoorValues dv in doorsValues) {
-            if(dv.id == id) {
+            if(dv.puertaId == puertaId) {
                 return dv;
             }
         }
         return null;
+    }
+
+    public static void SetDoorIdToValues(int doorId, int id) {
+        for(int i = 0; i < doorsValues.Count; i++ ) {
+            if(doorsValues[i].id == id) {
+                doorsValues[i].puertaId = doorId;
+            }
+        }
     }
 
     public static void UpdateProgress(int hp = 0) {
@@ -166,9 +175,10 @@ public class GameManager
 
     }
 }
+
 [System.Serializable]
 public class DoorValues {
-    public string puertaId;
+    public int puertaId;
     public int id;
     public GameObject boss;
     public List<int> casosAPreguntar;
