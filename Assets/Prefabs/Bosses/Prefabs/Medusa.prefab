@@ -205,7 +205,17 @@ PrefabInstance:
     - target: {fileID: 4328034372709113545, guid: 37df75166be935043a6803560e713c0e,
         type: 3}
       propertyPath: timeBetweenAttacks
-      value: 27
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328034372709113545, guid: 37df75166be935043a6803560e713c0e,
+        type: 3}
+      propertyPath: damage2
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328034372709113545, guid: 37df75166be935043a6803560e713c0e,
+        type: 3}
+      propertyPath: timeBetweenAttacks2
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8096114488468898412, guid: 37df75166be935043a6803560e713c0e,
         type: 3}
