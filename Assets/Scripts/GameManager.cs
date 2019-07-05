@@ -14,11 +14,29 @@ public class GameManager
     static int currentQuestion = 0;
     public static int id;
     static List<int> bossesDone;
+    static List<int> doorsOrganized;
+    //static List<DoorValues> doorsValues;
 
     public static void FinishGame() {
         LOLSDK.Instance.CompleteGame();
     }
 
+    //public static void ResetDoorsValues() {
+    //    doorsValues = new List<DoorValues>();
+    //}
+
+    //public static void AddDoorsValues(DoorValues doorValues) {
+    //    doorsValues.Add(doorValues);
+    //}
+
+    //public static DoorValues GetDoorValuesById(int id) {
+    //    foreach(DoorValues dv in doorsValues) {
+    //        if(dv.id == id) {
+    //            return dv;
+    //        }
+    //    }
+    //    return null;
+    //}
 
     public static void UpdateProgress(int hp = 0) {
         hp = Mathf.Clamp(hp, 200, 1250);
@@ -56,6 +74,17 @@ public class GameManager
             return true;
         }
         return false;
+    }
+
+    public static int NextBossId() {
+        int val = 0;
+        for(int i = 0; i <= 13; i++) {
+            if(!IsBossKilled(i)) {
+                val = i;
+                return i;
+            }
+        }
+        return val;
     }
 
     public static int GetNewQuestion() {
@@ -117,7 +146,6 @@ public class GameManager
         }
     }
 
-
     public static int ReturnRandomQuestion() {
         int r = Random.Range(0, casosAPreguntar.Count);
         while(posibleRandomQuestions(casosAPreguntar[r])) {
@@ -136,3 +164,9 @@ public class GameManager
 
     }
 }
+//[System.Serializable]
+//public class DoorValues {
+//    public int id;
+//    public GameObject boss;
+//    public List<int> casosAPreguntar;
+//}

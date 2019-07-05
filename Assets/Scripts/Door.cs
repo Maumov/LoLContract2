@@ -20,8 +20,9 @@ public class Door : MonoBehaviour
     bool interacting;
 
     public List<GameObject> DoorsStatusOn, DoorsStatusOff;
-
+    bool statusIsOn;
     private void Start() {
+        //GameManager.ResetDoorsValues();
         audio = GetComponent<AudioSource>();
         loadingScreen = FindObjectOfType<LoadingScreen>();
         anim = GetComponent<Animator>();
@@ -46,10 +47,18 @@ public class Door : MonoBehaviour
                         DoorsStatusOff[i].SetActive(true);
                     }
                 }
-            }
-            
+            }        
         }
+        //Invoke("LateStart", 1f);
     }
+
+    //void LateStart() {
+    //    DoorValues doorValues = new DoorValues();
+    //    doorValues.id = id;
+    //    doorValues.boss = boss;
+    //    doorValues.casosAPreguntar = casosAPreguntar;
+    //    GameManager.AddDoorsValues(doorValues);
+    //}
 
     private void Update() {
         if(interacting) {
@@ -63,6 +72,19 @@ public class Door : MonoBehaviour
         FindObjectOfType<PlayerMovement>().enabled = false;
         anim.SetTrigger("Open");
         audio.Play();
+
+        if(!statusIsOn) {
+            Door[] doors = FindObjectsOfType<Door>();
+            foreach(Door d in doors) {
+                int nextBossId = GameManager.NextBossId();
+                if(d.id == nextBossId) {
+                    id = d.id;
+                    boss = d.boss;
+                    casosAPreguntar = d.casosAPreguntar;
+                }
+            }
+        }
+
         GameManager.SetQuestions(casosAPreguntar, boss, id);
         Invoke("EnterDoor", 1f);
     }
@@ -97,7 +119,7 @@ public class Door : MonoBehaviour
             if(DoorStatusOff != null) {
                 DoorStatusOff.SetActive(false);
             }
-            
+            statusIsOn = true;
         } else {
             if(DoorStatusOn != null) {
                 DoorStatusOn.SetActive(false);
