@@ -186,39 +186,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissionDisplay
       objectReference: {fileID: 0}
-    - target: {fileID: 4339533300258335714, guid: 52a22f4960e59124283c53b3ff28f914,
+    - target: {fileID: 5864496202095438682, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_RootOrder
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
+      propertyPath: m_havePropertiesChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5864496200390385099, guid: 52a22f4960e59124283c53b3ff28f914,
@@ -271,6 +262,46 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 28
       objectReference: {fileID: 0}
+    - target: {fileID: 7756118072060214615, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339533300258335714, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864496202095438683, guid: 52a22f4960e59124283c53b3ff28f914,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5864496200411287018, guid: 52a22f4960e59124283c53b3ff28f914,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -285,27 +316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864496202289109791, guid: 52a22f4960e59124283c53b3ff28f914,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5864496202095438677, guid: 52a22f4960e59124283c53b3ff28f914, type: 3}
