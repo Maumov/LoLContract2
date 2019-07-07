@@ -138,10 +138,14 @@ public class Combat : MonoBehaviour
                 }
             }
         }
-        if(isCurrentAttack1) {
+        if(isPlayer) {
             target.GetDamage(damage);
         } else {
-            target.GetDamage(damage2);
+            if(isCurrentAttack1) {
+                target.GetDamage(damage);
+            } else {
+                target.GetDamage(damage2);
+            }
         }
     }
 
