@@ -67,7 +67,7 @@ public class QuestionHandler : MonoBehaviour
         simplified.denominator = a.denominator;
         int divisor = 0;
         int maxValue = a.numerator < a.denominator ? a.numerator : a.denominator;
-        for(int i = 1; i < maxValue; i++) {
+        for(int i = 1; i <= maxValue; i++) {
             if((a.numerator % i == 0) && (a.denominator % i == 0)) {
                 divisor = i;
             }
