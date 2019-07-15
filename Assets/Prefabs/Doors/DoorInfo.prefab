@@ -84,7 +84,7 @@ MonoBehaviour:
     id: 9
     boss: {fileID: 7300028305041372710, guid: 1eb24b221fdf0fc4eb0af0488ca40f58, type: 3}
     casosAPreguntar: 1000000011000000
-  - puertaId: 0
+  - puertaId: -1
     id: 10
     boss: {fileID: 7853405646655214918, guid: 1e73f2fcc6a4dd743ba039bed3343678, type: 3}
     casosAPreguntar: 12000000
@@ -92,3 +92,7 @@ MonoBehaviour:
     id: 11
     boss: {fileID: 194140800146496287, guid: 1f7fe1eb745e4ad4294af6b2e6e54cce, type: 3}
     casosAPreguntar: 13000000
+  - puertaId: -1
+    id: 12
+    boss: {fileID: 7770865576098506404, guid: dbfe789d02a55c1498e08e76d75cd16a, type: 3}
+    casosAPreguntar: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000

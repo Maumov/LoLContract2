@@ -130,12 +130,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9f7ea120f016247a39dc7b868d72d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  puertaId: 12
+  doorValues:
+    puertaId: 0
+    id: -2
+    boss: {fileID: 0}
+    casosAPreguntar: 
   isLastBoss: 0
-  boss: {fileID: 0}
-  casosAPreguntar: 
   DoorStatusOn: {fileID: 4318997204812624728}
   DoorStatusOff: {fileID: 5750822000773985457}
+  DoorsStatusOn: []
+  DoorsStatusOff: []
+  spaceCanvas: {fileID: 0}
 --- !u!135 &7443091408688537877
 SphereCollider:
   m_ObjectHideFlags: 0
