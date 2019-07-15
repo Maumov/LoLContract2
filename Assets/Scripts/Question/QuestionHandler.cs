@@ -95,20 +95,30 @@ public class QuestionHandler : MonoBehaviour
 
         bool sw = false;
 
+        Debug.Log("EntreCheckAnswer");
         switch(respuesta.answerType) {
             case AnswerType.Number:
-            if(question.answer.numerator == respuesta.numerator) {
-                sw = true;
-            }
+                Debug.Log("EntreNumber");
+            if (question.answer.numerator == respuesta.numerator) {
+
+                    Debug.Log("EntreNumber");
+                    sw = true;
+                }
             break;
             case AnswerType.Denominator:
+                
+                    Debug.Log("EntreDenominator");
             if(question.answer.numerator == respuesta.numerator) {
-                sw = true;
+
+                    Debug.Log("EntreDenominator");
+                    sw = true;
             }
             break;
             case AnswerType.Fraction:
+            Debug.Log("Entro Fraccion");
             //if((question.answer.numerator == respuesta.numerator) && (question.answer.denominator == respuesta.denominator)) {
             if(CompareFraction(question.answer, respuesta)) {
+                    Debug.Log("Entro al Compare");
                 sw = true;
             }
             break;

@@ -194,6 +194,8 @@ public class Combat : MonoBehaviour
 
     [ContextMenu("Atacar")]
     void TestAtacar() {
+        damage = 1000;
+        damage2 = 1000;
         Attack("Attack");
     }
 
