@@ -192,6 +192,16 @@ public class Combat : MonoBehaviour
         yield return null;
     }
 
+    [ContextMenu("Atacar")]
+    void TestAtacar() {
+        Attack("Attack");
+    }
+
+    [ContextMenu("Curarse")]
+    void TestHeal() {
+        Attack("Curarse");
+    }
+
     public void Attack(string accion) {
         actionToDo = accion;
         if(stats.isDead()) {
