@@ -39,4 +39,8 @@ public class Answer{
     public int numerator;
     public int denominator;
 
+
+    public override string ToString() {
+        return "AT: " + answerType.ToString() + ", N: " + numerator + "," + "D: " + denominator;
+    }
 }

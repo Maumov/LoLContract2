@@ -79,9 +79,15 @@ public class QuestionHandler : MonoBehaviour
     }
 
     bool CompareFraction(Answer a, Answer b) {
-        if((MCD(a).numerator == MCD(b).numerator) && (MCD(a).denominator == MCD(b).denominator)) {
+        Debug.Log("Pregunta es: A:" + a.ToString() + " , B:" + b.ToString());
+        Answer MCDA = MCD(a);
+        Answer MCDB = MCD(b);
+        if((MCDA.numerator == MCDB.numerator) && (MCDA.denominator == MCDB.denominator)) {
+
+            Debug.Log("Correcto: A:" + MCDA.ToString() + " , B:" + MCDA.ToString());
             return true;
         }
+        Debug.Log("Falso: A:" + MCDA.ToString() + " , B:" + MCDA.ToString());
         return false;
     }
 
