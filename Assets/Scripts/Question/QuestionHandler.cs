@@ -80,9 +80,9 @@ public class QuestionHandler : MonoBehaviour
 
     bool CompareFraction(Answer a, Answer b) {
         Debug.Log("Pregunta es: A:" + a.ToString() + " , B:" + b.ToString());
-        Answer MCDA = MCD(a);
-        Answer MCDB = MCD(b);
-        if((MCDA.numerator == MCDB.numerator) && (MCDA.denominator == MCDB.denominator)) {
+        Answer MCDA = question.exerciseNumber == 7 || question.exerciseNumber == 8 || question.exerciseNumber == 9 ? a : MCD(a);
+        Answer MCDB = question.exerciseNumber == 7 || question.exerciseNumber == 8 || question.exerciseNumber == 9 ? b : MCD(b);
+        if ((MCDA.numerator == MCDB.numerator) && (MCDA.denominator == MCDB.denominator)) {
 
             Debug.Log("Correcto: A:" + MCDA.ToString() + " , B:" + MCDA.ToString());
             return true;
