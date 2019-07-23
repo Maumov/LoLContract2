@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using LoLSDK;
+
 public class MissionViewer : MonoBehaviour
 {
     public List<string> textos;
@@ -9,7 +11,7 @@ public class MissionViewer : MonoBehaviour
     public TextMeshProUGUI text;
 
     public void Start() {
-        Show();
+        //Show();
     }
 
     public void SetTexts(List<string> t) {
@@ -28,10 +30,11 @@ public class MissionViewer : MonoBehaviour
         }
     }
 
-    void Show() {
+    public void Show() {
         string s = SharedState.LanguageDefs[textos[currentShowing]];
         //Debug.Log(s);
         text.text = s;
+        LOLSDK.Instance.SpeakText(s);
         //text.text = SharedState.LanguageDefs[textos[currentShowing].ToString()];
     }
 

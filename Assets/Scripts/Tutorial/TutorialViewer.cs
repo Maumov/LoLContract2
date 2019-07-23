@@ -44,8 +44,17 @@ public class TutorialViewer : MonoBehaviour
         isShowing = true;
         foreach(GameObject g in exercises[questionHandler.question.exerciseNumber].Steps) {
             g.SetActive(false);
+           
         }
         exercises[questionHandler.question.exerciseNumber].Steps[currentStep].SetActive(true);
+        Invoke("ShowTutorialMessage", 0.2f);
+    }
+
+    void ShowTutorialMessage() {
+        MissionViewer mv = FindObjectOfType<MissionViewer>();
+        if(mv != null) {
+            mv.Show();
+        }
     }
 
     public void NextStepButtonPressed() {
