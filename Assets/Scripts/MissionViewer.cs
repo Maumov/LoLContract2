@@ -34,7 +34,7 @@ public class MissionViewer : MonoBehaviour
         string s = SharedState.LanguageDefs[textos[currentShowing]];
         //Debug.Log(s);
         text.text = s;
-        LOLSDK.Instance.SpeakText(s);
+        LOLSDK.Instance.SpeakText(textos[currentShowing]);
         //text.text = SharedState.LanguageDefs[textos[currentShowing].ToString()];
     }
 
