@@ -19,8 +19,9 @@ public class TimerViewer : MonoBehaviour
         
     }
 
-    public void UpdateValue(float value, float value2) {
+    public void UpdateValue(float value) {
+        //public void UpdateValue(float value, float value2) {
         image.fillAmount = value;
-        image2.fillAmount = value2;
+        //image2.fillAmount = value2;
     }
 }

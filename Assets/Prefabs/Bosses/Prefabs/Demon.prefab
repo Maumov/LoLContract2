@@ -69,10 +69,63 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2362107202308139942}
     m_Modifications:
-    - target: {fileID: 1679188234829178341, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: m_Name
-      value: Character_BR_RedDemon_01
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: readyEffect
+      value: 
+      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
+        type: 3}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: getHitEffect
+      value: 
+      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
+        type: 3}
+    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: LandFX.positionOffset.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593637578898120653, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 704e29b94a2251248986d6f55cfa361a,
+        type: 2}
+    - target: {fileID: 1593637578898120653, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617542760787967790, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
@@ -91,6 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -102,16 +160,6 @@ PrefabInstance:
     - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
@@ -129,20 +177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+    - target: {fileID: 1679188234829178341, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677310167061374907, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+      propertyPath: m_Name
+      value: Character_BR_RedDemon_01
       objectReference: {fileID: 0}
     - target: {fileID: 3175480690099191589, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
@@ -151,8 +189,8 @@ PrefabInstance:
       objectReference: {fileID: 4637801409046359737}
     - target: {fileID: 3175480690099191589, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: radiusStopMoving
-      value: 1
+      propertyPath: returnSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3175480690099191589, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
@@ -161,51 +199,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3175480690099191589, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: returnSpeed
-      value: 15
+      propertyPath: radiusStopMoving
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: getHitEffect
-      value: 
-      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
-        type: 3}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: readyEffect
-      value: 
-      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
-        type: 3}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: LandFX.positionOffset.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 651195924951287553, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: LandFX
-      value: 
-      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    - target: {fileID: 1593637578898120653, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593637578898120653, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: 704e29b94a2251248986d6f55cfa361a,
-        type: 2}
     - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
       propertyPath: damage
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
@@ -214,13 +214,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: timeBetweenAttacks2
+      propertyPath: timeBetweenAttacks
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 1617542760787967790, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
+    - target: {fileID: 7023232406397471222, guid: b16e2e124c0a90d4897e110fe7d6ec4c,
         type: 3}
-      propertyPath: maxHitPoints
-      value: 65
+      propertyPath: timeBetweenAttacks2
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16e2e124c0a90d4897e110fe7d6ec4c, type: 3}

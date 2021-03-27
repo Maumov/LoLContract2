@@ -2549,8 +2549,8 @@ Transform:
   - {fileID: 1306650269}
   - {fileID: 381331778}
   - {fileID: 1858855622}
-  - {fileID: 978519667}
   - {fileID: 1842270844}
+  - {fileID: 978519667}
   - {fileID: 1216157533}
   m_Father: {fileID: 1605394708}
   m_RootOrder: 6
@@ -12017,7 +12017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672951778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.33, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21712,6 +21712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: YouLose
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962475213074693397, guid: 5e94dfa04f80503449b558d2b9b9e19f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6962475213619631519, guid: 5e94dfa04f80503449b558d2b9b9e19f,
         type: 3}

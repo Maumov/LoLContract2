@@ -27,6 +27,7 @@
     {
       "questionId": "q2",
       "stem": "A stitch in time saves nine what?",
+      "imageURL": "http://3.bp.blogspot.com/-QM6KFrHYfMQ/U4X92xgQ5WI/AAAAAAAACo0/KLVH0MJbSrc/s1600/Stitch+in+time+saves+nine+(1).gif",
       "alternatives": [
         {
           "alternativeId": "a5",
@@ -49,7 +50,8 @@
     },
     {
       "questionId": "q3",
-      "stem": "After eating, do amphibians have to wait one hour before getting out of the water?", 
+      "stem": "After eating, do amphibians have to wait one hour before getting out of the water?",
+      "imageURL": "https://cdn.meme.am/instances/250x250/23625193.jpg",
       "alternatives": [
         {
           "alternativeId": "a9",
@@ -73,6 +75,7 @@
     {
       "questionId": "q4",
       "stem": "After they make Styrofoam, what do they ship it in?",
+      "imageURL": "https://cdn.meme.am/instances/65111038.jpg",
       "alternatives": [
         {
           "alternativeId": "a13",

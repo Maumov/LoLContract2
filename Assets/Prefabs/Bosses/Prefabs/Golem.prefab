@@ -69,10 +69,81 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2371648214108544870}
     m_Modifications:
-    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
+    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
-      propertyPath: m_Name
-      value: Character_BR_FortGolem_01
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 6694624755666713450}
+    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: returnSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: radiusStopMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: damage2
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: timeBetweenAttacks2
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 2893ab265f284654fb0c73e683c00f24,
+        type: 2}
+    - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
@@ -91,6 +162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -102,16 +178,6 @@ PrefabInstance:
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
@@ -129,32 +195,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+    - target: {fileID: 7473750368122937314, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
+      propertyPath: m_Name
+      value: Character_BR_FortGolem_01
       objectReference: {fileID: 0}
-    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
+    - target: {fileID: 7573007864385461176, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7471595743053787884, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_Controller
+      propertyPath: LandFX
       value: 
-      objectReference: {fileID: 22100000, guid: 2893ab265f284654fb0c73e683c00f24,
-        type: 2}
-    - target: {fileID: 7415973219653755304, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 7573007864385461176, guid: 10b33102456829844b80f356a31745bb,
         type: 3}
       propertyPath: readyEffect
@@ -171,56 +221,6 @@ PrefabInstance:
         type: 3}
       propertyPath: LandFX.positionOffset.y
       value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7573007864385461176, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: LandFX
-      value: 
-      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
-    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 6694624755666713450}
-    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: radiusStopMoving
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3402861474232404810, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: returnSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: damage2
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507705462845106187, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: timeBetweenAttacks2
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3784928949970124626, guid: 10b33102456829844b80f356a31745bb,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b33102456829844b80f356a31745bb, type: 3}

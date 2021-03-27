@@ -69,10 +69,63 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 714544621156675943}
     m_Modifications:
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: LandFX
+      value: 
+      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: readyEffect
+      value: 
+      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
+        type: 3}
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: getHitEffect
+      value: 
+      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
+        type: 3}
+    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: LandFX.positionOffset.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899803152579923234, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 43039296f10b56c4db51dabac3a446c9,
+        type: 2}
+    - target: {fileID: 3899803152579923234, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3984465787874249372, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
       propertyPath: m_Name
       value: Character_SpiritDemon_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
@@ -91,6 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -102,16 +160,6 @@ PrefabInstance:
     - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
@@ -129,54 +177,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+    - target: {fileID: 6648320393678050748, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
+      propertyPath: maxHitPoints
+      value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
+      propertyPath: damage
+      value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 3989300471813009230, guid: 0586de0f603d5a448bbb529993938b54,
+    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+      propertyPath: damage2
+      value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 3899803152579923234, guid: 0586de0f603d5a448bbb529993938b54,
+    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: 43039296f10b56c4db51dabac3a446c9,
-        type: 2}
-    - target: {fileID: 3899803152579923234, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
+      propertyPath: timeBetweenAttacks
+      value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
+    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
-      propertyPath: getHitEffect
-      value: 
-      objectReference: {fileID: 19831454, guid: b8fd5155356c32f4c81ecdf9b62cbc64,
-        type: 3}
-    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: readyEffect
-      value: 
-      objectReference: {fileID: 19820956, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4,
-        type: 3}
-    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: LandFX.positionOffset.y
-      value: 0.25
+      propertyPath: timeBetweenAttacks2
+      value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 3627698515644754404, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: LandFX
-      value: 
-      objectReference: {fileID: 195466, guid: 8fa2345bdbe5baa4ebf9e514bbbee0f4, type: 3}
     - target: {fileID: 8803502653568150941, guid: 0586de0f603d5a448bbb529993938b54,
         type: 3}
       propertyPath: target
@@ -186,31 +211,6 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSpeed
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: damage
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: damage2
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698190896580477919, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: timeBetweenAttacks2
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 6648320393678050748, guid: 0586de0f603d5a448bbb529993938b54,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0586de0f603d5a448bbb529993938b54, type: 3}

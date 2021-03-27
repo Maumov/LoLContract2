@@ -162,28 +162,28 @@ public class Combat : MonoBehaviour
             if(target != null) {
                 if(target.GetComponent<Stats>().isDead()) {
                     nextAttack = Time.time + timeBetweenAttacks;
-                    nextAttack2 = Time.time + timeBetweenAttacks2;
+                    //nextAttack2 = Time.time + timeBetweenAttacks2;
                     yield return null;
                 }
             }
 
             if(TutorialViewer.isShowing) {
                 nextAttack += Time.deltaTime;
-                nextAttack2 += Time.deltaTime;
+                //nextAttack2 += Time.deltaTime;
             } else {
                 float val1 = (nextAttack - Time.time) / timeBetweenAttacks;
-                float val2 = (nextAttack2 - Time.time) / timeBetweenAttacks2;
-                timerViewer.UpdateValue( val1, val2 );
+                //float val2 = (nextAttack2 - Time.time) / timeBetweenAttacks2;
+                timerViewer.UpdateValue( val1);
             }
 
             if(nextAttack < Time.time) {
                 isAttack1 = true;
                 yield return StartCoroutine(WaitAttackTurn());
             }
-            if(nextAttack2 < Time.time) {
-                isAttack1 = false;
-                yield return StartCoroutine(WaitAttackTurn());
-            }
+            //if(nextAttack2 < Time.time) {
+            //    isAttack1 = false;
+            //    yield return StartCoroutine(WaitAttackTurn());
+            //}
             yield return null;
 
         }
@@ -222,10 +222,11 @@ public class Combat : MonoBehaviour
         if(isAttack1) {
             isCurrentAttack1 = true;
             nextAttack = Time.time + timeBetweenAttacks;
-        } else {
-            isCurrentAttack1 = false;
-            nextAttack2 = Time.time + timeBetweenAttacks2;
-        }
+        } 
+        //else {
+            //isCurrentAttack1 = false;
+            //nextAttack2 = Time.time + timeBetweenAttacks2;
+        //}
         
     }
 
