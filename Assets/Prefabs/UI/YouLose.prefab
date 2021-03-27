@@ -461,7 +461,7 @@ MonoBehaviour:
   revive: {fileID: 3534485619103662743}
   countDown: {fileID: 4854911895054007995}
   scoreText: {fileID: 0}
-  timer: 20
+  timer: 30
   FinalBossUI: {fileID: 0}
 --- !u!114 &7815454764228902416
 MonoBehaviour:
@@ -3624,9 +3624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6953348018016805519 stripped
+--- !u!114 &3848727418087597582 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7164834513592685885, guid: ae5b48e3d3cbc744cb08c69950a859cd,
+  m_CorrespondingSourceObject: {fileID: 3925088405817561532, guid: ae5b48e3d3cbc744cb08c69950a859cd,
     type: 3}
   m_PrefabInstance: {fileID: 221197730316842930}
   m_PrefabAsset: {fileID: 0}
@@ -3636,9 +3636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3848727418087597582 stripped
+--- !u!114 &6953348018016805519 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3925088405817561532, guid: ae5b48e3d3cbc744cb08c69950a859cd,
+  m_CorrespondingSourceObject: {fileID: 7164834513592685885, guid: ae5b48e3d3cbc744cb08c69950a859cd,
     type: 3}
   m_PrefabInstance: {fileID: 221197730316842930}
   m_PrefabAsset: {fileID: 0}
